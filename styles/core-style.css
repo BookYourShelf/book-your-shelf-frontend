@@ -205,7 +205,7 @@ img {
 
 /* ScrollUp */
 #scrollUp {
-  background-color: #ff084e;
+  background-color: #1f5b70;
   border-radius: 0;
   bottom: 60px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
@@ -233,7 +233,7 @@ img {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 50px;
-  background-color: #0315ff;
+  background-color: #fbaa1d;
   letter-spacing: 1.5px;
   font-weight: 600; }
   .essence-btn:hover, .essence-btn:focus {
@@ -242,7 +242,7 @@ img {
 
 /* :: 4.0 Header Area CSS */
 .header_area {
-  position: absolute;
+  position: relative;
   z-index: 900;
   top: 0;
   left: 0;
@@ -386,7 +386,7 @@ img {
     .header_area .cart-area a span {
       font-family: "Ubuntu", sans-serif;
       font-size: 18px;
-      color: #0315ff;
+      color: #fbaa1d;
       font-weight: 700;
       position: absolute;
       top: -10px; }
@@ -462,7 +462,7 @@ img {
     .right-side-cart-area .cart-button a span {
       font-family: "Ubuntu", sans-serif;
       font-size: 18px;
-      color: #0315ff;
+      color: #fbaa1d;
       font-weight: 700;
       position: absolute;
       top: -10px; }
@@ -699,7 +699,7 @@ img {
       .single_catagory_area .catagory-content a {
         font-size: 18px; } }
   .single_catagory_area:hover .catagory-content a {
-    color: #0315ff; }
+    color: #fbaa1d; }
 
 /* :: 7.0 CTA Area CSS */
 .cta-area {
@@ -776,7 +776,7 @@ img {
       .single-product-wrapper .product-img .product-badge.offer-badge {
         background-color: #dc0345; }
       .single-product-wrapper .product-img .product-badge.new-badge {
-        background-color: #0315ff; }
+        background-color: #fbaa1d; }
     .single-product-wrapper .product-img .product-favourite a {
       position: absolute;
       height: 25px;
@@ -886,7 +886,7 @@ img {
     text-align: center;
     color: #787878; }
     .pagination .page-item .page-link:hover, .pagination .page-item .page-link:focus {
-      color: #0315ff;
+      color: #fbaa1d;
       box-shadow: none; }
   .pagination .page-item:first-child {
     margin-right: 15px; }
@@ -1043,7 +1043,7 @@ img {
         border: none;
         width: 100%; }
         .single_product_details_area .single_product_desc .nice-select .list .option.selected {
-          color: #0315ff; }
+          color: #fbaa1d; }
     .single_product_details_area .single_product_desc .cart-fav-box .favme {
       cursor: pointer;
       color: #ccc;
@@ -1169,7 +1169,7 @@ img {
       font-family: "Ubuntu", sans-serif;
       letter-spacing: 1px;
       margin-bottom: 0;
-      color: #0315ff; }
+      color: #fbaa1d; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .breadcumb_area.breadcumb-style-two .page-title h2 {
           font-size: 48px; } }
@@ -1209,7 +1209,7 @@ img {
       font-weight: 300;
       color: #787878; }
       .widget .catagories-menu .sub-menu li > a:hover {
-        color: #0315ff; }
+        color: #fbaa1d; }
   .widget.price .ui-slider-handle {
     background-color: #000000;
     border: none;
@@ -1219,7 +1219,7 @@ img {
     height: 15px;
     margin: 0; }
   .widget.price .ui-slider-range.ui-corner-all.ui-widget-header {
-    background-color: #0315ff; }
+    background-color: #fbaa1d; }
   .widget.price .ui-slider-horizontal {
     height: 5px; }
   .widget.price .range-price {
@@ -1251,7 +1251,7 @@ img {
         .widget.color .widget-desc ul li a.color3 {
           background-color: #030303; }
         .widget.color .widget-desc ul li a.color4 {
-          background-color: #0315ff; }
+          background-color: #fbaa1d; }
         .widget.color .widget-desc ul li a.color5 {
           background-color: #dc0647; }
         .widget.color .widget-desc ul li a.color6 {
@@ -1274,7 +1274,7 @@ img {
       font-weight: 300;
       text-transform: capitalize; }
       .widget.brands ul li a:hover {
-        color: #0315ff; }
+        color: #fbaa1d; }
 
 .product-topbar {
   position: relative;
@@ -1288,7 +1288,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.75px; }
     .product-topbar .total-products p span {
-      color: #0315ff; }
+      color: #fbaa1d; }
   .product-topbar .product-sorting p {
     margin-bottom: 0;
     font-size: 12px;
@@ -1320,7 +1320,7 @@ img {
       border-radius: 0;
       border: none; }
       .product-topbar .nice-select .list .option.selected {
-        color: #0315ff; }
+        color: #fbaa1d; }
 
 /* :: 14.0 Checkout Area CSS */
 .checkout_details_area form label {
@@ -1328,7 +1328,7 @@ img {
   text-transform: uppercase;
   font-weight: 600; }
   .checkout_details_area form label span {
-    color: #0315ff; }
+    color: #fbaa1d; }
 .checkout_details_area form .form-control {
   height: 42px;
   border: 1px solid #ebebeb;
@@ -1461,7 +1461,7 @@ img {
             font-size: 18px;
             margin-bottom: 20px; } }
         .blog-wrapper .single-blog-area .hover-content .hover-post-title a:hover {
-          color: #0315ff; }
+          color: #fbaa1d; }
       @media only screen and (max-width: 767px) {
         .blog-wrapper .single-blog-area .hover-content p {
           display: none; } }
@@ -1475,7 +1475,7 @@ img {
         font-size: 12px;
         font-weight: 600;
         margin-bottom: 0;
-        color: #0315ff;
+        color: #fbaa1d;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         margin-top: 50px; }
@@ -1568,7 +1568,7 @@ img {
           .single-blog-wrapper .single-blog-content-wrapper .single-blog--text blockquote h6 i {
             margin-right: 30px;
             font-size: 30px;
-            color: #0315ff; }
+            color: #fbaa1d; }
         .single-blog-wrapper .single-blog-content-wrapper .single-blog--text blockquote span {
           margin-left: 60px;
           font-size: 16px;
@@ -1663,7 +1663,7 @@ img {
       .regular-page-content-wrapper .regular-page-text blockquote h6 i {
         margin-right: 30px;
         font-size: 30px;
-        color: #0315ff; }
+        color: #fbaa1d; }
     .regular-page-content-wrapper .regular-page-text blockquote span {
       margin-left: 60px;
       font-size: 16px;
@@ -1747,7 +1747,7 @@ img {
           font-size: 14px;
           font-weight: 300; }
           .contact-area .contact-info .contact-address p:last-child a:hover {
-            color: #0315ff; }
+            color: #fbaa1d; }
 
 /* ##### The End ##### */
 
