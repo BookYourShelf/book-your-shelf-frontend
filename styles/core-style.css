@@ -20,9 +20,7 @@ body {
   font-size: 14px;
   background-color: #ffffff;
    }
-  @media only screen and (max-width: 767px) {
-    body {
-      margin-top: 80px; } }
+  
 
 h1,
 h2,
