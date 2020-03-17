@@ -52,7 +52,6 @@ body
 div
 {
 	display: block;
-	position: relative;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -590,6 +589,7 @@ box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
 }
 .product_button > div > div
 {
+	position: relative;
 	width: 36px;
 	height: 36px;
 	margin-top: 4px;
@@ -1372,5 +1372,5 @@ box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
   }
 
 .product_image_showcase{
-	padding: 40px;
+	padding: 30px;
 }

@@ -50,7 +50,6 @@ body
 div
 {
 	display: block;
-	position: relative;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -819,10 +818,12 @@ section
 .product_dropdown_filter
 {
 	width: 114px;
+	position: relative;
 }
 .product_dropdown_sorting
 {
 	margin-right: 59px;
+	position: relative;
 }
 .isotope_filter_text span,
 .isotope_sorting_text span
@@ -1133,6 +1134,7 @@ section
 }
 .product_button > div > div
 {
+	position: relative;
 	width: 36px;
 	height: 36px;
 	margin-top: 4px;
@@ -1493,4 +1495,8 @@ section
 	font-size: 16px;
 	color: #969696;
 	font-weight: 300;
+}
+
+.product_image_showcase{
+	padding: 30px;
 }
