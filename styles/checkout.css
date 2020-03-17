@@ -396,7 +396,7 @@ section
 }
 .hamburger:hover i
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .main_nav
 {
@@ -415,7 +415,7 @@ section
 .main_nav ul li.active a,
 .main_nav ul li a:hover
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .header_search
 {
@@ -446,8 +446,8 @@ section
 .search_input:focus,
 .search_input:hover
 {
-	border-color: #2fce98;
-	box-shadow: 0 0 1px 0px #2fce98 inset, 0 0 1px 0px #2fce98;
+	border-color: #fbaa1d;
+	box-shadow: 0 0 1px 0px #fbaa1d inset, 0 0 1px 0px #fbaa1d;
 }
 .search_input::-webkit-input-placeholder
 {
@@ -518,7 +518,7 @@ section
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	background: #2fce98;
+	background: #fbaa1d;
 	text-align: center;
 	line-height: 24px;
 	color: #FFFFFF;
@@ -564,7 +564,7 @@ section
 .svg:hover rect,
 .svg:hover polygon
 {
-	fill: #2fce98;
+	fill: #fbaa1d;
 }
 
 /*********************************
@@ -607,7 +607,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .menu_nav ul li a::after
 {
@@ -617,7 +617,7 @@ section
 	left: 0;
 	width: 0%;
 	height: 2px;
-	background: #2fce98;
+	background: #fbaa1d;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
@@ -692,11 +692,11 @@ section
 }
 .menu_social_list li:hover
 {
-	border-color: #2fce98;
+	border-color: #fbaa1d;
 }
 .menu_social_list li:hover a i
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .menu_search
 {
@@ -780,7 +780,7 @@ section
 }
 .breadcrumbs ul li a:hover
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 
 /*********************************
@@ -853,7 +853,7 @@ section
 .checkout_input:hover,
 .checkout_input:focus
 {
-	border-bottom: solid 2px #2fce98;
+	border-bottom: solid 2px #fbaa1d;
 }
 .checkout_input::-webkit-input-placeholder
 {
@@ -987,7 +987,7 @@ section
 }
 .billing_checkbox:checked ~ .checkbox_mark
 {
-	border-color: #2fce98;
+	border-color: #fbaa1d;
 }
 .checkbox_text
 {
@@ -1068,7 +1068,7 @@ section
 	width: 100%;
 	height: 44px;
 	text-align: center;
-	background: #2fce98;
+	background: #fbaa1d;
 	border-radius: 3px;
 	margin-top: 32px;
 }
@@ -1152,14 +1152,14 @@ section
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #2fce98;
+	background: #fbaa1d;
 	content: '';
 	visibility: hidden;
 	opacity: 0;
 }
 .radio_container input:checked ~ .radio_mark
 {
-	border-color: #2fce98;
+	border-color: #fbaa1d;
 }
 .radio_container input:checked ~ .radio_mark::after
 {
@@ -1168,7 +1168,7 @@ section
 }
 .radio_container input:checked ~ .radio_text
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .radio_text
 {
@@ -1268,7 +1268,7 @@ section
 }
 .footer_list li a:hover
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .footer_list li a > div::after
 {
@@ -1288,7 +1288,7 @@ section
 }
 .footer_list li a:hover > div::after
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .footer_list li a > div
 {
@@ -1315,7 +1315,7 @@ section
 .footer_tag_1
 {
 	left: calc(100% + 5px);
-	background: #2fce98;
+	background: #fbaa1d;
 }
 .footer_tag_2
 {
@@ -1383,7 +1383,7 @@ section
 	width: 53px;
 	height: 53px;
 	border-radius: 50%;
-	background: #2fce98;
+	background: #fbaa1d;
 	border: none;
 	outline: none;
 	font-size: 24px;
@@ -1442,12 +1442,12 @@ section
 }
 .footer_social_list li:hover
 {
-	border-color: #2fce98;
+	border-color: #fbaa1d;
 	transform: translateY(-5px);
 }
 .footer_social_list li a:hover i
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .footer_bar
 {
@@ -1470,7 +1470,7 @@ section
 }
 .footer_nav ul li a:hover
 {
-	color: #2fce98;
+	color: #fbaa1d;
 }
 .copyright
 {
@@ -1481,4 +1481,10 @@ section
 
 .btn.btn-sm {
     font-size: 14px !important;
-    padding: 10px 20px !important; }
+    padding: 10px 20px !important;
+}
+
+.book_your_shelf_footer {
+	max-width:40%;
+	height:auto;
+}

@@ -381,10 +381,6 @@ section
 .product
 {
 	margin-bottom: 30px;
-	border: 1px #bdbdbd solid;
-	-webkit-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
--moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
 }
 .product.home_item_large
 {
@@ -1373,4 +1369,13 @@ box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
 
 .product_image_showcase{
 	padding: 30px;
+}
+
+.book_your_shelf_footer {
+	max-width:40%;
+	height:auto;
+}
+
+.book_your_shelf_logo {
+	max-width:15%;
 }

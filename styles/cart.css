@@ -1550,3 +1550,8 @@ section
 	color: #969696;
 	font-weight: 300;
 }
+
+.book_your_shelf_footer {
+	max-width:40%;
+	height:auto;
+}
