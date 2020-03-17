@@ -440,7 +440,7 @@ section
 }
 .product_name
 {
-	max-width: 175px;
+	max-width: 320px;
 }
 .product_name a
 {
@@ -1378,4 +1378,8 @@ section
 
 .book_your_shelf_logo {
 	max-width:15%;
+}
+
+.fa:hover {
+	color: #fbaa1d;
 }
