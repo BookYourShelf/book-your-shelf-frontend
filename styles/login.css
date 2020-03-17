@@ -986,7 +986,8 @@ section
 	height: 25px;
 	width: 25px;
 	background-color: #eee;
-  }
+	cursor: pointer;
+}
   
   /* When the checkbox is checked, add a blue background */
   .checkbox_container input:checked ~ .checkbox_mark {
@@ -1025,7 +1026,6 @@ section
 	color: #4a4a4a;
 	display: inline-block;
 	vertical-align: middle;
-	cursor: pointer;
 }
 
 /*********************************
