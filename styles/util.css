@@ -3712,3 +3712,7 @@ iframe {border: none;}
 .pointer-none {
 	pointer-events: none;
 }
+
+.bold-text {
+	font-weight: bold;
+}

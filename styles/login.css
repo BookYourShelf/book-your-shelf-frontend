@@ -10,7 +10,7 @@
 3. Header
 4. Menu
 5. Home
-6. Checkout
+6. login
 	6.1 Billing
 	6.2 Cart
 7. Footer
@@ -784,10 +784,10 @@ section
 }
 
 /*********************************
-6. Checkout
+6. login
 *********************************/
 
-.checkout
+.login
 {
 	width: 100%;
 	background: #FFFFFF;
@@ -807,33 +807,33 @@ section
 	padding-bottom: 32px;
 	background: #f8f8f8;
 }
-.checkout_box
+.login_box
 {
 	background: #edf4f6;
 }
-.checkout_title
+.login_title
 {
 	font-weight: 600;
 	color: #4a4a4a;
 	font-size: 24px;
 	line-height: 0.75;
 }
-.checkout_form_container
+.login_form_container
 {
 	margin-top: 31px;
 }
-.checkout_form > div:not(:last-child)
+.login_form > div:not(:last-child)
 {
 	margin-bottom: 20px;
 }
-.checkout_form label
+.login_form label
 {
 	font-size: 14px;
 	font-weight: 600;
 	color: #414141;
 	margin-bottom: 9px;
 }
-.checkout_input
+.login_input
 {
 	width: 100%;
 	height: 52px;
@@ -850,78 +850,78 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.checkout_input:hover,
-.checkout_input:focus
+.login_input:hover,
+.login_input:focus
 {
 	border-bottom: solid 2px #fbaa1d;
 }
-.checkout_input::-webkit-input-placeholder
+.login_input::-webkit-input-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	color: #969696 !important;
 }
-.checkout_input:-moz-placeholder
+.login_input:-moz-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	color: #969696 !important;
 }
-.checkout_input::-moz-placeholder
+.login_input::-moz-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	color: #969696 !important;
 } 
-.checkout_input:-ms-input-placeholder
+.login_input:-ms-input-placeholder
 { 
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	color: #969696 !important;
 }
-.checkout_input::input-placeholder
+.login_input::input-placeholder
 {
 	font-size: 14px !important;
 	font-weight: 400 !important;
 	color: #969696 !important;
 }
-.checkout_input:focus::-webkit-input-placeholder
+.login_input:focus::-webkit-input-placeholder
 {
 	color: #000000 !important;
 }
-.checkout_input:focus:-moz-placeholder
+.login_input:focus:-moz-placeholder
 {
 	color: #000000 !important;
 }
-.checkout_input:focus::-moz-placeholder
-{
-	color: #000000 !important;
-} 
-.checkout_input:focus:-ms-input-placeholder
-{ 
-	color: #000000 !important;
-}
-.checkout_input:focus::input-placeholder
-{
-	color: #000000 !important;
-}
-.checkout_input:hover::-webkit-input-placeholder
-{
-	color: #000000 !important;
-}
-.checkout_input:hover:-moz-placeholder
-{
-	color: #000000 !important;
-}
-.checkout_input:hover::-moz-placeholder
+.login_input:focus::-moz-placeholder
 {
 	color: #000000 !important;
 } 
-.checkout_input:hover:-ms-input-placeholder
+.login_input:focus:-ms-input-placeholder
 { 
 	color: #000000 !important;
 }
-.checkout_input:hover::input-placeholder
+.login_input:focus::input-placeholder
+{
+	color: #000000 !important;
+}
+.login_input:hover::-webkit-input-placeholder
+{
+	color: #000000 !important;
+}
+.login_input:hover:-moz-placeholder
+{
+	color: #000000 !important;
+}
+.login_input:hover::-moz-placeholder
+{
+	color: #000000 !important;
+} 
+.login_input:hover:-ms-input-placeholder
+{ 
+	color: #000000 !important;
+}
+.login_input:hover::input-placeholder
 {
 	color: #000000 !important;
 }
@@ -950,20 +950,20 @@ section
 {
     display: none;
 }
-.checkout_address_2
+.login_address_2
 {
 	margin-top: 16px;
 }
-.checkout_extra
+.login_extra
 {
 	margin-top: 22px;
 }
-.checkout_extra ul {
+.login_extra ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
-.checkout_extra ul li {
+.login_extra ul li {
 	justify-content: space-between;
   display: flex;
 }
@@ -976,28 +976,48 @@ section
 {
 	display: none;
 }
-.checkbox_mark
-{
+
+
+/* Create a custom checkbox */
+.checkbox_mark {
 	position: absolute;
+	top: 0;
 	left: 0;
-	top: 6px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
-	width: 13px;
-    height: 13px;
-	background: #FFFFFF;
-	cursor: pointer;
-	vertical-align: middle;
-	margin-bottom: 0;
-	border: solid 2px #969696;
-}
-.billing_checkbox:checked ~ .checkbox_mark
-{
-	border-color: #fbaa1d;
-}
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox_container input:checked ~ .checkbox_mark {
+	background-color: #fbaa1d;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox_mark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox_container input:checked ~ .checkbox_mark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox_container .checkbox_mark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
 .checkbox_text
 {
 	font-size: 13px;
@@ -1072,7 +1092,7 @@ section
 {
 	margin-top: 53px;
 }
-.checkout_button
+.login_button
 {
 	width: 100%;
 	height: 44px;
@@ -1081,7 +1101,7 @@ section
 	border-radius: 3px;
 	margin-top: 32px;
 }
-.checkout_button a
+.login_button a
 {
 	display: block;
 	font-size: 18px;
@@ -1095,7 +1115,7 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.checkout_button:hover
+.login_button:hover
 {
 	background: #4a4a4a;
 }
