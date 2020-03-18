@@ -1377,7 +1377,8 @@ section
 }
 
 .book_your_shelf_logo {
-	max-width:15%;
+	max-width: 13%;
+	margin-right: 30px;
 }
 
 .fa:hover {

@@ -1525,3 +1525,8 @@ section
 	max-width:40%;
 	height:auto;
 }
+
+.book_your_shelf_logo {
+	max-width: 13%;
+	margin-right: 30px;
+}

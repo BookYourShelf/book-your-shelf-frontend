@@ -1500,3 +1500,13 @@ section
 .product_image_showcase{
 	padding: 30px;
 }
+
+.book_your_shelf_footer {
+	max-width:40%;
+	height:auto;
+}
+
+.book_your_shelf_logo {
+	max-width: 13%;
+	margin-right: 30px;
+}
