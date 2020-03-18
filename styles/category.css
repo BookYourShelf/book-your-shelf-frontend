@@ -753,7 +753,7 @@ section
 }
 .breadcrumbs
 {
-	margin-top: 15px;
+	margin-top: 30px;
 }
 .breadcrumbs ul li
 {
@@ -762,7 +762,7 @@ section
 .breadcrumbs ul li:not(:last-of-type)::after
 {
 	display: inline-block;
-	content: '/';
+	content: '>';
 	font-size: 16px;
 	font-weight: 500;
 	color: #969696;
@@ -788,7 +788,7 @@ section
 .products_bar
 {
 	width: 100%;
-	height: 167px;
+	height: 80px;
 	background: #FFFFFF;
 	z-index: 1;
 }
@@ -1182,7 +1182,6 @@ section
 .products
 {
 	background: #FFFFFF;
-	padding-top: 72px;
 	padding-bottom: 82px;
 }
 .page_nav_row
