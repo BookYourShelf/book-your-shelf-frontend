@@ -1334,6 +1334,7 @@ section
 	-ms-transform: translateY(250%);
 	-o-transform: translateY(250%);
 	transform: translateY(250%);
+	color: white;
   }
   
   /*---------------------------------------------*/
