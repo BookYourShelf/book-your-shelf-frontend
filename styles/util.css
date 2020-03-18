@@ -3716,3 +3716,7 @@ iframe {border: none;}
 .bold-text {
 	font-weight: bold;
 }
+
+.orange-text {
+	color: #fbaa1d;
+}
