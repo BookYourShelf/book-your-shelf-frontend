@@ -990,22 +990,32 @@ section
 .button_continue
 {
 	background: #fbaa1d;
+	border-radius: 2px;
+	text-align: center;
+	border: solid 2px #fbaa1d;
 }
 .button_continue:hover
 {
-	background: #000000;
+	background: transparent;
+}
+.button_continue:hover a
+{
+	color: #fbaa1d;
 }
 .button_clear
 {
-	background: #b2b2b2;
+	background: #414141;
+	border-radius: 2px;
+	text-align: center;
+	border: solid 2px #414141;
 }
 .button_clear:hover
 {
-	background: #414141;
+	background: transparent;
 }
 .button_clear:hover a
 {
-	color: #FFFFFF;
+	color: #414141;
 }
 .cart_extra_row
 {
@@ -1064,14 +1074,27 @@ section
 	width: 90px;
 	height: 44px;
 	background: #fbaa1d;
-	border-radius: 3px;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 700;
-	border: none;
 	outline: none;
 	cursor: pointer;
+	border-radius: 2px;
+	text-align: center;
+	border: solid 2px #fbaa1d;
+}
+.coupon_button a
+{
+	color: #ffffff;
+}
+.coupon_button:hover
+{
+	background: transparent;
+}
+.coupon_button:hover a
+{
+	color: #fbaa1d;
 }
 .coupon_text
 {
@@ -1238,8 +1261,9 @@ section
 	height: 44px;
 	text-align: center;
 	background: #fbaa1d;
-	border-radius: 3px;
 	margin-top: 70px;
+	border-radius: 2px;
+	border: solid 2px #fbaa1d;
 }
 .checkout_button a
 {
@@ -1255,9 +1279,13 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+.checkout_button:hover a
+{
+	color: #fbaa1d;
+}
 .checkout_button:hover
 {
-	background: #4a4a4a;
+	background: transparent;
 }
 
 /*********************************

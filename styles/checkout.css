@@ -1069,8 +1069,9 @@ section
 	height: 44px;
 	text-align: center;
 	background: #fbaa1d;
-	border-radius: 3px;
 	margin-top: 32px;
+	border-radius: 2px;
+	border: solid 2px #fbaa1d;
 }
 .checkout_button a
 {
@@ -1088,7 +1089,11 @@ section
 }
 .checkout_button:hover
 {
-	background: #4a4a4a;
+	background: transparent;
+}
+.checkout_button:hover a
+{
+	color: #fbaa1d;
 }
 .payment_options ul
 {
