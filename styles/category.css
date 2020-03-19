@@ -855,6 +855,7 @@ section
 	visibility: hidden;
 	opacity: 0;
 	width: 100px;
+	z-index: 111111;
 	text-align: right;
 	background: #f6f8fa;
 	padding-left: 15px;
