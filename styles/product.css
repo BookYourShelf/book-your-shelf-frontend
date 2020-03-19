@@ -51,7 +51,6 @@ body
 div
 {
 	display: block;
-	position: relative;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1104,6 +1103,7 @@ section
 }
 .product_button > div > div
 {
+	position: relative;
 	width: 36px;
 	height: 36px;
 	margin-top: 4px;
