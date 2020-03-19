@@ -387,6 +387,12 @@ section
 	-moz-box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
 	box-shadow: 0px 0px 28px -12px rgba(0,0,0,0.52);
 }
+
+.product_box
+{
+	margin-bottom: 30px;
+	
+}
 .product.home_item_large
 {
 	margin-bottom: 0;
