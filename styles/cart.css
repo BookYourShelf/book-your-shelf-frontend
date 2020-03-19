@@ -118,7 +118,7 @@ p a:hover::after
 }
 ::selection
 {
-	background: rgba(188,155,155,0.6);
+	background: #fbaa1d;
 	color: #FFFFFF;
 }
 p::selection
