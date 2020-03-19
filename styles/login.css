@@ -1539,3 +1539,7 @@ section
 	max-width: 13%;
 	margin-right: 30px;
 }
+
+.show_password_bg {
+	background-color: white!important;
+}

@@ -219,22 +219,29 @@
                                     <div>
                                         <!-- Name -->
                                         <div class="login-text p-b-10" style="color: black;">Name</div>
-                                        <input type="email" id="register_name" class="login_input" required="required">
+                                        <input type="email" id="register_name" class="login_input form-control" required="required">
                                     </div>
                                     <div>
                                         <!-- Surname -->
                                         <div class="login-text p-b-10" style="color: black;">Surname</div>
-                                        <input type="email" id="register_surname" class="login_input" required="required">
+                                        <input type="email" id="register_surname" class="login_input form-control" required="required">
                                     </div>
                                     <div>
                                         <!-- Email -->
                                         <div class="login-text p-b-10" style="color: black;">E-Mail Address</div>
-                                        <input type="email" id="register_email" class="login_input" required="required">
+                                        <input type="email" id="register_email" class="login_input form-control" required="required">
                                     </div>
                                     <div>
                                         <!-- Password -->
                                         <div class="login-text p-b-10" style="color: black;">Password</div>
-                                        <input type="password" id="register_password" class="login_input" required="required">
+                                        <div class="input-group">
+                                            <input type="password" id="register_password" class="login_input form-control pwd" required="required">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text show_password_bg">
+                                                    <button class="btn btn-default reveal" type="button"><i class="fa fa-eye"></i></button>
+                                                </span> 
+                                            </div>
+                                        </div>
                                         <div>
                                             <span>*Your password must be 8-16 characters, and include at least one lowercase letter, one uppercase letter, and a number.</span>
                                         </div>
