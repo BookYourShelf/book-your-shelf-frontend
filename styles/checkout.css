@@ -967,28 +967,45 @@ section
 {
 	display: none;
 }
-.checkbox_mark
-{
+.checkbox_mark {
 	position: absolute;
+	top: 0;
 	left: 0;
-	top: 6px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
-	width: 13px;
-    height: 13px;
-	background: #FFFFFF;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
 	cursor: pointer;
-	vertical-align: middle;
-	margin-bottom: 0;
-	border: solid 2px #969696;
 }
-.billing_checkbox:checked ~ .checkbox_mark
-{
-	border-color: #fbaa1d;
-}
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox_container input:checked ~ .checkbox_mark {
+	background-color: #fbaa1d;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox_mark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox_container input:checked ~ .checkbox_mark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox_container .checkbox_mark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
 .checkbox_text
 {
 	font-size: 13px;
