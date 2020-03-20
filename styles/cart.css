@@ -1592,3 +1592,7 @@ section
 .fa:hover {
 	color: #fbaa1d;
 }
+
+.product_stock:hover {
+	color: #4a4a4a;
+}
