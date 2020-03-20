@@ -986,12 +986,13 @@ section
 {
 	padding-left: 25px;
 	padding-right: 25px;
-	padding-top: 18px;
 	padding-bottom: 10px;
 }
 .product_name
 {
+	text-align: center;
 	max-width: 320px;
+	height: 55px;
 }
 .product_name a
 {
@@ -1061,11 +1062,24 @@ section
 .rating_r_5 i:nth-child(5)::before{content: "\f005";}
 .product_price
 {
+	text-align: center;
 	font-size: 30px;
 	color: #4a4a4a;
 	font-weight: 500;
-	margin-top: 19px;
+	margin-top: 10px;
 	line-height: 0.75;
+}
+.sale_price
+{
+	text-align: center;
+	font-size: 20px;
+	color: #1f5b70;
+	font-weight: 500;
+	margin-top: 10px;
+	line-height: 0.75;
+}
+.sale_price del {
+	color: #b3b3b3;
 }
 .home_item_large .product_price
 {
@@ -1521,4 +1535,45 @@ section
 .book_your_shelf_logo {
 	max-width: 13%;
 	margin-right: 30px;
+}
+
+.home_item_rating
+{
+	text-align: center;
+}
+
+.product_text
+{
+	text-align: center;
+	font-size: 14px;
+	font-weight: 300;
+	color: #4a4a4a;
+}
+
+.sidebar_title
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	text-align: start;
+	max-width: 320px;
+	height: 55px;
+}
+
+.sidebar_title a
+{
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #4a4a4a;
+}
+
+.sidebar_title a:hover,
+.product_category a:hover
+{
+	color: #fbaa1d;
+}
+
+.sidebar_text
+{
+	<!-- TODO -->
 }
