@@ -1590,3 +1590,16 @@ section
 .product_stock:hover {
 	color: #4a4a4a;
 }
+
+.sale_price
+{
+	display: inline;
+	color: #fbaa1d;
+	font-weight: 500;
+	margin-top: 10px;
+	line-height: 0.75;
+}
+
+.sale_price del {
+	color: #b3b3b3;
+}

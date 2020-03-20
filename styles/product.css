@@ -984,10 +984,11 @@ section
 }
 .product_price
 {
-	font-size: 61.32px;
+	font-size: 40px;
 	color: #4a4a4a;
 	font-weight: 500;
-	margin-top: 37px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	line-height: 0.75;
 }
 .product_price span
@@ -1484,4 +1485,22 @@ section
 .book_your_shelf_logo {
 	max-width: 13%;
 	margin-right: 30px;
+}
+
+.sale_price_container {
+	margin-top: 20px;
+}
+
+.sale_price
+{
+	display: inline;
+	font-size: 18px;
+	color: #fbaa1d;
+	font-weight: 500;
+	margin-top: 10px;
+	line-height: 0.75;
+}
+
+.sale_price del {
+	color: #b3b3b3;
 }
