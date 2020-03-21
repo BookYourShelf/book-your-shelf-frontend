@@ -1552,7 +1552,7 @@ section
 
 .sidebar_title
 {
-	margin-left: 10px;
+	margin-left: 15px;
 	margin-top: 10px;
 	text-align: start;
 	max-width: 320px;
@@ -1580,7 +1580,7 @@ section
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 .collapsible {
@@ -1607,5 +1607,73 @@ section
 	display:inline;
 }
 
+.checkbox_container
+{
+	position: relative;
+	padding-left: 29px;
+}
 
+/* When the checkbox is checked, add a blue background */
+.checkbox_container input:checked ~ .checkbox_mark {
+	background-color: #fbaa1d;
+}
 
+/* Show the checkmark when checked */
+.checkbox_container input:checked ~ .checkbox_mark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox_container .checkbox_mark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.checkbox_mark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	cursor: pointer;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox_mark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.sidebar_expand {
+	padding-top: 2px;
+	padding-bottom: 5px;
+}
+
+.expand_element {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+.expand_element_text {
+	display:inline;
+	cursor: pointer;
+}
+
+.expand_element_text:hover {
+	color: #fbaa1d;
+}
+
+.expand_element_star {
+	display:inline;
+	cursor: pointer;
+}
