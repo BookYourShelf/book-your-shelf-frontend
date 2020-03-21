@@ -1610,3 +1610,22 @@ section
 .show_password_bg {
     background-color: white!important;
 }
+
+.profile-order-title {
+    font-size: 20px;
+    text-align: center;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.profile-order-text {
+    text-align: center;
+    font-size:18px;
+    color: black;
+    height: 55px;
+}
+
+.profile-order-expand-box {
+    padding-left: 20px;
+    padding-right: 20px;
+}
