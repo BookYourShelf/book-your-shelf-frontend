@@ -916,7 +916,7 @@ section
 .login_input:hover::-moz-placeholder
 {
 	color: #000000 !important;
-} 
+}
 .login_input:hover:-ms-input-placeholder
 { 
 	color: #000000 !important;

@@ -1771,3 +1771,25 @@ img {
 {
   color: #fbaa1d;
 }
+.user-button-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.user-button-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.user-button-dropdown-content a {
+  color: black;
+  display: block;
+}
+.user-button-dropdown-content a:hover {
+  color: #fbaa1d;
+  background-color: #f5f5f5;
+}
+.user-button-dropdown:hover .user-button-dropdown-content {
+  display: block;
+}

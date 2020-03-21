@@ -37,7 +37,7 @@ ul, li {
 
 /*---------------------------------------------*/
 input, textarea, label {
-	display: block;
+	display:block;
 	outline: none;
 	border: none;
 }

@@ -1557,6 +1557,7 @@ section
 	text-align: start;
 	max-width: 320px;
 	height: 55px;
+	padding-top:12px;
 }
 
 .sidebar_title a
@@ -1575,5 +1576,36 @@ section
 
 .sidebar_text
 {
-	<!-- TODO -->
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
+
+.collapsible {
+  cursor: pointer; 
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: #4a4a4a;
+  font-weight: bold;
+  float: right;
+  padding-right: 20px;
+}
+
+.actives:after {
+  content: "\2212";  /* \03BD down */
+}
+
+
+.inline input,
+.inline label
+{
+	display:inline;
+}
+
+
+
