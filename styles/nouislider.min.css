@@ -101,7 +101,7 @@ p {
     height: 10px;
     width: 10px;
     margin-top: -4px;
-    background-color: #fff;
+    background-color: #fbaa1d;
     cursor: pointer;
     cursor: pointer;
     pointer-events: all;
@@ -181,7 +181,7 @@ p {
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .price-wrap-1, 

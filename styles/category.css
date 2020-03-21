@@ -1661,7 +1661,6 @@ section
 .expand_element {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	cursor: pointer;
 }
 
 .expand_element_text {
