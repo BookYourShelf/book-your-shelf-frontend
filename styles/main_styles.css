@@ -1369,7 +1369,7 @@ section
   
   /*---------------------------------------------*/
   .block1-txt:hover {
-	background-color: rgba(31,91,112,0.5);
+	background-color: rgba(255,255,255,0.2);
   }
   
   .block1-txt:hover .block1-txt-child2 {

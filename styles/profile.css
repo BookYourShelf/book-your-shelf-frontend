@@ -107,7 +107,7 @@
 }
 body
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-weight: 400;
     background: #FFFFFF;
@@ -183,7 +183,7 @@ p a:hover::after
 }
 ::selection
 {
-    background: rgba(188,155,155,0.6);
+    background: #fbaa1d;
     color: #FFFFFF;
 }
 p::selection
@@ -1079,7 +1079,6 @@ section
     color: #4a4a4a;
     display: inline-block;
     vertical-align: middle;
-    cursor: pointer;
 }
 
 /*********************************
@@ -1580,4 +1579,34 @@ section
 .book_your_shelf_logo {
     max-width: 13%;
     margin-right: 30px;
+}
+
+.profile-navbar-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.login-text {
+    font-size: medium;
+}
+
+.register-text {
+    color: #fbaa1d;
+    font-weight: bold;
+}
+
+.book_your_shelf_footer {
+    max-width:40%;
+    height:auto;
+}
+
+.book_your_shelf_logo {
+    max-width: 13%;
+    margin-right: 30px;
+}
+
+.show_password_bg {
+    background-color: white!important;
 }
