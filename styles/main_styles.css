@@ -1400,6 +1400,8 @@ section
 
 .product_image_showcase{
 	padding: 30px;
+	height: 360px;
+	text-align: center;
 }
 
 .book_your_shelf_footer {
