@@ -261,9 +261,25 @@
                             <ul class="d-flex flex-row align-items-start justify-content-start text-center">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="category.html">Woman</a></li>
-                                <li style="color: #fbaa1d">New Products</li>
+                                <li style="color: #fbaa1d">Literature</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category name -->
+            <div class="row products_bar_row">
+                <div class="col">
+                    <div><b class="category-name">Literature</b></div>
+                </div>
+            </div>
+
+            <!-- Search results -->
+            <div class="row products_bar_row" style="display: none">
+                <div class="col">
+                    <div><b class="category-name">Search results for </b>
+                        <b class="category-name">"literature"</b>   <!-- TODO Search value will be here -->
                     </div>
                 </div>
             </div>
@@ -336,7 +352,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="languages1" class="expand_element_text">English</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -346,7 +362,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="languages2" class="expand_element_text">Turkish</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -356,7 +372,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="languages3" class="expand_element_text">French</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                         </div>
@@ -379,7 +395,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="Media1" class="expand_element_text">Pocket Size</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -389,7 +405,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="Media2" class="expand_element_text">Slim Cover</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
                                         </div>
                                     </form>
@@ -410,7 +426,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="pub1" class="expand_element_text">publisher A</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -420,7 +436,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="pub2" class="expand_element_text">publisher B</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -430,7 +446,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="pub3" class="expand_element_text">publisher C</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -440,7 +456,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="pub4" class="expand_element_text">publisher D</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
                                         </div>
                                     </form>
@@ -461,7 +477,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="Author1" class="expand_element_text">Author A</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -471,7 +487,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="Author2" class="expand_element_text">Author B</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -481,7 +497,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="Author3" class="expand_element_text">Author C</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
 
                                             <div class="expand_element">
@@ -491,7 +507,7 @@
                                                     <span class="checkbox_mark"></span>
                                                 </label>
                                                 <label for="Author4" class="expand_element_text">Author D</label>
-												<span class="number" style="float:right">1</span>
+                                                <span class="number" style="float:right">1</span>
                                             </div>
                                         </div>
                                     </form>
@@ -506,93 +522,99 @@
                                         <div class="inline sidebar_expand">
 
                                             <div class="expand_element">
-												<label class="checkbox_container">
-													<input style="display: none" type="checkbox" id="star1" name="star1" value="star1">
-													<span class="checkbox_mark"></span>
-												</label>
+                                                <label class="checkbox_container">
+                                                    <input style="display: none" type="checkbox" id="star1" name="star1"
+                                                           value="star1">
+                                                    <span class="checkbox_mark"></span>
+                                                </label>
                                                 <label for="star1" class="expand_element_star">
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
-												</label>
-												<span class="number" style="float:right;";>1</span>
+                                                </label>
+                                                <span class="number" style="float:right;" ;>1</span>
                                             </div>
 
                                             <div class="expand_element">
-												<label class="checkbox_container">
-													<input style="display: none" type="checkbox" id="star2" name="star2" value="star2">
-													<span class="checkbox_mark"></span>
-												</label>
+                                                <label class="checkbox_container">
+                                                    <input style="display: none" type="checkbox" id="star2" name="star2"
+                                                           value="star2">
+                                                    <span class="checkbox_mark"></span>
+                                                </label>
                                                 <label for="star2" class="expand_element_star">
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star"></span>
-												</label>
-												<span class="number" style="float:right;">1</span>
+                                                </label>
+                                                <span class="number" style="float:right;">1</span>
                                             </div>
 
                                             <div class="expand_element">
-												<label class="checkbox_container">
-													<input style="display: none" type="checkbox" id="star3" name="star3" value="star3">
-													<span class="checkbox_mark"></span>
-												</label>
+                                                <label class="checkbox_container">
+                                                    <input style="display: none" type="checkbox" id="star3" name="star3"
+                                                           value="star3">
+                                                    <span class="checkbox_mark"></span>
+                                                </label>
                                                 <label for="star3" class="expand_element_star">
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star"></span>
-												</label>
-												<span class="number" style="float:right;">1</span>
+                                                </label>
+                                                <span class="number" style="float:right;">1</span>
                                             </div>
 
                                             <div class="expand_element">
-												<label class="checkbox_container">
-													<input style="display: none" type="checkbox" id="star4" name="star4" value="star4">
-													<span class="checkbox_mark"></span>
-												</label>
+                                                <label class="checkbox_container">
+                                                    <input style="display: none" type="checkbox" id="star4" name="star4"
+                                                           value="star4">
+                                                    <span class="checkbox_mark"></span>
+                                                </label>
                                                 <label for="star4" class="expand_element_star">
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star"></span>
-												</label>
-												<span class="number" style="float:right;">1</span>
+                                                </label>
+                                                <span class="number" style="float:right;">1</span>
                                             </div>
 
                                             <div class="expand_element">
-												<label class="checkbox_container">
-													<input style="display: none" type="checkbox" id="star5" name="star5" value="star5">
-													<span class="checkbox_mark"></span>
-												</label>
+                                                <label class="checkbox_container">
+                                                    <input style="display: none" type="checkbox" id="star5" name="star5"
+                                                           value="star5">
+                                                    <span class="checkbox_mark"></span>
+                                                </label>
                                                 <label for="star5" class="expand_element_star">
                                                     <span class="fa fa-star checked"></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star"></span>
-												</label>
-												<span class="number" style="float:right;">1</span>
+                                                </label>
+                                                <span class="number" style="float:right;">1</span>
                                             </div>
 
                                             <div class="expand_element">
-												<label class="checkbox_container">
-													<input style="display: none" type="checkbox" id="star6" name="star6" value="star6">
-													<span class="checkbox_mark"></span>
-												</label>
+                                                <label class="checkbox_container">
+                                                    <input style="display: none" type="checkbox" id="star6" name="star6"
+                                                           value="star6">
+                                                    <span class="checkbox_mark"></span>
+                                                </label>
                                                 <label for="star6" class="expand_element_star">
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star "></span>
                                                     <span class="fa fa-star"></span>
-												</label>
-												<span class="number" style="float:right;">1</span>
+                                                </label>
+                                                <span class="number" style="float:right;">1</span>
                                             </div>
                                         </div>
                                     </form>
@@ -837,7 +859,8 @@
                             <div class="col-xl-4 col-md-6">
                                 <a href="product.html">
                                     <div class="product">
-                                        <div class="product_image_showcase"><img src="images/kurk_mantolu.jpg" alt="" class="product_image_img">
+                                        <div class="product_image_showcase"><img src="images/kurk_mantolu.jpg" alt=""
+                                                                                 class="product_image_img">
                                         </div>
                                         <div class="product_content">
 
@@ -887,7 +910,8 @@
                             <div class="col-xl-4 col-md-6">
                                 <a href="product.html">
                                     <div class="product">
-                                        <div class="product_image_showcase"><img src="images/donusum.jpg" alt="" class="product_image_img"></div>
+                                        <div class="product_image_showcase"><img src="images/donusum.jpg" alt=""
+                                                                                 class="product_image_img"></div>
                                         <div class="product_content">
 
                                             <div class="product_info align-items-center justify-content-center">
@@ -947,6 +971,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Search fail - No book -->
+        <div class="search_fail" style="display: none">
+            <br>
+            <img src="images/search-fail.png">
+            <div>
+                <br>
+                <b class="category-name">No products were found according to your search criteria.</b>
+            </div>
+            <div style="display: none">
+                <br>
+                <b class="category-name">No products here yet.</b>
+            </div>
+            <br>
         </div>
 
         <!-- Footer -->

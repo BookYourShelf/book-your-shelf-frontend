@@ -1678,3 +1678,14 @@ section
 	display:inline;
 	cursor: pointer;
 }
+
+.category-name {
+	text-align: start;
+	font-size: 22px;
+	font-weight: bold;
+	color: #4a4a4a;
+}
+
+.search_fail {
+	text-align: center;
+}
