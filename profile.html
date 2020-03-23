@@ -689,95 +689,322 @@
                     <div class="tab-pane fade " id="address" role="tabpanel" aria-labelledby="address-tab">
 
 
-                        <div class="checkout">
-                            <div class="container">
-                                <div class="row">
+                        <div class="checkout_title">MY ADDRESSES</div>
+                        <br>
+                        <br>
+                        <div class="row order - row ">
+                        <div class="col-lg-6">
+                            <div class="checkout_title">Billing Address</div>
+                            <br>
 
-                                    <!-- Billing -->
-                                    <div class="col-lg-6">
-                                        <div class="billing">
-                                            <div class="checkout_title">MY ADDESS</div>
-                                            <div class="login_form_container">
-                                                <form action="#" id="address_form" class="login_form">
-                                                    <br>
-                                                    <br>
-                                                    <div>
-                                                        <!-- Country -->
-                                                        <br>
-                                                        <br>
-                                                        <select name="checkout_country" id="checkout_country"
-                                                                class="dropdown_item_select checkout_input form-control"
-                                                                require="required">
-                                                            <option value="Country">Country</option>
-                                                            <option value="lithuania" selected>Lithuania</option>
-                                                            <option>Sweden</option>
-                                                            <option>UK</option>
-                                                            <option>Italy</option>
-                                                        </select>
-                                                    </div>
-                                                    <div>
-                                                        <br>
-                                                        <br>
-                                                        <select name="checkout_city" id="checkout_city"
-                                                                class="dropdown_item_select checkout_input form-control"
-                                                                require="required">
-                                                            <option>City / Town</option>
-                                                            <option>City</option>
-                                                            <option>City</option>
-                                                            <option>City</option>
-                                                            <option>City</option>
-                                                        </select>
-                                                    </div>
-                                                    <div>
-                                                        <!-- Province -->
-                                                        <br>
-                                                        <br>
-                                                        <select name="checkout_province" id="checkout_province"
-                                                                class="dropdown_item_select checkout_input form-control"
-                                                                require="required">
-                                                            <option>Province</option>
-                                                            <option>Province</option>
-                                                            <option>Province</option>
-                                                            <option>Province</option>
-                                                            <option>Province</option>
+                            <div class="billingAddress">
+                                <a href="#Billing_address" class="trans_200" data-toggle="collapse">
+                                    <div class="product_content">
+                                        <div class="row order - row ">
+                                            <div class="checkout_title">Add new address  </div>
+                                            <i class="col-4 fa fa-plus product_text"></i>
+                                        </div>
+                                    </div>
+                                </a>
 
-                                                        </select>
+                            </div>
+                            <br>
+                            <br>
 
-                                                    </div>
-                                                    <br>
-                                                    <br>
-                                                    <div>
-                                                        <!-- Address -->
+                            <div id="Billing_address" class="collapse">
 
-                                                        <input type="text" id="checkout_address"
-                                                               class="checkout_input form-control"
-                                                               placeholder="Address Line 1" required="required">
-                                                        <input type="text" id="checkout_address_2"
-                                                               class="checkout_input checkout_address_2 form-control"
-                                                               placeholder="Address Line 2" required="required">
-                                                    </div>
+                                <div class="cart_container">
+                                    <div class=" profile-order-expand-box">
 
-                                                    <div>
-                                                        <!-- Zipcode -->
+
+                                        <div class="container">
+                                            <div class="billingAddress">
+                                                <div class="login_form_container">
+                                                    <form action="#" id="address_form1" class="login_form">
+
+                                                        <div>
+                                                            <br>
+                                                            <!-- Name -->
+                                                            <div class="login-text p-b-10" style="color: black;">Name
+                                                            </div>
+                                                            <input type="email" id="address_name1"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="--Name--">
+                                                        </div>
+                                                        <div>
+                                                            <!-- Surname -->
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">
+                                                                Surname
+                                                            </div>
+                                                            <input type="email" id="address_surname1"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="--Surname--">
+                                                        </div>
+
+
+                                                        <div>
+                                                            <!-- Address Title -->
+                                                            <br>
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">Address title
+                                                            </div>
+                                                            <select name="checkout_title" id="checkout_title1"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option value="Country">Address Title</option>
+                                                                <option value="lithuania" selected>Home</option>
+                                                                <option>Work place</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <!-- Country -->
+                                                            <br>
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">Country
+                                                            </div>
+                                                            <select name="checkout_country" id="checkout_country1"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option value="Country">Country</option>
+                                                                <option value="lithuania" selected>Lithuania</option>
+                                                                <option>Sweden</option>
+                                                                <option>UK</option>
+                                                                <option>Italy</option>
+                                                            </select>
+                                                        </div>
                                                         <br>
                                                         <br>
-                                                        <input type="text" id="checkout_zipcode"
-                                                               class="checkout_input form-control"
-                                                               placeholder="Zip Code" required="required">
-                                                    </div>
-                                                    <div><!--ERROR--></div>
-                                                    <br>
-                                                    <br>
-                                                    <div class="login_button trans_200"><a href="index.html">change
-                                                        address</a></div>
+                                                        <div>
 
-                                                </form>
+                                                            <div class="login-text p-b-10" style="color: black;">City
+                                                            </div>
+                                                            <select name="checkout_city" id="checkout_city1"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option>City / Town</option>
+                                                                <option>City</option>
+                                                                <option>City</option>
+                                                                <option>City</option>
+                                                                <option>City</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <!-- Province -->
+                                                            <br>
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">Province
+                                                            </div>
+                                                            <select name="checkout_province" id="checkout_province1"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                        <div>
+                                                            <!-- Address -->
+                                                            <div class="login-text p-b-10" style="color: black;">Address
+                                                            </div>
+                                                            <input type="text" id="checkout_address1"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="Address Line 1" required="required">
+                                                            <input type="text" id="checkout_address_2.1"
+                                                                   class="checkout_input checkout_address_2 form-control"
+                                                                   placeholder="Address Line 2" required="required">
+                                                        </div>
+
+                                                        <div>
+                                                            <!-- Zipcode -->
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">Zipcode
+                                                            </div>
+                                                            <input type="text" id="checkout_zipcode1"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="Zip Code" required="required">
+                                                        </div>
+                                                        <div><!--ERROR--></div>
+                                                        <br>
+                                                        <br>
+                                                        <div class="login_button trans_200"><a href="index.html">Add
+                                                            address</a></div>
+
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <br>
+
+                        <div class="col-lg-6">
+                            <div class="checkout_title">Delivery Address</div>
+                            <br>
+
+                            <div class="billingAddress">
+                                <a href="#Delivery_address" class="trans_200" data-toggle="collapse">
+                                    <div class="product_content">
+                                        <div class="row order - row ">
+                                            <div class="checkout_title">Add new address  </div>
+                                            <i class="col-4 fa fa-plus product_text"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <br>
+                            <br>
+
+                            <div id="Delivery_address" class="collapse">
+
+                                <div class="cart_container">
+                                    <div class=" profile-order-expand-box">
+
+
+                                        <div class="container">
+                                            <div class="billingAddress">
+                                                <div class="login_form_container">
+                                                    <form action="#" id="address_form" class="login_form">
+
+                                                        <div>
+                                                            <br>
+                                                            <!-- Name -->
+                                                            <div class="login-text p-b-10" style="color: black;">Name
+                                                            </div>
+                                                            <input type="email" id="address_name"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="--Name--">
+                                                        </div>
+                                                        <div>
+                                                            <!-- Surname -->
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">
+                                                                Surname
+                                                            </div>
+                                                            <input type="email" id="address_surname"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="--Surname--">
+                                                        </div>
+
+                                                        <div>
+                                                            <!-- Address Title -->
+                                                            <br>
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">Address title
+                                                            </div>
+                                                            <select name="checkout_title" id="checkout_title"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option value="Country">Address Title</option>
+                                                                <option value="lithuania" selected>Home</option>
+                                                                <option>Work place</option>
+                                                            </select>
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                        <div>
+                                                            <!-- Country -->
+
+                                                            <div class="login-text p-b-10" style="color: black;">Country
+                                                            </div>
+                                                            <select name="checkout_country" id="checkout_country"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option value="Country">Country</option>
+                                                                <option value="lithuania" selected>Lithuania</option>
+                                                                <option>Sweden</option>
+                                                                <option>UK</option>
+                                                                <option>Italy</option>
+                                                            </select>
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                        <div>
+
+                                                            <div class="login-text p-b-10" style="color: black;">City
+                                                            </div>
+                                                            <select name="checkout_city" id="checkout_city"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option>City / Town</option>
+                                                                <option>City</option>
+                                                                <option>City</option>
+                                                                <option>City</option>
+                                                                <option>City</option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <!-- Province -->
+                                                            <br>
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">Province
+                                                            </div>
+                                                            <select name="checkout_province" id="checkout_province"
+                                                                    class="dropdown_item_select checkout_input form-control"
+                                                                    require="required">
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+                                                                <option>Province</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                        <div>
+                                                            <!-- Address -->
+                                                            <div class="login-text p-b-10" style="color: black;">Address
+                                                            </div>
+                                                            <input type="text" id="checkout_address"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="Address Line 1" required="required">
+                                                            <input type="text" id="checkout_address_2"
+                                                                   class="checkout_input checkout_address_2 form-control"
+                                                                   placeholder="Address Line 2" required="required">
+                                                        </div>
+
+                                                        <div>
+                                                            <!-- Zipcode -->
+                                                            <br>
+                                                            <div class="login-text p-b-10" style="color: black;">Zipcode
+                                                            </div>
+                                                            <input type="text" id="checkout_zipcode"
+                                                                   class="checkout_input form-control"
+                                                                   placeholder="Zip Code" required="required">
+                                                        </div>
+                                                        <div><!--ERROR--></div>
+                                                        <br>
+                                                        <br>
+                                                        <div class="login_button trans_200"><a href="index.html">Add
+                                                            address</a></div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
                     </div>
 
                     <div class="tab-pane fade " id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
