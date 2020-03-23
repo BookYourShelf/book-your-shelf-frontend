@@ -243,3 +243,7 @@ $(document).ready(function()
 	}
 
 });
+
+$('#show_review').on('click', function(e){
+	$('#review-tab').click();
+});
