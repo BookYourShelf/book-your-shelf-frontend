@@ -1603,3 +1603,94 @@ section
 .relativer {
 	position: relative;
 }
+
+.checkout_input
+{
+	background: #FFFFFF;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	border-bottom: solid 2px #FFFFFF;
+	padding-left: 20px;
+	color: #000000;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.checkout_input:hover,
+.checkout_input:focus
+{
+	border-bottom: solid 2px #fbaa1d;
+}
+.checkout_input::-webkit-input-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #969696 !important;
+}
+.checkout_input:-moz-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #969696 !important;
+}
+.checkout_input::-moz-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #969696 !important;
+}
+.checkout_input:-ms-input-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #969696 !important;
+}
+.checkout_input::input-placeholder
+{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #969696 !important;
+}
+.checkout_input:focus::-webkit-input-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:focus:-moz-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:focus::-moz-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:focus:-ms-input-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:focus::input-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:hover::-webkit-input-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:hover:-moz-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:hover::-moz-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:hover:-ms-input-placeholder
+{
+	color: #000000 !important;
+}
+.checkout_input:hover::input-placeholder
+{
+	color: #000000 !important;
+}
