@@ -191,6 +191,7 @@
                         <a href="register.html" style="line-height: 40px">Register</a>
                         <a href="login.html" style="line-height: 40px">Login</a>
                         <a href="profile.html" style="line-height: 40px">Profile</a>
+                        <a href="index.html" style="line-height: 40px">Logout</a>
                     </div>
                 </div>
 
@@ -253,11 +254,13 @@
                                         <!-- Cart Item 1 -->
                                         <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
                                             <div class="product_box d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
-                                                <div><div class="product_image"><img src="images/seker_portakali.jpg" alt="" class="product_image_img"></div></div>
-                                                <div class="product_name_container">
-                                                    <div class="product_name"><a href="product.html">Seker Portakali</a></div>
-                                                    <div class="product_text">José Mauro de Vasconcelos</div>
-                                                </div>
+                                                <a href="product.html">
+                                                    <div><div class="product_image"><img src="images/seker_portakali.jpg" alt="" class="product_image_img"></div></div>
+                                                    <div class="product_name_container">
+                                                        <div class="product_name"><a href="product.html">Seker Portakali</a></div>
+                                                        <div class="product_text">José Mauro de Vasconcelos</div>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="product_total product_text">
                                                 <div class="align-items-start justify-content-start">	<!-- when no sale delete -->
@@ -274,11 +277,13 @@
                                         <!-- Cart Item 2 -->
                                         <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
                                             <div class="product_box d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
-                                                <div><div class="product_image"><img src="images/otomatik_portakal.jpg" alt="" class="product_image_img"></div></div>
-                                                <div class="product_name_container">
-                                                    <div class="product_name"><a href="product.html">Otomatik Portakal</a></div>
-                                                    <div class="product_text">Anthony Burgess</div>
-                                                </div>
+                                                <a href="product.html">
+                                                    <div><div class="product_image"><img src="images/otomatik_portakal.jpg" alt="" class="product_image_img"></div></div>
+                                                    <div class="product_name_container">
+                                                        <div class="product_name"><a href="product.html">Otomatik Portakal</a></div>
+                                                        <div class="product_text">Anthony Burgess</div>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="product_total product_text"><span>Price: </span>₺9.60</div>
                                             <div><i style="font-size:30px" class="fa fa-check product_text product_stock"></i></div>
@@ -294,11 +299,17 @@
                                         <div class="button button_continue trans_200"><a href="checkout.html">continue shopping</a></div>
                                     </div>
                                 </div>
+
+                                <!-- Out of stock warning -->
+                                <div class="out-of-stock" style="display: none">This product is out of stock.</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- No product -->
+            <div class="warning-text" style="display:none;">There are no products in your wish list.</div>
 
             <!-- Footer -->
             <footer class="footer">

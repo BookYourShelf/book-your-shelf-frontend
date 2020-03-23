@@ -1793,3 +1793,19 @@ img {
 .user-button-dropdown:hover .user-button-dropdown-content {
   display: block;
 }
+
+.warning-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #4a4a4a;
+}
+
+.out-of-stock {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: red;
+}

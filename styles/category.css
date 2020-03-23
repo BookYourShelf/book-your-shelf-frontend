@@ -1525,6 +1525,8 @@ section
 
 .product_image_showcase{
 	padding: 30px;
+	height: 360px;
+	text-align: center;
 }
 
 .book_your_shelf_footer {
@@ -1675,4 +1677,15 @@ section
 .expand_element_star {
 	display:inline;
 	cursor: pointer;
+}
+
+.category-name {
+	text-align: start;
+	font-size: 22px;
+	font-weight: bold;
+	color: #4a4a4a;
+}
+
+.search_fail {
+	text-align: center;
 }

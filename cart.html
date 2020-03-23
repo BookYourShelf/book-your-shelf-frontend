@@ -186,6 +186,7 @@
 						<a href="register.html" style="line-height: 40px">Register</a>
 						<a href="login.html" style="line-height: 40px">Login</a>
 						<a href="profile.html" style="line-height: 40px">Profile</a>
+						<a href="index.html" style="line-height: 40px">Logout</a>
 					</div>
 				</div>
 
@@ -288,11 +289,13 @@
 									<!-- Cart Item 1 -->
 									<li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
 										<div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
-											<div><div class="product_image"><img src="images/hayvan_ciftligi.jpg" alt="" class="product_image_img"></div></div>
-											<div class="product_name_container">
-												<div class="product_name"><a href="product.html">Hayvan Ciftligi</a></div>
-												<div class="product_text">George Orwell</div>
-											</div>
+											<a href="product.html">
+												<div><div class="product_image"><img src="images/hayvan_ciftligi.jpg" alt="" class="product_image_img"></div></div>
+												<div class="product_name_container">
+													<div class="product_name"><a href="product.html">Hayvan Ciftligi</a></div>
+													<div class="product_text">George Orwell</div>
+												</div>
+											</a>
 										</div>
 										<div class="product_price product_text">
 											<div class="align-items-start justify-content-start">	<!-- when no sale delete -->
@@ -302,7 +305,7 @@
 											<span>Price: </span>₺11.99
 										</div>
 										<div class="product_quantity_container">
-											<div class="product_quantity ml-lg-auto mr-lg-auto text-center">
+											<div class="product_quantity ml-lg-auto mr-lg-auto text-center relativer">
 												<span class="product_text product_num">1</span>
 												<div class="qty_sub qty_button trans_200 text-center"><span>-</span></div>
 												<div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
@@ -316,17 +319,19 @@
 									<!-- Cart Item 2 -->
 									<li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
 										<div class="product d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
-											<div><div class="product_image"><img src="images/sineklerin_tanrisi.jpg" alt="" class="product_image_img"></div></div>
-											<div class="product_name_container">
-												<div class="product_name"><a href="product.html">Sineklerin Tanrisi</a></div>
-												<div class="product_text">William Golding</div>
-											</div>
+											<a href="product.html">
+												<div><div class="product_image"><img src="images/sineklerin_tanrisi.jpg" alt="" class="product_image_img"></div></div>
+												<div class="product_name_container">
+													<div class="product_name"><a href="product.html">Sineklerin Tanrisi</a></div>
+													<div class="product_text">William Golding</div>
+												</div>
+											</a>
 										</div>
 										<div class="product_price product_text">
 											<span>Price: </span>₺9.60
 										</div>
 										<div class="product_quantity_container">
-											<div class="product_quantity ml-lg-auto mr-lg-auto text-center">
+											<div class="product_quantity ml-lg-auto mr-lg-auto text-center relativer">
 												<span class="product_text product_num">1</span>
 												<div class="qty_sub qty_button trans_200 text-center"><span>-</span></div>
 												<div class="qty_add qty_button trans_200 text-center"><span>+</span></div>
@@ -346,6 +351,9 @@
 									<div class="button button_continue trans_200"><a href="checkout.html">continue shopping</a></div>
 								</div>
 							</div>
+
+							<!-- Out of stock warning -->
+							<div class="out-of-stock" style="display: none">One or more products are out of stock.</div>
 						</div>
 					</div>
 				</div>
@@ -354,7 +362,7 @@
 						<div class="cart_extra cart_extra_1">
 							<div class="cart_extra_content cart_extra_coupon">
 								<div class="cart_extra_title">Coupon code</div>
-								<div class="coupon_form_container">
+								<div class="coupon_form_container relativer">
 									<form action="#" id="coupon_form" class="coupon_form">
 										<input type="text" class="coupon_input" required="required">
 										<button class="coupon_button"><a href="">apply</a></button>
@@ -407,8 +415,8 @@
 										<div class="cart_extra_total_value ml-auto">Free</div>
 									</li>
 									<li class="d-flex flex-row align-items-center justify-content-start">
-										<div class="cart_extra_total_title">Total</div>
-										<div class="cart_extra_total_value ml-auto">$29.90</div>
+										<div class="cart_extra_total_title relativer">Total</div>
+										<div class="cart_extra_total_value ml-auto relativer">$29.90</div>
 									</li>
 								</ul>
 								<div class="checkout_button trans_200"><a href="checkout.html">proceed to checkout</a></div>
@@ -418,6 +426,9 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- No product -->
+		<div class="warning-text" style="display: none">There are no products in your shopping cart.</div>
 
 		<!-- Footer -->
 		<footer class="footer">
