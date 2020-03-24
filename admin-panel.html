@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Profile | Book Your Shelf</title>
+    <title>Panel | Book Your Shelf</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Little Closet template">
@@ -194,7 +194,6 @@
                     <a href="register.html" style="line-height: 40px">Register</a>
                     <a href="login.html" style="line-height: 40px">Login</a>
                     <a href="profile.html" style="line-height: 40px">Profile</a>
-                    <a href="admin-panel.html" style="line-height: 40px">Panel</a>
                     <a href="index.html" style="line-height: 40px">Logout</a>
                 </div>
             </div>
@@ -226,7 +225,7 @@
                         <div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
                             <ul class="d-flex flex-row align-items-start justify-content-start text-center">
                                 <li><a href="index.html">Home</a></li>
-                                <li style="color: #fbaa1d">My Account</li>
+                                <li style="color: #fbaa1d">Panel</li>
                             </ul>
                         </div>
                     </div>
@@ -238,23 +237,37 @@
             <div class="container">
                 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active profile-navbar-text" id="information-tab" data-toggle="tab"
-                           href="#information" role="tab" aria-controls="information" aria-selected="true">My
-                            Informations</a>
+                        <a class="nav-link active profile-navbar-text" id="user-tab" data-toggle="tab"
+                           href="#user" role="tab" aria-controls="information" aria-selected="true">User</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link profile-navbar-text" id="category-tab" data-toggle="tab"
+                           href="#category" role="tab" aria-controls="information" aria-selected="true">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link profile-navbar-text" id="hot-list-tab" data-toggle="tab" href="#hot-list"
+                           role="tab" aria-controls="order" aria-selected="true">Hot List</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link profile-navbar-text" id="campaign-tab" data-toggle="tab" href="#campaign"
+                           role="tab" aria-controls="address" aria-selected="true">Campaign</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link profile-navbar-text" id="reviews-tab" data-toggle="tab" href="#product"
+                           role="tab" aria-controls="reviews" aria-selected="false">Product</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="order-tab" data-toggle="tab" href="#order"
-                           role="tab" aria-controls="order" aria-selected="true">My Orders</a>
+                           role="tab" aria-controls="reviews" aria-selected="false">Order</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link profile-navbar-text" id="address-tab" data-toggle="tab" href="#address"
-                           role="tab" aria-controls="address" aria-selected="true">My Addresses</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link profile-navbar-text" id="reviews-tab" data-toggle="tab" href="#reviews"
-                           role="tab" aria-controls="reviews" aria-selected="false">My Reviews</a>
+                        <a class="nav-link profile-navbar-text" id="sale-tab" data-toggle="tab" href="#sale"
+                           role="tab" aria-controls="reviews" aria-selected="false">Sale</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -419,6 +432,9 @@
                     <br>
                     <br>
                     <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
+
+                        <div class="isotope_sorting_text"><span>Default Sorting</span><i
+                                class="fa fa-caret-down" aria-hidden="true"></i></div>
                         <div>
                             <div class="row order - row ">
 
@@ -909,7 +925,7 @@
                                                         </div>
                                                         <div class="col-md-3">
                                                             <a href="#billing_address_update"
-                                                                    class="trans_200" data-toggle="collapse"><i
+                                                               class="trans_200" data-toggle="collapse"><i
                                                                     style="font-size: 25px; padding-right: 10px" class="fa fa-pencil"></i></a>
                                                             <a href="#" class="trans_200" data-toggle="collapse"><i
                                                                     style="font-size: 25px; color: #4a4a4a" class="fa product_text">&#xf014;</i></a>
