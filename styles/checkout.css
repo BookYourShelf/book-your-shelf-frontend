@@ -1514,3 +1514,7 @@ section
 	max-width: 13%;
 	margin-right: 30px;
 }
+
+.relativer {
+	position: relative;
+}
