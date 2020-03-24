@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/admin-panel.css">
     <link rel="stylesheet" type="text/css" href="styles/cart.css">
     <link rel="stylesheet" type="text/css" href="styles/cart_responsive.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
@@ -433,21 +434,61 @@
                     <br>
                     <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
 
-                        <div class="isotope_sorting_text"><span>Default Sorting</span><i
-                                class="fa fa-caret-down" aria-hidden="true"></i></div>
+                        <!-- Sort orders -->
+                        <div class="products_bar_side d-flex flex-row align-items-end justify-content-end ml-lg-auto">
+                            <div class="products_dropdown product_dropdown_sorting">
+                                <div class="isotope_sorting_text"><span>Sort</span><i
+                                        class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_sorting_btn"
+                                        data-isotope-option='{ "sortBy": "original-order" }'>Date
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>Price</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>User Name</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "id" }'>User ID</li>
+                                </ul>
+                            </div>
+
+                            <div class="products_dropdown text-right product_dropdown_filter">
+                                <div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down"
+                                                                                       aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_filter_btn" data-filter="*">All</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Info Received</li>
+                                    <li class="item_filter_btn" data-filter=".sale">In Transit</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Out For Delivery</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Failed Attempt</li>
+                                    <li class="item_filter_btn" data-filter=".hot">Delivered</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Exception</li>
+                                    <li class="item_filter_btn" data-filter=".new">Expired</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Pending</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
+
                         <div>
                             <div class="row order - row ">
 
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+                                <div class="col-lg-2 col-md-2 col-xs-4">
                                     <div class="profile-order-title">Order Date</div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+
+                                <div class="col-lg-2 col-md-2 col-xs-4">
                                     <div class="profile-order-title">Order Code</div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+
+                                <div class="col-lg-2 col-md-2 col-xs-4">
+                                    <div class="profile-order-title">User ID</div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-4">
+                                    <div class="profile-order-title">User Name Surname</div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-4">
                                     <div class="profile-order-title">Total Price</div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+                                <div class="col-lg-2 col-md-2 col-xs-4">
                                     <div class="profile-order-title">Order Status</div>
                                 </div>
                             </div>
@@ -460,20 +501,28 @@
                                         <a href="#order1" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
                                                 <div class="row order - row ">
-                                                    <div class="col-lg-3 col-md-3 col-xs-6">
+                                                    <div class="col-lg-2 col-md-3 col-xs-6">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                        <div class="profile-order-text">123456</div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                        <div class="profile-order-text">Jane Doe</div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -543,20 +592,28 @@
                                         <a href="#order2" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
                                                 <div class="row order - row ">
-                                                    <div class="col-lg-3 col-md-3 col-xs-6">
+                                                    <div class="col-lg-2 col-md-3 col-xs-6">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                        <div class="profile-order-text">123456</div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                        <div class="profile-order-text">Jane Doe</div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -626,20 +683,28 @@
                                         <a href="#order3" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
                                                 <div class="row order - row ">
-                                                    <div class="col-lg-3 col-md-3 col-xs-6">
+                                                    <div class="col-lg-2 col-md-3 col-xs-6">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                        <div class="profile-order-text">123456</div>
+                                                    </div>
+
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                        <div class="profile-order-text">Jane Doe</div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col-lg-2 col-md-2 col-xs-4">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -709,6 +774,19 @@
 
                         <!-- No product -->
                         <div class="warning-text" style="display: none">There are no orders.</div>
+
+                        <div class="row page_nav_row">
+                            <div class="col">
+                                <div class="page_nav">
+                                    <ul class="d-flex flex-row align-items-start justify-content-center">
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">2</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">3</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -926,14 +1004,18 @@
                                                         <div class="col-md-3">
                                                             <a href="#billing_address_update"
                                                                class="trans_200" data-toggle="collapse"><i
-                                                                    style="font-size: 25px; padding-right: 10px" class="fa fa-pencil"></i></a>
+                                                                    style="font-size: 25px; padding-right: 10px"
+                                                                    class="fa fa-pencil"></i></a>
                                                             <a href="#" class="trans_200" data-toggle="collapse"><i
-                                                                    style="font-size: 25px; color: #4a4a4a" class="fa product_text">&#xf014;</i></a>
+                                                                    style="font-size: 25px; color: #4a4a4a"
+                                                                    class="fa product_text">&#xf014;</i></a>
                                                         </div>
                                                     </li>
                                                     <li class="row">
                                                         <div class="col-md-9 registered-address-content">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.
                                                         </div>
                                                     </li>
                                                     <li class="row">
@@ -951,7 +1033,8 @@
                                             <div class="address-container">
                                                 <div class="billingAddress">
                                                     <div class="checkout_form_container">
-                                                        <form action="#" id="billing_address_update_form" class="checkout_form">
+                                                        <form action="#" id="billing_address_update_form"
+                                                              class="checkout_form">
 
                                                             <!-- Address Title -->
                                                             <div>
@@ -959,7 +1042,8 @@
                                                                     Address Title
                                                                 </div>
 
-                                                                <select name="billing_address_update_title" id="billing_address_update_title"
+                                                                <select name="billing_address_update_title"
+                                                                        id="billing_address_update_title"
                                                                         class="dropdown_item_select checkout_input form-control"
                                                                         require="required">
                                                                     <option>SELECT</option>
@@ -974,7 +1058,8 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- Name -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Name
                                                                     </div>
 
@@ -984,11 +1069,13 @@
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Surname -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Surname
                                                                     </div>
 
-                                                                    <input type="text" id="billing_address_update_surname"
+                                                                    <input type="text"
+                                                                           id="billing_address_update_surname"
                                                                            class="checkout_input form-control"
                                                                            placeholder="Surname"
                                                                            required="required">
@@ -1017,7 +1104,8 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- City -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         City
                                                                     </div>
 
@@ -1034,7 +1122,8 @@
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Province -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Province
                                                                     </div>
 
@@ -1055,21 +1144,25 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- Neighborhood -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Neighborhood
                                                                     </div>
 
-                                                                    <input type="text" id="billing_address_update_neighborhood"
+                                                                    <input type="text"
+                                                                           id="billing_address_update_neighborhood"
                                                                            class="checkout_input form-control"
                                                                            required="required">
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Zipcode -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Zip Code
                                                                     </div>
 
-                                                                    <input type="number" id="billing_address_update_zip_code"
+                                                                    <input type="number"
+                                                                           id="billing_address_update_zip_code"
                                                                            class="checkout_input form-control"
                                                                            required="required">
                                                                 </div>
@@ -1087,7 +1180,8 @@
 
                                                             <!-- Phone no -->
                                                             <div>
-                                                                <div class="login-text p-b-10" style="color: black;">Phone
+                                                                <div class="login-text p-b-10" style="color: black;">
+                                                                    Phone
                                                                     Number
                                                                 </div>
                                                                 <input type="phone" id="billing_address_update_phone"
@@ -1097,7 +1191,8 @@
 
                                                             <!-- Email -->
                                                             <div>
-                                                                <div class="login-text p-b-10" style="color: black;">E-Mail
+                                                                <div class="login-text p-b-10" style="color: black;">
+                                                                    E-Mail
                                                                 </div>
                                                                 <input type="email" id="billing_address_update_email"
                                                                        class="checkout_input form-control"
@@ -1127,14 +1222,18 @@
                                                         <div class="col-md-3">
                                                             <a href="#billing_address_update_id"
                                                                class="trans_200" data-toggle="collapse"><i
-                                                                    style="font-size: 25px; padding-right: 10px" class="fa fa-pencil"></i></a>
+                                                                    style="font-size: 25px; padding-right: 10px"
+                                                                    class="fa fa-pencil"></i></a>
                                                             <a href="#" class="trans_200" data-toggle="collapse"><i
-                                                                    style="font-size: 25px; color: #4a4a4a" class="fa product_text">&#xf014;</i></a>
+                                                                    style="font-size: 25px; color: #4a4a4a"
+                                                                    class="fa product_text">&#xf014;</i></a>
                                                         </div>
                                                     </li>
                                                     <li class="row">
                                                         <div class="col-md-9 registered-address-content">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.
                                                         </div>
                                                     </li>
                                                     <li class="row">
@@ -1152,7 +1251,8 @@
                                             <div class="address-container">
                                                 <div class="billingAddress">
                                                     <div class="checkout_form_container">
-                                                        <form action="#" id="billing_address_update_form_2" class="checkout_form">
+                                                        <form action="#" id="billing_address_update_form_2"
+                                                              class="checkout_form">
 
                                                             <!-- Address Title -->
                                                             <div>
@@ -1160,7 +1260,8 @@
                                                                     Address Title
                                                                 </div>
 
-                                                                <select name="billing_address_update_title_id" id="billing_address_update_title_id"
+                                                                <select name="billing_address_update_title_id"
+                                                                        id="billing_address_update_title_id"
                                                                         class="dropdown_item_select checkout_input form-control"
                                                                         require="required">
                                                                     <option>SELECT</option>
@@ -1175,21 +1276,25 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- Name -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Name
                                                                     </div>
 
-                                                                    <input type="text" id="billing_address_update_name_id"
+                                                                    <input type="text"
+                                                                           id="billing_address_update_name_id"
                                                                            class="checkout_input form-control"
                                                                            placeholder="Name" required="required">
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Surname -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Surname
                                                                     </div>
 
-                                                                    <input type="text" id="billing_address_update_surname_id"
+                                                                    <input type="text"
+                                                                           id="billing_address_update_surname_id"
                                                                            class="checkout_input form-control"
                                                                            placeholder="Surname"
                                                                            required="required">
@@ -1218,7 +1323,8 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- City -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         City
                                                                     </div>
 
@@ -1235,7 +1341,8 @@
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Province -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Province
                                                                     </div>
 
@@ -1256,21 +1363,25 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- Neighborhood -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Neighborhood
                                                                     </div>
 
-                                                                    <input type="text" id="billing_address_update_neighborhood_id"
+                                                                    <input type="text"
+                                                                           id="billing_address_update_neighborhood_id"
                                                                            class="checkout_input form-control"
                                                                            required="required">
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Zipcode -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Zip Code
                                                                     </div>
 
-                                                                    <input type="number" id="billing_address_update_zip_code_id"
+                                                                    <input type="number"
+                                                                           id="billing_address_update_zip_code_id"
                                                                            class="checkout_input form-control"
                                                                            required="required">
                                                                 </div>
@@ -1288,7 +1399,8 @@
 
                                                             <!-- Phone no -->
                                                             <div>
-                                                                <div class="login-text p-b-10" style="color: black;">Phone
+                                                                <div class="login-text p-b-10" style="color: black;">
+                                                                    Phone
                                                                     Number
                                                                 </div>
                                                                 <input type="phone" id="billing_address_update_phone_id"
@@ -1298,7 +1410,8 @@
 
                                                             <!-- Email -->
                                                             <div>
-                                                                <div class="login-text p-b-10" style="color: black;">E-Mail
+                                                                <div class="login-text p-b-10" style="color: black;">
+                                                                    E-Mail
                                                                 </div>
                                                                 <input type="email" id="billing_address_update_email_id"
                                                                        class="checkout_input form-control"
@@ -1533,14 +1646,18 @@
                                                         <div class="col-md-3">
                                                             <a href="#delivery_address_update"
                                                                class="trans_200" data-toggle="collapse"><i
-                                                                    style="font-size: 25px; padding-right: 10px" class="fa fa-pencil"></i></a>
+                                                                    style="font-size: 25px; padding-right: 10px"
+                                                                    class="fa fa-pencil"></i></a>
                                                             <a href="#" class="trans_200" data-toggle="collapse"><i
-                                                                    style="font-size: 25px; color: #4a4a4a" class="fa product_text">&#xf014;</i></a>
+                                                                    style="font-size: 25px; color: #4a4a4a"
+                                                                    class="fa product_text">&#xf014;</i></a>
                                                         </div>
                                                     </li>
                                                     <li class="row">
                                                         <div class="col-md-9 registered-address-content">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua.
                                                         </div>
                                                     </li>
                                                     <li class="row">
@@ -1558,7 +1675,8 @@
                                             <div class="address-container">
                                                 <div class="billingAddress">
                                                     <div class="checkout_form_container">
-                                                        <form action="#" id="delivery_address_update_form" class="checkout_form">
+                                                        <form action="#" id="delivery_address_update_form"
+                                                              class="checkout_form">
 
                                                             <!-- Address Title -->
                                                             <div>
@@ -1566,7 +1684,8 @@
                                                                     Address Title
                                                                 </div>
 
-                                                                <select name="delivery_address_update_title" id="delivery_address_update_title"
+                                                                <select name="delivery_address_update_title"
+                                                                        id="delivery_address_update_title"
                                                                         class="dropdown_item_select checkout_input form-control"
                                                                         require="required">
                                                                     <option>SELECT</option>
@@ -1581,7 +1700,8 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- Name -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Name
                                                                     </div>
 
@@ -1591,11 +1711,13 @@
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Surname -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Surname
                                                                     </div>
 
-                                                                    <input type="text" id="delivery_address_update_surname"
+                                                                    <input type="text"
+                                                                           id="delivery_address_update_surname"
                                                                            class="checkout_input form-control"
                                                                            placeholder="Surname"
                                                                            required="required">
@@ -1624,7 +1746,8 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- City -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         City
                                                                     </div>
 
@@ -1641,7 +1764,8 @@
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Province -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Province
                                                                     </div>
 
@@ -1662,21 +1786,25 @@
                                                             <div class="row">
                                                                 <div class="col-lg-6">
                                                                     <!-- Neighborhood -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Neighborhood
                                                                     </div>
 
-                                                                    <input type="text" id="delivery_address_update_neighborhood"
+                                                                    <input type="text"
+                                                                           id="delivery_address_update_neighborhood"
                                                                            class="checkout_input form-control"
                                                                            required="required">
                                                                 </div>
                                                                 <div class="col-lg-6">
                                                                     <!-- Zipcode -->
-                                                                    <div class="login-text p-b-10" style="color: black;">
+                                                                    <div class="login-text p-b-10"
+                                                                         style="color: black;">
                                                                         Zip Code
                                                                     </div>
 
-                                                                    <input type="number" id="delivery_address_update_zip_code"
+                                                                    <input type="number"
+                                                                           id="delivery_address_update_zip_code"
                                                                            class="checkout_input form-control"
                                                                            required="required">
                                                                 </div>
@@ -1694,7 +1822,8 @@
 
                                                             <!-- Phone no -->
                                                             <div>
-                                                                <div class="login-text p-b-10" style="color: black;">Phone
+                                                                <div class="login-text p-b-10" style="color: black;">
+                                                                    Phone
                                                                     Number
                                                                 </div>
                                                                 <input type="phone" id="delivery_address_update_phone"
@@ -1704,7 +1833,8 @@
 
                                                             <!-- Email -->
                                                             <div>
-                                                                <div class="login-text p-b-10" style="color: black;">E-Mail
+                                                                <div class="login-text p-b-10" style="color: black;">
+                                                                    E-Mail
                                                                 </div>
                                                                 <input type="email" id="delivery_address_update_email"
                                                                        class="checkout_input form-control"

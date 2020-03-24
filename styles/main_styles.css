@@ -761,16 +761,6 @@ section
 {
 	display: block;
 }
-.page_nav ul li:not(:last-of-type)::after
-{
-	display: inline-block;
-	font-size: 18px;
-	font-weight: 700;
-	color: #4a4a4a;
-	content: '/';
-	margin-left: 14px;
-	margin-right: 14px;
-}
 .page_nav ul li a
 {
 	font-size: 18px;
