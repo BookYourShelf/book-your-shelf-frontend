@@ -362,6 +362,8 @@
 						<div class="cart_extra cart_extra_1">
 							<div class="cart_extra_content cart_extra_coupon">
 								<div class="cart_extra_title">Coupon code</div>
+								<div class="coupon_text">
+									Enter the code of your discount coupon.</div>
 								<div class="coupon_form_container relativer">
 									<form action="#" id="coupon_form" class="coupon_form">
 										<input type="text" style="width: calc(100% - 120px);height: 44px;"
@@ -369,7 +371,10 @@
 										<button class="coupon_button"><a href="">apply</a></button>
 									</form>
 								</div>
-								<div class="coupon_text">Phasellus sit amet nunc eros. Sed nec congue tellus. Aenean nulla nisl, volutpat blandit lorem ut.</div>
+
+								<!-- Invalid coupon code. warning -->
+								<div class="coupon_text">&nbsp;</div>
+
 								<div class="shipping">
 									<div class="cart_extra_title">Shipping Method</div>
 									<ul>
@@ -379,21 +384,13 @@
 												<span class="radio_mark"></span>
 												<span class="radio_text">Next day delivery</span>
 											</label>
-											<div class="shipping_price ml-auto">$4.99</div>
+											<div class="shipping_price ml-auto">₺7.99</div>
 										</li>
 										<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
 											<label class="radio_container">
-												<input type="radio" id="radio_2" name="shipping_radio" class="shipping_radio">
+												<input type="radio" id="radio_2" name="shipping_radio" class="shipping_radio" checked>
 												<span class="radio_mark"></span>
 												<span class="radio_text">Standard delivery</span>
-											</label>
-											<div class="shipping_price ml-auto">$1.99</div>
-										</li>
-										<li class="shipping_option d-flex flex-row align-items-center justify-content-start">
-											<label class="radio_container">
-												<input type="radio" id="radio_3" name="shipping_radio" class="shipping_radio" checked>
-												<span class="radio_mark"></span>
-												<span class="radio_text">Personal Pickup</span>
 											</label>
 											<div class="shipping_price ml-auto">Free</div>
 										</li>
@@ -409,15 +406,19 @@
 								<ul class="cart_extra_total_list">
 									<li class="d-flex flex-row align-items-center justify-content-start">
 										<div class="cart_extra_total_title">Subtotal</div>
-										<div class="cart_extra_total_value ml-auto">$29.90</div>
+										<div class="cart_extra_total_value ml-auto">₺29.90</div>
 									</li>
 									<li class="d-flex flex-row align-items-center justify-content-start">
 										<div class="cart_extra_total_title">Shipping</div>
 										<div class="cart_extra_total_value ml-auto">Free</div>
 									</li>
 									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div class="cart_extra_total_title">Coupon</div>
+										<div class="cart_extra_total_value ml-auto">- ₺9.90</div>
+									</li>
+									<li class="d-flex flex-row align-items-center justify-content-start">
 										<div class="cart_extra_total_title relativer">Total</div>
-										<div class="cart_extra_total_value ml-auto relativer">$29.90</div>
+										<div class="cart_extra_total_value ml-auto relativer">$20.90</div>
 									</li>
 								</ul>
 								<div class="checkout_button trans_200"><a href="checkout.html">proceed to checkout</a></div>

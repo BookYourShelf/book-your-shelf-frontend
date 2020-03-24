@@ -1040,7 +1040,7 @@ section
 .coupon_form_container
 {
 	max-width: 400px;
-	margin-top: 31px;
+	margin-top: 15px;
 }
 .coupon_form
 {
@@ -1096,7 +1096,7 @@ section
 }
 .shipping
 {
-	margin-top: 38px;
+	margin-top: 30px;
 	max-width: 363px;
 }
 .shipping ul
@@ -1199,7 +1199,7 @@ section
 }
 .cart_extra_total_list
 {
-	margin-top: 97px;
+	margin-top: 50px;
 	padding-right: 48px;
 	padding-left: 20px;
 }
@@ -1251,7 +1251,7 @@ section
 	height: 44px;
 	text-align: center;
 	background: #fbaa1d;
-	margin-top: 70px;
+	margin-top: 45px;
 	border-radius: 2px;
 	border: solid 2px #fbaa1d;
 }
