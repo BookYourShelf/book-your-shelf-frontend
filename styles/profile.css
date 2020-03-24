@@ -1097,10 +1097,10 @@ section
 
 .cart_total
 {
-    padding-top: 51px;
-    padding-left: 68px;
-    padding-bottom: 59px;
-    padding-right: 68px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-right: 40px;
     background: #f8f8f8;
 }
 .cart_extra_total_list
