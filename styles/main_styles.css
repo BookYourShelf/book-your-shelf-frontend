@@ -90,11 +90,7 @@ p:last-of-type
 }
 a
 {
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+
 }
 a, a:hover, a:visited, a:active, a:link
 {

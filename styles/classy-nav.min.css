@@ -53,8 +53,8 @@ img {
 }
 
 .classy-nav-container a {
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
     text-decoration: none;
     outline: 0;
     font-size: 14px;
@@ -65,8 +65,8 @@ img {
 
 .classy-nav-container a:focus,
 .classy-nav-container a:hover {
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
     text-decoration: none;
     outline: 0;
     font-size: 14px;
@@ -248,8 +248,8 @@ img {
     height: 3px;
     margin-top: 5px;
     padding: 0;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
+    -webkit-transition-duration: .1s;
+    transition-duration: .1s;
     width: 30px;
     cursor: pointer
 }
@@ -278,8 +278,8 @@ img {
     background-color: #fff;
     z-index: 200;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s
+    -webkit-transition-duration: .1s;
+    transition-duration: .1s
 }
 
 .classynav ul li .megamenu .single-mega.cn-col-5 {
@@ -530,8 +530,8 @@ img {
     z-index: 100;
     height: auto;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
+    -webkit-transition-duration: .1s;
+    transition-duration: .1s;
     opacity: 0;
     visibility: hidden;
     padding: 10px 0
@@ -589,8 +589,8 @@ img {
     background-color: #fff;
     z-index: 200;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s
+    -webkit-transition-duration: .1s;
+    transition-duration: .1s
 }
 
 .breakpoint-off .classynav ul li.megamenu-item:focus .megamenu,
@@ -619,8 +619,8 @@ img {
         z-index: 1000;
         width: 300px;
         height: 100%;
-        -webkit-transition-duration: .5s;
-        transition-duration: .5s;
+        -webkit-transition-duration: .2s;
+        transition-duration: .2s;
         padding: 0;
         box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
         display: block;
@@ -743,8 +743,8 @@ img {
     z-index: 1000;
     width: 300px;
     height: 100%;
-    -webkit-transition-duration: .5s;
-    transition-duration: .5s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
     padding: 0;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
     display: block;
