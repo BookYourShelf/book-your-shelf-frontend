@@ -271,8 +271,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link profile-navbar-text" id="sale-tab" data-toggle="tab" href="#sale"
-                           role="tab" aria-controls="reviews" aria-selected="false">Search History</a>
+                        <a class="nav-link profile-navbar-text" id="history-tab" data-toggle="tab" href="#history"
+                           role="tab" aria-controls="history" aria-selected="false">Search History</a>
                     </li>
                 </ul>
                 <br>
@@ -468,7 +468,7 @@
                                                     <input type="phone" id="user-info-update_phone"
                                                            class="login_input form-control"
                                                            placeholder="Phone Number" required="required"
-                                                           value="+905555555555">
+                                                           value="05555555555">
                                                 </div>
                                             </div>
 
@@ -895,8 +895,7 @@
                                                             <div><!--ERROR--></div>
 
                                                             <!-- Button -->
-                                                            <div class="login_button trans_200"><a href="#">Add
-                                                                address</a></div>
+                                                            <div class="login_button trans_200"><a href="#">Update</a></div>
 
                                                         </form>
                                                     </div>
@@ -1114,8 +1113,7 @@
                                                             <div><!--ERROR--></div>
 
                                                             <!-- Button -->
-                                                            <div class="login_button trans_200"><a href="#">Add
-                                                                address</a></div>
+                                                            <div class="login_button trans_200"><a href="#">Update</a></div>
 
                                                         </form>
                                                     </div>
@@ -1536,8 +1534,7 @@
                                                             <div><!--ERROR--></div>
 
                                                             <!-- Button -->
-                                                            <div class="login_button trans_200"><a href="#">Add
-                                                                address</a></div>
+                                                            <div class="login_button trans_200"><a href="#">Update</a></div>
 
                                                         </form>
                                                     </div>
@@ -1681,7 +1678,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Hayvan
                                                                             Ciftligi</a></div>
-                                                                        <div class="cart-product-text">George Orwell</div>
+                                                                        <div class="cart-product-text">George Orwell
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -1704,7 +1702,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Sineklerin
                                                                             Tanrisi</a></div>
-                                                                        <div class="cart-product-text">William Golding</div>
+                                                                        <div class="cart-product-text">William Golding
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -1767,7 +1766,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Hayvan
                                                                             Ciftligi</a></div>
-                                                                        <div class="cart-product-text">George Orwell</div>
+                                                                        <div class="cart-product-text">George Orwell
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -1790,7 +1790,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Sineklerin
                                                                             Tanrisi</a></div>
-                                                                        <div class="cart-product-text">William Golding</div>
+                                                                        <div class="cart-product-text">William Golding
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -1853,7 +1854,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Hayvan
                                                                             Ciftligi</a></div>
-                                                                        <div class="cart-product-text">George Orwell</div>
+                                                                        <div class="cart-product-text">George Orwell
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -1876,7 +1878,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Sineklerin
                                                                             Tanrisi</a></div>
-                                                                        <div class="cart-product-text">William Golding</div>
+                                                                        <div class="cart-product-text">William Golding
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -2199,7 +2202,8 @@
                                                         <div class="product_name_container">
                                                             <div class="cart-product-name"><a href="product.html">Seker
                                                                 Portakali</a></div>
-                                                            <div class="cart-product-text">José Mauro de Vasconcelos</div>
+                                                            <div class="cart-product-text">José Mauro de Vasconcelos
+                                                            </div>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -2232,6 +2236,61 @@
                                                     </a>
                                                 </div>
                                                 <div class="cart_product_price product_text"><span>Price: </span>₺9.60
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Out of stock warning -->
+                                    <div class="out-of-stock" style="display: none">This product is out of stock.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- No product -->
+                        <div class="warning-text" style="display: none">There are no reviews.</div>
+                    </div>
+
+                    <!-- Search History -->
+                    <div class="tab-pane fade " id="history" role="tabpanel" aria-labelledby="history-tab">
+
+                        <div class="row product-container-padding">
+                            <div class="col">
+                                <div class="cart_container">
+
+                                    <!-- Search Values -->
+                                    <div class="cart_items">
+                                        <ul class="cart_items_list">
+
+                                            <!-- Search Value 1 -->
+                                            <li class="search-value-height cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start justify-content-start">
+                                                <div class="product-row d-flex flex-lg-row flex-column align-items-lg-center align-items-center">
+
+                                                    <div class="product_name_container">
+                                                        <div class="search-value-text">Seker Portakali</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!-- Search Value 2 -->
+                                            <li class="search-value-height cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
+                                                <div class="product-row d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
+
+                                                    <div class="product_name_container">
+                                                        <div class="search-value-text">Otomatik Portakal</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!-- Search Value 3 -->
+                                            <li class="search-value-height cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
+                                                <div class="product-row d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
+
+                                                    <div class="product_name_container">
+                                                        <div class="search-value-text">
+                                                            PortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakal
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </li>
                                         </ul>
