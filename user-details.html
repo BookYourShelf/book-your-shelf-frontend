@@ -250,7 +250,7 @@
                            href="#address" role="tab" aria-controls="information" aria-selected="true">Addresses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link profile-navbar-text" id="hot-list-tab" data-toggle="tab" href="#hot-list"
+                        <a class="nav-link profile-navbar-text" id="order-tab" data-toggle="tab" href="#order"
                            role="tab" aria-controls="order" aria-selected="true">Orders</a>
                     </li>
 
@@ -265,7 +265,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link profile-navbar-text" id="order-tab" data-toggle="tab" href="#order"
+                        <a class="nav-link profile-navbar-text" id="ordesr-tab" data-toggle="tab" href="#order"
                            role="tab" aria-controls="reviews" aria-selected="false">Wish List</a>
                     </li>
 
@@ -1550,6 +1550,7 @@
                         <br>
                     </div>
 
+                    <!-- Informations -->
                     <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
 
                         <!-- Sort orders -->
@@ -1562,14 +1563,11 @@
                                         data-isotope-option='{ "sortBy": "original-order" }'>Date
                                     </li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>Price</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>User Name
-                                    </li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "id" }'>User ID</li>
                                 </ul>
                             </div>
 
                             <div class="products_dropdown text-right product_dropdown_filter">
-                                <div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down"
+                                <div class="isotope_filter_text"><span>Order Filter</span><i class="fa fa-caret-down"
                                                                                        aria-hidden="true"></i></div>
                                 <ul>
                                     <li class="item_filter_btn" data-filter="*">All</li>
@@ -1583,31 +1581,46 @@
                                     <li class="item_filter_btn" data-filter=".sale">Pending</li>
                                 </ul>
                             </div>
+
+                            <div class="products_dropdown text-right product_dropdown_filter">
+                                <div class="isotope_filter_text"><span>Payment Filter</span><i class="fa fa-caret-down"
+                                                                                       aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_filter_btn" data-filter="*">All</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Pending</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Processed</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Completed</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Refunded</li>
+                                    <li class="item_filter_btn" data-filter=".hot">Failed</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Expired</li>
+                                    <li class="item_filter_btn" data-filter=".new">Revoked</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Preapproved</li>
+                                    <li class="item_filter_btn" data-filter=".sale">Cancelled</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <br>
 
                         <div>
-                            <div class="row order - row ">
+                            <div class="row">
 
-                                <div class="col-lg-2 col-md-2 col-xs-4">
+                                <div class="col">
                                     <div class="profile-order-title">Order Date</div>
                                 </div>
 
-                                <div class="col-lg-2 col-md-2 col-xs-4">
+                                <div class="col">
                                     <div class="profile-order-title">Order Code</div>
                                 </div>
 
-                                <div class="col-lg-2 col-md-2 col-xs-4">
-                                    <div class="profile-order-title">User ID</div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-xs-4">
-                                    <div class="profile-order-title">User Name Surname</div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-xs-4">
+                                <div class="col">
                                     <div class="profile-order-title">Total Price</div>
                                 </div>
-                                <div class="col-lg-2 col-md-2 col-xs-4">
+
+                                <div class="col">
+                                    <div class="profile-order-title">Payment Status</div>
+                                </div>
+                                <div class="col">
                                     <div class="profile-order-title">Order Status</div>
                                 </div>
                             </div>
@@ -1619,29 +1632,24 @@
                                     <div class="product">
                                         <a href="#order1" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
-                                                <div class="row order - row ">
-                                                    <div class="col-lg-2 col-md-3 col-xs-6">
+                                                <div class="row">
+                                                    <div class="col">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
-                                                        <div class="profile-order-text">123456</div>
-                                                    </div>
-
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
-                                                        <div class="profile-order-text">Jane Doe</div>
-                                                    </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
+                                                        <div class="profile-order-text">Completed</div>
+                                                    </div>
+                                                    <div class="col">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -1710,29 +1718,24 @@
                                     <div class="product">
                                         <a href="#order2" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
-                                                <div class="row order - row ">
-                                                    <div class="col-lg-2 col-md-3 col-xs-6">
+                                                <div class="row">
+                                                    <div class="col">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
-                                                        <div class="profile-order-text">123456</div>
-                                                    </div>
-
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
-                                                        <div class="profile-order-text">Jane Doe</div>
-                                                    </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
+                                                        <div class="profile-order-text">Completed</div>
+                                                    </div>
+                                                    <div class="col">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -1801,29 +1804,24 @@
                                     <div class="product">
                                         <a href="#order3" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
-                                                <div class="row order - row ">
-                                                    <div class="col-lg-2 col-md-3 col-xs-6">
+                                                <div class="row">
+                                                    <div class="col">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
-                                                        <div class="profile-order-text">123456</div>
-                                                    </div>
-
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
-                                                        <div class="profile-order-text">Jane Doe</div>
-                                                    </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-2 col-md-2 col-xs-4">
+                                                    <div class="col">
+                                                        <div class="profile-order-text">Completed</div>
+                                                    </div>
+                                                    <div class="col">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
