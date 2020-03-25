@@ -117,3 +117,14 @@
     font-size: 14px;
     color: #fbaa1d;
 }
+
+.tab-title {
+    color: #4a4a4a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tab-content {
+    color: #4a4a4a;
+    font-size: 20px;
+}
