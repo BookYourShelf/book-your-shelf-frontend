@@ -420,18 +420,72 @@
                     <br>
                     <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="order-tab">
                         <div>
-                            <div class="row order - row ">
 
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+                            <!-- Sort orders -->
+                            <div class="products_bar_side d-flex flex-row align-items-end justify-content-end ml-lg-auto">
+                                <div class="products_dropdown product_dropdown_sorting">
+                                    <div class="isotope_sorting_text"><span>Sort</span><i
+                                            class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                    <ul>
+                                        <li class="item_sorting_btn"
+                                            data-isotope-option='{ "sortBy": "original-order" }'>Date
+                                        </li>
+                                        <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>Price</li>
+                                    </ul>
+                                </div>
+
+                                <div class="products_dropdown text-right product_dropdown_filter">
+                                    <div class="isotope_filter_text"><span>Order Filter</span><i class="fa fa-caret-down"
+                                                                                                 aria-hidden="true"></i></div>
+                                    <ul>
+                                        <li class="item_filter_btn" data-filter="*">All</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Info Received</li>
+                                        <li class="item_filter_btn" data-filter=".sale">In Transit</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Out For Delivery</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Failed Attempt</li>
+                                        <li class="item_filter_btn" data-filter=".hot">Delivered</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Exception</li>
+                                        <li class="item_filter_btn" data-filter=".new">Expired</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Pending</li>
+                                    </ul>
+                                </div>
+
+                                <div class="products_dropdown text-right product_dropdown_filter">
+                                    <div class="isotope_filter_text"><span>Payment Filter</span><i class="fa fa-caret-down"
+                                                                                                   aria-hidden="true"></i></div>
+                                    <ul>
+                                        <li class="item_filter_btn" data-filter="*">All</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Pending</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Processed</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Completed</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Refunded</li>
+                                        <li class="item_filter_btn" data-filter=".hot">Failed</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Expired</li>
+                                        <li class="item_filter_btn" data-filter=".new">Revoked</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Preapproved</li>
+                                        <li class="item_filter_btn" data-filter=".sale">Cancelled</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+
+                                <div class="col">
                                     <div class="profile-order-title">Order Date</div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+
+                                <div class="col">
                                     <div class="profile-order-title">Order Code</div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+
+                                <div class="col">
                                     <div class="profile-order-title">Total Price</div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-xs-6">
+
+                                <div class="col">
+                                    <div class="profile-order-title">Payment Status</div>
+                                </div>
+                                <div class="col">
                                     <div class="profile-order-title">Order Status</div>
                                 </div>
                             </div>
@@ -443,21 +497,24 @@
                                     <div class="product">
                                         <a href="#order1" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
-                                                <div class="row order - row ">
-                                                    <div class="col-lg-3 col-md-3 col-xs-6">
+                                                <div class="row">
+                                                    <div class="col">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
+                                                        <div class="profile-order-text">Completed</div>
+                                                    </div>
+                                                    <div class="col">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -526,21 +583,24 @@
                                     <div class="product">
                                         <a href="#order2" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
-                                                <div class="row order - row ">
-                                                    <div class="col-lg-3 col-md-3 col-xs-6">
+                                                <div class="row">
+                                                    <div class="col">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
+                                                        <div class="profile-order-text">Completed</div>
+                                                    </div>
+                                                    <div class="col">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -609,21 +669,24 @@
                                     <div class="product">
                                         <a href="#order3" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
-                                                <div class="row order - row ">
-                                                    <div class="col-lg-3 col-md-3 col-xs-6">
+                                                <div class="row">
+                                                    <div class="col">
                                                         <div class="profile-order-text">
                                                             12.03.2020
                                                             <br>
                                                             14:30
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
                                                         <div class="profile-order-text">XHSHFJ276</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
                                                         <div class="profile-order-text">89.90 TL</div>
                                                     </div>
-                                                    <div class="col-lg-3 col-md-3 col-xs-6 ">
+                                                    <div class="col">
+                                                        <div class="profile-order-text">Completed</div>
+                                                    </div>
+                                                    <div class="col">
                                                         <div class="profile-order-text">Delivered</div>
                                                     </div>
                                                 </div>
@@ -693,6 +756,19 @@
 
                         <!-- No product -->
                         <div class="warning-text" style="display: none">There are no orders.</div>
+
+                        <div class="row page_nav_row">
+                            <div class="col">
+                                <div class="page_nav">
+                                    <ul class="d-flex flex-row align-items-start justify-content-center">
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">2</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">3</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
