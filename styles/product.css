@@ -805,62 +805,8 @@ section
 	border-radius: 2px;
 	z-index: 1;
 }
-#slider
-{
-	width: 100%;
-	height: 100%;
-}
-#slider.flexslider
-{
-	border: none;
-	margin-bottom: 0;
-}
-.carousel_container
-{
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 61px;
-	z-index: 1;
-}
-#carousel
-{
-	
-	width: 116px;
-	height: 325px;
-}
-#carousel .flex-viewport
-{
-	height: 100% !important;
-}
-#carousel.flexslider
-{
-	border: none;
-	background: transparent;
-	margin-bottom: 0;
-}
-#carousel.flexslider .slides
-{
-	width: 100% !important;
-	padding-left: 18px;
-	padding-right: 18px;
-	margin-top: -10px;
-}
-#carousel.flexslider .slides > li > div
-{
-	height: 109px !important;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	cursor: pointer;
-}
-#carousel.flexslider .slides > li > div > img
-{
-	box-shadow: 0px 8px 18px rgba(0,0,0,0.2);
-}
+
+
 .fs_nav
 {
 	position: absolute;
