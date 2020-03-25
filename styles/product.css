@@ -537,7 +537,10 @@ section
 	opacity: 1;
 	cursor: default;
 }
-
+.flexslider .slides img {
+	border-style: solid;
+	border-width: 1px;
+}
 .flex-direction-nav a {
     display: block;
     width: 40px;
