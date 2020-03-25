@@ -247,7 +247,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="address-tab" data-toggle="tab"
-                           href="#address" role="tab" aria-controls="information" aria-selected="true">Addresses</a>
+                           href="#address" role="tab" aria-controls="address" aria-selected="true">Addresses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="order-tab" data-toggle="tab" href="#order"
@@ -255,8 +255,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link profile-navbar-text" id="campaign-tab" data-toggle="tab" href="#campaign"
-                           role="tab" aria-controls="address" aria-selected="true">Reviews</a>
+                        <a class="nav-link profile-navbar-text" id="review-tab" data-toggle="tab" href="#review"
+                           role="tab" aria-controls="review" aria-selected="true">Reviews</a>
                     </li>
 
                     <li class="nav-item">
@@ -1906,8 +1906,26 @@
                         </div>
                     </div>
 
+                    <!-- Reviews -->
+                    <div class="tab-pane fade " id="review" role="tabpanel" aria-labelledby="reviews-tab">
 
-                    <div class="tab-pane fade " id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                        <!-- Sort orders -->
+                        <div class="products_bar_side d-flex flex-row align-items-start justify-content-start ml-lg-auto">
+                            <div class="products_dropdown product_dropdown_sorting">
+                                <div class="isotope_sorting_text"><span>Sort</span><i
+                                        class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_sorting_btn"
+                                        data-isotope-option='{ "sortBy": "original-order" }'>Date
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "book-name" }'>Book Name</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "decr-rate" }'>Decreasing Rate</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "incr-rate" }'>Increasing Rate</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
 
                         <div>
                             <!-- Review -->
@@ -1917,13 +1935,21 @@
                                 <div class="col-lg-6">
                                     <div class="review_item">
                                         <div class="media">
-                                            <div class="media-body">
-                                                <h4>Blake Ruiz</h4>
-                                                <i class="fa fa-star" style="color:#fbd600"></i>
-                                                <i class="fa fa-star" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-half-full" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-o" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                            <div class="media-body row">
+                                                <div class="col-lg-10">
+                                                    <h4>02.02.2020</h4>
+                                                    <i class="fa fa-star" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-half-full" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                                </div>
+                                                <div class="align-items-end">
+                                                    <!-- Delete button -->
+                                                    <a href="#" class="trans_200" data-toggle="collapse"><i
+                                                            style="font-size: 30px; color: #4a4a4a"
+                                                            class="fa product_text" title="Delete this review">&#xf014;</i></a>
+                                                </div>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -1988,13 +2014,21 @@
                                 <div class="col-lg-6">
                                     <div class="review_item">
                                         <div class="media">
-                                            <div class="media-body">
-                                                <h4>Blake Ruiz</h4>
-                                                <i class="fa fa-star" style="color:#fbd600"></i>
-                                                <i class="fa fa-star" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-half-full" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-o" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                            <div class="media-body row">
+                                                <div class="col-lg-10">
+                                                    <h4>01.02.2020</h4>
+                                                    <i class="fa fa-star" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-half-full" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                                </div>
+                                                <div class="align-items-end">
+                                                    <!-- Delete button -->
+                                                    <a href="#" class="trans_200" data-toggle="collapse"><i
+                                                            style="font-size: 30px; color: #4a4a4a"
+                                                            class="fa product_text" title="Delete this review">&#xf014;</i></a>
+                                                </div>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
