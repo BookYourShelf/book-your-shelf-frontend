@@ -161,9 +161,12 @@ $(document).ready(function()
 			animation: "slide",
 			controlNav: false,
 			animationLoop: false,
+			directionNav: true,
 			slideshow: false,
 			itemWidth: 60,
 			itemMargin: 30,
+			maxItems: 3,
+			minItems: 1,
 			asNavFor: '#slider'
 		  });
 		 
