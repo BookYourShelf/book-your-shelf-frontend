@@ -261,8 +261,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link profile-navbar-text" id="reviews-tab" data-toggle="tab" href="#product"
-                           role="tab" aria-controls="reviews" aria-selected="false">Shopping Cart</a>
+                        <a class="nav-link profile-navbar-text" id="cart-tab" data-toggle="tab" href="#cart"
+                           role="tab" aria-controls="cart" aria-selected="false">Shopping Cart</a>
                     </li>
 
                     <li class="nav-item">
@@ -2071,6 +2071,77 @@
                         <!-- No product -->
                         <div class="warning-text" style="display: none">There are no reviews.</div>
                     </div>
+
+                    <!-- Cart -->
+                    <div class="tab-pane fade " id="cart" role="tabpanel" aria-labelledby="cart-tab">
+
+                        <div class="row product-container-padding">
+                            <div class="col">
+                                <div class="cart_container">
+
+                                    <!-- Cart Bar -->
+                                    <div class="cart_bar">
+                                        <ul class="cart_bar_list item_list d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">Product</li>
+                                            <li>Price</li>
+                                            <li>Total</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Cart Items -->
+                                    <div class="cart_items">
+                                        <ul class="cart_items_list">
+
+                                            <!-- Cart Item 1 -->
+                                            <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
+                                                <div class="product-row d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
+                                                    <a href="product.html">
+                                                        <div><div class="product_image"><img src="images/hayvan_ciftligi.jpg" alt="" class="product_image_img"></div></div>
+                                                        <div class="product_name_container">
+                                                            <div class="product_name"><a href="product.html">Hayvan Ciftligi</a></div>
+                                                            <div class="product_text">George Orwell</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="cart_product_price product_text">
+                                                    <div class="align-items-start justify-content-start">	<!-- when no sale delete -->
+                                                        <div class="cart_sale_price"><b>%40 off</b></div>
+                                                        <div class="cart_sale_price"><del>₺15.99</del></div>
+                                                    </div>
+                                                    <span>Price: </span>₺11.99
+                                                </div>
+                                                <div class="product_total product_text"><span>Total: </span>₺11.99</div>
+                                            </li>
+
+                                            <!-- Cart Item 2 -->
+                                            <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
+                                                <div class="product-row d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
+                                                    <a href="product.html">
+                                                        <div><div class="product_image"><img src="images/sineklerin_tanrisi.jpg" alt="" class="product_image_img"></div></div>
+                                                        <div class="product_name_container">
+                                                            <div class="product_name"><a href="product.html">Sineklerin Tanrisi</a></div>
+                                                            <div class="product_text">William Golding</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="cart_product_price product_text">
+                                                    <span>Price: </span>₺9.60
+                                                </div>
+                                                <div class="product_total product_text"><span>Total: </span>₺9.60</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Out of stock warning -->
+                                    <div class="out-of-stock" style="display: none">One or more products are out of stock.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- No product -->
+                        <div class="warning-text" style="display: none">There are no reviews.</div>
+                    </div>
+
                 </div>
             </div>
         </section>

@@ -128,3 +128,30 @@
     color: #4a4a4a;
     font-size: 20px;
 }
+
+.product-container-padding {
+    padding-bottom: 50px;
+}
+
+.product-row
+{
+    height: 100%;
+}
+
+.cart_product_price
+{
+    font-size: 16px !important;
+}
+
+.cart_sale_price
+{
+    display: inline;
+    color: #fbaa1d;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 0.75;
+}
+
+.cart_sale_price del {
+    color: #b3b3b3;
+}
