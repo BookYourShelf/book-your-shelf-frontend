@@ -1791,3 +1791,22 @@ section
     font-size: 14px;
     color: #fbaa1d;
 }
+
+.cart-product-name a
+{
+    font-size: 18px;
+    color: #4a4a4a!important;
+    font-weight: 500;
+}
+
+.cart-product-name a:hover
+{
+    color: #fbaa1d!important;
+}
+
+.cart-product-text
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
