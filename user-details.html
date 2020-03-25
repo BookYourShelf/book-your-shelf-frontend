@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Panel | Book Your Shelf</title>
+    <title>User Details | Book Your Shelf</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Little Closet template">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="styles/admin-panel.css">
+    <link rel="stylesheet" type="text/css" href="styles/user-details.css">
     <link rel="stylesheet" type="text/css" href="styles/cart.css">
     <link rel="stylesheet" type="text/css" href="styles/cart_responsive.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
@@ -226,7 +226,9 @@
                         <div class="breadcrumbs d-flex flex-column align-items-center justify-content-center">
                             <ul class="d-flex flex-row align-items-start justify-content-start text-center">
                                 <li><a href="index.html">Home</a></li>
-                                <li style="color: #fbaa1d">Panel</li>
+                                <li><a href="admin-panel.html">Panel</a></li>
+                                <!-- TODO Name -->
+                                <li style="color: #fbaa1d">Jane Doe</li>
                             </ul>
                         </div>
                     </div>
@@ -239,36 +241,36 @@
                 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active profile-navbar-text" id="user-tab" data-toggle="tab"
-                           href="#user" role="tab" aria-controls="information" aria-selected="true">User</a>
+                           href="#user" role="tab" aria-controls="information" aria-selected="true">Informations</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="category-tab" data-toggle="tab"
-                           href="#category" role="tab" aria-controls="information" aria-selected="true">Category</a>
+                           href="#category" role="tab" aria-controls="information" aria-selected="true">Addresses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="hot-list-tab" data-toggle="tab" href="#hot-list"
-                           role="tab" aria-controls="order" aria-selected="true">Hot List</a>
+                           role="tab" aria-controls="order" aria-selected="true">Orders</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="campaign-tab" data-toggle="tab" href="#campaign"
-                           role="tab" aria-controls="address" aria-selected="true">Campaign</a>
+                           role="tab" aria-controls="address" aria-selected="true">Reviews</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="reviews-tab" data-toggle="tab" href="#product"
-                           role="tab" aria-controls="reviews" aria-selected="false">Product</a>
+                           role="tab" aria-controls="reviews" aria-selected="false">Shopping Cart</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="order-tab" data-toggle="tab" href="#order"
-                           role="tab" aria-controls="reviews" aria-selected="false">Order</a>
+                           role="tab" aria-controls="reviews" aria-selected="false">Wish List</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="sale-tab" data-toggle="tab" href="#sale"
-                           role="tab" aria-controls="reviews" aria-selected="false">Sale</a>
+                           role="tab" aria-controls="reviews" aria-selected="false">Search History</a>
                     </li>
                 </ul>
                 <br>
@@ -286,9 +288,9 @@
                                     <li class="item_sorting_btn"
                                         data-isotope-option='{ "sortBy": "original-order" }'>ID
                                     </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "id" }'>ID</li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Name</li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "surname" }'>Surname</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "email" }'>E-Mail</li>
                                 </ul>
                             </div>
 
@@ -296,7 +298,6 @@
                                 <div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down"
                                                                                        aria-hidden="true"></i></div>
                                 <ul>
-                                    <!-- TODO Filters -->
                                     <li class="item_filter_btn" data-filter="*">All</li>
                                     <li class="item_filter_btn" data-filter=".sale">Info Received</li>
                                     <li class="item_filter_btn" data-filter=".sale">In Transit</li>
@@ -336,7 +337,7 @@
 
                                     <!-- User -->
                                     <div class="product">
-                                        <a href="user-details.html">
+                                        <a href="#user_1" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
                                                 <div class="row order - row collapsible">
                                                     <div class="col-lg-3 col-md-3 col-xs-6">
@@ -356,18 +357,32 @@
                                                 </div>
                                             </div>
                                         </a>
+
+                                        <div id="user_1" class="collapse">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    AAA
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    BB
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <!-- User -->
                                     <div class="product">
-                                        <a href="user-details.html">
+                                        <a href="#user_2" class="trans_200" data-toggle="collapse">
                                             <div class="product_content">
                                                 <div class="row order - row collapsible">
                                                     <div class="col-lg-3 col-md-3 col-xs-6">
-                                                        <div class="profile-order-text">2</div>
+                                                        <div class="profile-order-text">1</div>
                                                     </div>
                                                     <div class="col-lg-3 col-md-3 col-xs-6">
-                                                        <div class="profile-order-text">John</div>
+                                                        <div class="profile-order-text">Jane</div>
                                                     </div>
 
                                                     <div class="col-lg-3 col-md-3 col-xs-6">
@@ -375,11 +390,49 @@
                                                     </div>
 
                                                     <div class="col-lg-3 col-md-3 col-xs-6">
-                                                        <div class="profile-order-text">john_doe@gmail@com</div>
+                                                        <div class="profile-order-text">jane_doe@gmail@com</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </a>
+
+                                        <div id="user_2" class="collapse">
+                                            <form id="user_form_2">
+                                                <div class="inline sidebar_expand">
+
+                                                    <div class="expand_element">
+                                                        <label class="checkbox_container">
+                                                            <input style="display: none" type="checkbox" id="languages1"
+                                                                   name="languages1" value="English">
+                                                            <span class="checkbox_mark"></span>
+                                                        </label>
+                                                        <label for="languages1" class="expand_element_text">English</label>
+                                                        <span class="number" style="float:right">1</span>
+                                                    </div>
+
+                                                    <div class="expand_element">
+                                                        <label class="checkbox_container">
+                                                            <input style="display: none" type="checkbox" id="languages2"
+                                                                   name="languages2" value="Turkish">
+                                                            <span class="checkbox_mark"></span>
+                                                        </label>
+                                                        <label for="languages2" class="expand_element_text">Turkish</label>
+                                                        <span class="number" style="float:right">1</span>
+                                                    </div>
+
+                                                    <div class="expand_element">
+                                                        <label class="checkbox_container">
+                                                            <input style="display: none" type="checkbox" id="languages3"
+                                                                   name="languages3" value="French">
+                                                            <span class="checkbox_mark"></span>
+                                                        </label>
+                                                        <label for="languages3" class="expand_element_text">French</label>
+                                                        <span class="number" style="float:right">1</span>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
