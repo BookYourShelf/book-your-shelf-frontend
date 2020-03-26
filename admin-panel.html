@@ -293,25 +293,9 @@
                                         data-isotope-option='{ "sortBy": "original-order" }'>ID
                                     </li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Name</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "surname" }'>Surname</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "surname" }'>Surname
+                                    </li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "email" }'>E-Mail</li>
-                                </ul>
-                            </div>
-
-                            <div class="products_dropdown text-right product_dropdown_filter">
-                                <div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down"
-                                                                                       aria-hidden="true"></i></div>
-                                <ul>
-                                    <!-- TODO Filters -->
-                                    <li class="item_filter_btn" data-filter="*">All</li>
-                                    <li class="item_filter_btn" data-filter=".sale">Info Received</li>
-                                    <li class="item_filter_btn" data-filter=".sale">In Transit</li>
-                                    <li class="item_filter_btn" data-filter=".sale">Out For Delivery</li>
-                                    <li class="item_filter_btn" data-filter=".sale">Failed Attempt</li>
-                                    <li class="item_filter_btn" data-filter=".hot">Delivered</li>
-                                    <li class="item_filter_btn" data-filter=".sale">Exception</li>
-                                    <li class="item_filter_btn" data-filter=".new">Expired</li>
-                                    <li class="item_filter_btn" data-filter=".sale">Pending</li>
                                 </ul>
                             </div>
                         </div>
@@ -391,8 +375,8 @@
                             </div>
                         </div>
 
-                        <!-- No product -->
-                        <div class="warning-text" style="display: none">There are no orders.</div>
+                        <!-- No user -->
+                        <div class="warning-text" style="display: none">There are no users.</div>
 
                         <div class="row page_nav_row">
                             <div class="col">
@@ -411,6 +395,165 @@
                     <!-- Category -->
                     <div class="tab-pane fade" id="category" role="tabpanel" aria-labelledby="category-tab">
 
+                        <!-- Add category button -->
+                        <div class="address-element-padding">
+                            <a href="#billing_address_column" class="trans_200" data-toggle="collapse">
+                                <div class="billingAddress">
+                                    <div class="product_content">
+                                        <div style="align-items: center; justify-content: center"
+                                             class="row order - row ">
+                                            <div class="add-address">Add New Category</div>
+                                            <i style="padding-left: 5px" class="fa fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Category form -->
+                        <div id="billing_address_column" class="collapse">
+
+                            <div class="address-container">
+                                <div class="billingAddress">
+                                    <div class="checkout_form_container">
+                                        <form action="#" id="billing_address_form" class="checkout_form">
+
+                                            <!-- Name -->
+                                            <div>
+                                                <div class="login-text p-b-10" style="color: black;">
+                                                    Category Name
+                                                </div>
+
+                                                <input type="text" id="billing_address_name"
+                                                       class="checkout_input form-control"
+                                                       placeholder="Category Name" required="required">
+                                            </div>
+
+                                            <div><!--ERROR--></div>
+
+                                            <!-- Button -->
+                                            <div class="login_button trans_200"><a href="#">Add category</a></div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sort orders -->
+                        <div class="products_bar_side d-flex flex-row align-items-end justify-content-end ml-lg-auto">
+                            <div class="products_dropdown product_dropdown_sorting">
+                                <div class="isotope_sorting_text"><span>Sort</span><i
+                                        class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_sorting_btn"
+                                        data-isotope-option='{ "sortBy": "original-order" }'>ID
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Name</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "product-num" }'>
+                                        Total Products
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "sub-num" }'>
+                                        Total Subcategories
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <div class="row order - row ">
+
+                                <div class="col-lg-3 col-md-3 col-xs-6">
+                                    <div class="profile-order-title">ID</div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-xs-6">
+                                    <div class="profile-order-title">Name</div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-xs-6">
+                                    <div class="profile-order-title">Total Products</div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-6">
+                                    <div class="profile-order-title">Total Subcategories</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container">
+                                <div class="orderDetailBox">
+
+                                    <!-- Category -->
+                                    <div class="address-element-padding">
+                                        <a href="category-details.html">
+                                            <div class="category-element">
+                                                <div class="product_content">
+                                                    <div class="row order - row collapsible">
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">1</div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">Literature</div>
+                                                        </div>
+
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">1028</div>
+                                                        </div>
+
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">5</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Category -->
+                                    <div class="address-element-padding">
+                                        <a href="category-details.html">
+                                            <div class="category-element">
+                                                <div class="product_content">
+                                                    <div class="row order - row collapsible">
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">2</div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">Literature</div>
+                                                        </div>
+
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">1028</div>
+                                                        </div>
+
+                                                        <div class="col-lg-3 col-md-3 col-xs-6">
+                                                            <div class="profile-order-text">5</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- No categories -->
+                        <div class="warning-text" style="display: none">There are no categories.</div>
+
+                        <div class="row page_nav_row">
+                            <div class="col">
+                                <div class="page_nav">
+                                    <ul class="d-flex flex-row align-items-start justify-content-center">
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">2</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">3</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Hot List -->
@@ -441,7 +584,8 @@
                                         data-isotope-option='{ "sortBy": "original-order" }'>Date
                                     </li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "price" }'>Price</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>User Name</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>User Name
+                                    </li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "id" }'>User ID</li>
                                 </ul>
                             </div>
