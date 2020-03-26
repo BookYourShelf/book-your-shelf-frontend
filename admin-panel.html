@@ -273,7 +273,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link profile-navbar-text" id="review-tab" data-toggle="tab" href="#review"
-                           role="tab" aria-controls="review" aria-selected="false">Reviews</a>
+                           role="tab" aria-controls="review" aria-selected="false">Review</a>
                     </li>
                 </ul>
                 <br>
@@ -938,21 +938,59 @@
                     <!-- Reviews -->
                     <div class="tab-pane fade " id="review" role="tabpanel" aria-labelledby="review-tab">
 
+                        <!-- Sort orders -->
+                        <div class="products_bar_side d-flex flex-row align-items-end justify-content-end ml-lg-auto">
+                            <div class="products_dropdown product_dropdown_sorting">
+                                <div class="isotope_sorting_text"><span>Sort</span><i
+                                        class="fa fa-caret-down" aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_sorting_btn"
+                                        data-isotope-option='{ "sortBy": "original-order" }'>Date
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "user-name" }'>User Name</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "user-surname" }'>User Surname</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "book-name" }'>Book Name</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "decr-rate" }'>Decreasing Rate</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "incr-rate" }'>Increasing Rate</li>
+                                </ul>
+                            </div>
+
+                            <div class="products_dropdown text-right product_dropdown_filter">
+                                <div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down"
+                                                                                       aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_filter_btn" data-filter="*">All</li>
+                                    <li class="item_filter_btn" data-filter=".reviewed">Reviewed</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
+
                         <div>
                             <!-- Review -->
                             <div class="row">
 
                                 <!-- Review Content -->
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <div class="review_item">
                                         <div class="media">
-                                            <div class="media-body">
-                                                <h4>Blake Ruiz</h4>
-                                                <i class="fa fa-star" style="color:#fbd600"></i>
-                                                <i class="fa fa-star" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-half-full" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-o" style="color:#fbd600"></i>
-                                                <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                            <div class="media-body row">
+                                                <div class="col-lg-10">
+                                                    <h4>Jane Doe</h4>
+                                                    <h4>02.02.2020</h4>
+                                                    <i class="fa fa-star" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-half-full" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                                    <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <!-- Delete button -->
+                                                    <a href="#" class="trans_200" data-toggle="collapse"><i
+                                                            style="font-size: 30px; color: #4a4a4a"
+                                                            class="fa product_text" title="Delete this review">&#xf014;</i></a>
+                                                </div>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -986,7 +1024,7 @@
                                 </div>
 
                                 <!-- Book -->
-                                <div class="col-lg-6">
+                                <div class="col-lg-4">
                                     <div class="review_list">
                                         <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
                                             <div class="product_box d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
@@ -998,10 +1036,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_name_container">
-                                                        <div class="product_name txt-left"><a href="product.html">Seker
+                                                        <div class="cart-product-name txt-left"><a href="product.html">Seker
                                                             Portakali</a>
                                                         </div>
-                                                        <div class="product_text">José Mauro de Vasconcelos</div>
+                                                        <div class="cart-product-text">José Mauro de Vasconcelos</div>
                                                     </div>
                                                 </a>
                                             </div>
@@ -1014,16 +1052,23 @@
                             <div class="row">
 
                                 <!-- Review Content -->
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <div class="review_item">
-                                        <div class="media">
-                                            <div class="media-body">
-                                                <h4>Blake Ruiz</h4>
+                                        <div class="media-body row">
+                                            <div class="col-lg-10">
+                                                <h4>John Doe</h4>
+                                                <h4>01.02.2020</h4>
                                                 <i class="fa fa-star" style="color:#fbd600"></i>
                                                 <i class="fa fa-star" style="color:#fbd600"></i>
                                                 <i class="fa fa-star-half-full" style="color:#fbd600"></i>
                                                 <i class="fa fa-star-o" style="color:#fbd600"></i>
                                                 <i class="fa fa-star-o" style="color:#fbd600"></i>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <!-- Delete button -->
+                                                <a href="#" class="trans_200" data-toggle="collapse"><i
+                                                        style="font-size: 30px; color: #4a4a4a"
+                                                        class="fa product_text" title="Delete this review">&#xf014;</i></a>
                                             </div>
                                         </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -1038,7 +1083,7 @@
                                 </div>
 
                                 <!-- Book -->
-                                <div class="col-lg-6">
+                                <div class="col-lg-4">
                                     <div class="review_list">
                                         <li class="cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-end justify-content-start">
                                             <div class="product_box d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
@@ -1050,10 +1095,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_name_container">
-                                                        <div class="product_name txt-left"><a href="product.html">Kürk
+                                                        <div class="cart-product-name txt-left"><a href="product.html">Kürk
                                                             Mantolu</a>
                                                         </div>
-                                                        <div class="product_text">José Mauro de Vasconcelos</div>
+                                                        <div class="cart-product-text">José Mauro de Vasconcelos</div>
                                                     </div>
                                                 </a>
                                             </div>
@@ -1064,6 +1109,19 @@
                         </div>
                         <!-- No product -->
                         <div class="warning-text" style="display: none">There are no reviews.</div>
+
+                        <div class="row page_nav_row">
+                            <div class="col">
+                                <div class="page_nav">
+                                    <ul class="d-flex flex-row align-items-start justify-content-center">
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">2</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">3</a></li>
+                                        <li><a href="#" style="color: #fbaa1d;">4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
