@@ -815,35 +815,6 @@ section
     font-weight: 700;
     line-height: 0.75;
 }
-.breadcrumbs
-{
-    margin-top: 15px;
-}
-.breadcrumbs ul li
-{
-    position: relative;
-}
-.breadcrumbs ul li:not(:last-of-type)::after
-{
-    display: inline-block;
-    content: '/';
-    font-size: 16px;
-    font-weight: 500;
-    color: #969696;
-    margin-left: 4px;
-    margin-right: 4px;
-}
-.breadcrumbs ul li,
-.breadcrumbs ul li a
-{
-    font-size: 16px;
-    font-weight: 500;
-    color: #969696;
-}
-.breadcrumbs ul li a:hover
-{
-    color: #fbaa1d;
-}
 
 /*********************************
 6. Checkout
