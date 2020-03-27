@@ -1600,6 +1600,9 @@ section
     font-size:18px;
     color: black;
     height: 55px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .profile-order-expand-box {
@@ -1768,6 +1771,8 @@ section
     font-size: 18px;
     color: #4a4a4a!important;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .cart-product-name a:hover
@@ -1780,4 +1785,7 @@ section
     font-size: 14px;
     font-weight: 400;
     color: #4a4a4a;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }

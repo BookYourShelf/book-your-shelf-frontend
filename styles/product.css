@@ -921,6 +921,8 @@ section
 	color: #4a4a4a;
 	font-weight: 500;
 	margin-top: 1px;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .product_category a:hover
 {
