@@ -1676,6 +1676,9 @@ section
 .expand_element_text {
 	display:inline;
 	cursor: pointer;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .expand_element_text:hover {
