@@ -12,11 +12,11 @@
     <!-- Favicon  -->
     <link rel="icon" href="images/logo/book_your_shelf_tab.png">
     <link rel="stylesheet" type="text/css" href="styles/checkout.css">
+    <link rel="stylesheet" type="text/css" href="styles/cart.css">
     <link rel="stylesheet" type="text/css" href="styles/checkout_responsive.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
     <link rel="stylesheet" type="text/css" href="styles/core-style.css">
     <link rel="stylesheet" type="text/css" href="styles/util.css">
-    <link rel="stylesheet" type="text/css" href="styles/profile.css">
     <link rel="stylesheet" type="text/css" href="styles/payment.css">
 </head>
 
@@ -258,7 +258,7 @@
 
             <!-- TODO add place order button -->
             <!--<div class="checkout_button trans_200"><a href="thank-you.html">place order</a></div>-->
-            <div class="container">
+            <div class="container m-45-btm">
 
                 <div class="row">
                     <aside class="col-md-2"></aside>
@@ -280,18 +280,18 @@
 
                                 <div class="tab-content">
                                     <div class="tab-pane fade show active" id="nav-tab-card">
-                                        <p class="alert alert-success">Some text success or error</p>
+                                        <p class="alert alert-success d-none">Some text success or error</p>
                                         <form role="form">
                                             <div class="form-group">
                                                 <label for="username">Full name (on the card)</label>
-                                                <input type="text" class="form-control" name="username" placeholder=""
+                                                <input type="text" class="checkout_input form-control" name="username" placeholder=""
                                                     required="">
                                             </div> <!-- form-group.// -->
 
                                             <div class="form-group">
                                                 <label for="cardNumber">Card number</label>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" name="cardNumber"
+                                                    <input type="text" class="checkout_input form-control" name="cardNumber"
                                                         placeholder="">
                                                     <div class="input-group-append">
                                                         <span class="input-group-text text-muted">
@@ -308,9 +308,9 @@
                                                     <div class="form-group">
                                                         <label><span class="hidden-xs">Expiration</span> </label>
                                                         <div class="input-group">
-                                                            <input type="number" class="form-control" placeholder="MM"
+                                                            <input type="number" class="checkout_input form-control" placeholder="MM"
                                                                 name="">
-                                                            <input type="number" class="form-control" placeholder="YY"
+                                                            <input type="number" class="checkout_input form-control" placeholder="YY"
                                                                 name="">
                                                         </div>
                                                     </div>
@@ -320,12 +320,11 @@
                                                         <label data-toggle="tooltip" title=""
                                                             data-original-title="3 digits code on back side of the card">CVV
                                                             <i class="fa fa-question-circle"></i></label>
-                                                        <input type="number" class="form-control" required="">
+                                                        <input type="number" class="checkout_input form-control" required="">
                                                     </div> <!-- form-group.// -->
                                                 </div>
                                             </div> <!-- row.// -->
-                                            <button class="subscribe btn btn-primary btn-block" type="button"> Confirm
-                                            </button>
+                                            <div class="checkout_button trans_200"><a href="thank-you.html">Confirm</a></div>
                                         </form>
                                     </div> <!-- tab-pane.// -->
                                     <div class="tab-pane fade" id="nav-tab-paypal">
