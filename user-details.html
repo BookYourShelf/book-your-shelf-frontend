@@ -361,13 +361,13 @@
                                             </div>
 
                                             <!-- Birth Date -->
-                                            <div class="tab-content-text">
+                                            <div class="tab-content-text date">
                                                 02.02.1990
                                             </div>
 
                                             <!-- Phone -->
-                                            <div class="tab-content-text">
-                                                +905555555555
+                                            <div class="tab-content-text phone_mask">
+                                                5555555555
                                             </div>
                                         </div>
                                     </div>
@@ -445,19 +445,18 @@
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Birth Date
                                                     </div>
-
-                                                    <input type="date" id="user-info-update_birth_date"
-                                                           class="login_input form-control" value="1990-02-02">
+                                                    <input type="text" id="user-info-update_birth_date"
+                                                           class="login_input form-control date"
+                                                           placeholder="dd.mm.yyyy" value="02.02.1990" required="required">
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <!-- Phone no -->
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Phone Number
                                                     </div>
-                                                    <input type="phone" id="user-info-update_phone"
-                                                           class="login_input form-control"
-                                                           placeholder="Phone Number" required="required"
-                                                           value="05555555555">
+                                                    <input type="text" id="user-info-update_phone"
+                                                           class="login_input form-control phone_mask"
+                                                           placeholder="(XXX) XXX XX XX" value="5555555555" required="required">
                                                 </div>
                                             </div>
 
@@ -647,9 +646,9 @@
                                                         <div class="login-text p-b-10" style="color: black;">Phone
                                                             Number
                                                         </div>
-                                                        <input type="phone" id="billing_address_phone"
-                                                               class="checkout_input form-control"
-                                                               placeholder="Phone Number" required="required">
+                                                        <input type="text" id="billing_address_phone"
+                                                               class="checkout_input form-control phone_mask"
+                                                               placeholder="(XXX) XXX XX XX" required="required">
                                                     </div>
 
                                                     <!-- Email -->
@@ -866,9 +865,9 @@
                                                                     Phone
                                                                     Number
                                                                 </div>
-                                                                <input type="phone" id="billing_address_update_phone"
-                                                                       class="checkout_input form-control"
-                                                                       placeholder="Phone Number" required="required">
+                                                                <input type="text" id="billing_address_update_phone"
+                                                                       class="checkout_input form-control phone_mask"
+                                                                       placeholder="(XXX) XXX XX XX" required="required">
                                                             </div>
 
                                                             <!-- Email -->
@@ -1084,9 +1083,9 @@
                                                                     Phone
                                                                     Number
                                                                 </div>
-                                                                <input type="phone" id="billing_address_update_phone_id"
-                                                                       class="checkout_input form-control"
-                                                                       placeholder="Phone Number" required="required">
+                                                                <input type="text" id="billing_address_update_phone_id"
+                                                                       class="checkout_input form-control phone_mask"
+                                                                       placeholder="(XXX) XXX XX XX" required="required">
                                                             </div>
 
                                                             <!-- Email -->
@@ -1285,9 +1284,9 @@
                                                         <div class="login-text p-b-10" style="color: black;">Phone
                                                             Number
                                                         </div>
-                                                        <input type="phone" id="delivery_address_phone"
-                                                               class="checkout_input form-control"
-                                                               placeholder="Phone Number" required="required">
+                                                        <input type="text" id="delivery_address_phone"
+                                                               class="checkout_input form-control phone_mask"
+                                                               placeholder="(XXX) XXX XX XX" required="required">
                                                     </div>
 
                                                     <!-- Email -->
@@ -1505,9 +1504,9 @@
                                                                     Phone
                                                                     Number
                                                                 </div>
-                                                                <input type="phone" id="delivery_address_update_phone"
-                                                                       class="checkout_input form-control"
-                                                                       placeholder="Phone Number" required="required">
+                                                                <input type="text" id="delivery_address_update_phone"
+                                                                       class="checkout_input form-control phone_mask"
+                                                                       placeholder="(XXX) XXX XX XX" required="required">
                                                             </div>
 
                                                             <!-- Email -->
@@ -1624,9 +1623,8 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="profile-order-text">
-                                                            12.03.2020
-                                                            <br>
-                                                            14:30
+                                                            <div class="date">12.03.2020</div>
+                                                            <div class="time">14:30</div>
                                                         </div>
                                                     </div>
                                                     <div class="col">
@@ -1712,9 +1710,8 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="profile-order-text">
-                                                            12.03.2020
-                                                            <br>
-                                                            14:30
+                                                            <div class="date">12.03.2020</div>
+                                                            <div class="time">14:30</div>
                                                         </div>
                                                     </div>
                                                     <div class="col">
@@ -1800,9 +1797,8 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="profile-order-text">
-                                                            12.03.2020
-                                                            <br>
-                                                            14:30
+                                                            <div class="date">12.03.2020</div>
+                                                            <div class="time">14:30</div>
                                                         </div>
                                                     </div>
                                                     <div class="col">
@@ -1938,7 +1934,7 @@
                                         <div class="media">
                                             <div class="media-body row">
                                                 <div class="col-lg-10">
-                                                    <h4>02.02.2020</h4>
+                                                    <h4 class="date">02.02.2020</h4>
                                                     <i class="fa fa-star" style="color:#fbd600"></i>
                                                     <i class="fa fa-star" style="color:#fbd600"></i>
                                                     <i class="fa fa-star-half-full" style="color:#fbd600"></i>
@@ -2018,7 +2014,7 @@
                                         <div class="media">
                                             <div class="media-body row">
                                                 <div class="col-lg-10">
-                                                    <h4>01.02.2020</h4>
+                                                    <h4 class="date">01.02.2020</h4>
                                                     <i class="fa fa-star" style="color:#fbd600"></i>
                                                     <i class="fa fa-star" style="color:#fbd600"></i>
                                                     <i class="fa fa-star-half-full" style="color:#fbd600"></i>
@@ -2247,17 +2243,27 @@
                             <div class="col">
                                 <div class="cart_container">
 
+                                    <!-- Search History Bar -->
+                                    <div class="cart_bar">
+                                        <ul class="cart_bar_list item_list d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">Search Value</li>
+                                            <li>Total Search</li>
+                                        </ul>
+                                    </div>
+
                                     <!-- Search Values -->
                                     <div class="cart_items">
                                         <ul class="cart_items_list">
 
                                             <!-- Search Value 1 -->
                                             <li class="search-value-height cart_item item_list d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start justify-content-start">
-                                                <div class="product-row d-flex flex-lg-row flex-column align-items-lg-center align-items-center">
+                                                <div class="product-row d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start mr-auto">
 
                                                     <div class="product_name_container">
                                                         <div class="search-value-text">Seker Portakali</div>
                                                     </div>
+                                                </div>
+                                                <div class="cart_product_price product_text">1
                                                 </div>
                                             </li>
 
@@ -2268,6 +2274,8 @@
                                                     <div class="product_name_container">
                                                         <div class="search-value-text">Otomatik Portakal</div>
                                                     </div>
+                                                </div>
+                                                <div class="cart_product_price product_text">12
                                                 </div>
                                             </li>
 
@@ -2280,6 +2288,8 @@
                                                             PortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakalPortakal
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div class="cart_product_price product_text">12
                                                 </div>
                                             </li>
                                         </ul>
@@ -2380,6 +2390,8 @@
 <script src="js/active.js"></script>
 <script src="js/checkout.js"></script>
 <script src="js/login.js"></script>
+<script src="js/input-mask.js"></script>
+<script src="js/jquery.mask.js"></script>
 
 </body>
 
