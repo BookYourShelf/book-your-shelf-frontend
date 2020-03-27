@@ -9,6 +9,8 @@
         $('.percent').mask('##0,00%', {reverse: true});
         $('.clear-if-not-match').mask("00/00/0000", {clearIfNotMatch: true});
         $('.date').mask("00/00/0000", {placeholder: "dd/mm/yyyy"});
+        $('.credit-card').mask("0000 0000 0000 0000", {placeholder: "____ ____ ____ ____"});
+        $('.cvv').mask("000", {placeholder: "___"});
         $('.fallback').mask("00r00r0000", {
             translation: {
                 'r': {
