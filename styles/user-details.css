@@ -127,9 +127,7 @@
 .tab-content-text {
     color: #4a4a4a;
     font-size: 20px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+    word-wrap: break-word;
 }
 
 .product-container-padding {
