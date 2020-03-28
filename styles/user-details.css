@@ -148,7 +148,6 @@
 
 .cart_sale_price
 {
-    display: inline;
     color: #fbaa1d;
     font-weight: 500;
     margin-top: 10px;
@@ -160,7 +159,7 @@
 }
 
 .cart-product-name {
-    max-width: 100px!important;
+    max-width: 800px!important;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -183,6 +182,7 @@
 
 .cart-product-text
 {
+    max-width: 800px!important;
     font-size: 14px;
     font-weight: 400;
     color: #4a4a4a;
@@ -200,4 +200,68 @@
 .search-value-height
 {
     height: 30px!important;
+}
+
+.review-product-name {
+    max-width: 250px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.review-product-name a
+{
+    font-size: 18px;
+    color: #4a4a4a!important;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.review-product-name a:hover
+{
+    color: #fbaa1d!important;
+}
+
+.review-product-text
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    max-width: 250px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.shopping-cart-product-name {
+    max-width: 700px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.shopping-cart-product-name a
+{
+    font-size: 18px;
+    color: #4a4a4a!important;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.shopping-cart-product-name a:hover
+{
+    color: #fbaa1d!important;
+}
+
+.shopping-cart-product-text
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    max-width: 700px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
