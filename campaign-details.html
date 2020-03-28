@@ -244,28 +244,57 @@
         <section class="product_description_area">
             <div class="container">
                 <br>
-                <br>
+                <div class="address-element-padding">
+                    <div class="billingAddress">
+                        <div class="product_content">
+                            <div class="row">
 
+                                <!-- Titles -->
+                                <div class="col-lg-3">
+                                    <!-- ID -->
+                                    <div class="tab-title-text">
+                                        ID
+                                    </div>
 
-                        <div class="address-element-padding">
-                            <div class="billingAddress">
-                                <div class="product_content">
+                                    <!-- Name -->
+                                    <div class="tab-title-text">
+                                        Campaign Name
+                                    </div>
+
+                                    <!-- Rate -->
+                                    <div class="tab-title-text">
+                                        Discount Rate
+                                    </div>
+
+                                    <!-- Category -->
+                                    <div class="tab-title-text">
+                                        Category
+                                    </div>
+
+                                    <!-- Start -->
+                                    <div class="tab-title-text">
+                                        Campaign Start Date
+                                    </div>
+
+                                    <!-- End -->
+                                    <div class="tab-title-text">
+                                        Campaign End Date
+                                    </div>
+                                </div>
+
+                                <!-- Contents -->
+                                <div class="col-lg-9">
 
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="tab-title-text align-items-center">
-                                                ID
-                                            </div>
+                                        <!-- ID -->
+                                        <div class="col-lg-11 tab-content-text">
+                                            1
                                         </div>
-                                        <div class="col-md-5">
-                                            <div class="tab-content-text">
-                                                1
-                                            </div>
-                                        </div>
+                                        <!-- Buttons -->
                                         <div class="col-lg-1">
                                             <div class="row">
                                                 <!-- Update button -->
-                                                <a href="#category-info-update"
+                                                <a href="#campaign-info-update"
                                                    class="trans_200" data-toggle="collapse"><i
                                                         style="font-size: 25px; padding-right: 10px"
                                                         class="fa fa-pencil"></i></a>
@@ -276,126 +305,110 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-title-text">
-                                                Campaign Name
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-content-text">
-                                                Literature Day
-                                            </div>
-                                        </div>
+
+                                    <!-- Name -->
+                                    <div class="tab-content-text">
+                                        Literature Day
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-title-text">
-                                                Total Discount
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-content-text">
-                                                10
-                                            </div>
-                                        </div>
+
+                                    <!-- Rate -->
+                                    <div class="tab-content-text">
+                                        %10
                                     </div>
+
+                                    <!-- Category -->
+                                    <div class="tab-content-text">
+                                        Literature
+                                    </div>
+
+                                    <!-- Start Date -->
+                                    <div class="tab-content-text date">
+                                        28/03/2020
+                                    </div>
+
+                                    <!-- End Date -->
+                                    <div class="tab-content-text date">
+                                        30/03/2020
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Update informations form -->
+                <div id="campaign-info-update" class="collapse">
+                    <div class="address-container">
+                        <div class="billingAddress">
+                            <div class="checkout_form_container">
+                                <form action="#" id="campaign_update_form" class="checkout_form">
+
+                                    <!-- Name -->
+                                    <div>
+                                        <div class="login-text p-b-10" style="color: black;">
+                                            Campaign Name
+                                        </div>
+
+                                        <input type="text" id="campaign_update_name"
+                                               class="checkout_input form-control" value="Literature Day"
+                                               placeholder="Campaign Name" required="required">
+                                    </div>
+
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-title-text">
+                                            <div class="login-text p-b-10" style="color: black;">
+                                                Discount Rate
+                                            </div>
+                                            <input type="text" id="campaign_update_rate" value="10"
+                                                   class="checkout_input form-control discount-rate"
+                                                   placeholder="Discount Rate" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="login-text p-b-10" style="color: black;">
                                                 Category
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-content-text">
-                                                Literature
-                                            </div>
+                                            <select name="billing_address_title" id="campaign_update_category"
+                                                    class="dropdown_item_select checkout_input"
+                                                    require="required">
+                                                <option>LITERATURE</option>
+                                                <option>ALL</option>
+                                                <option>NOVEL</option>
+                                                <option>POET</option>
+                                            </select>
                                         </div>
                                     </div>
+
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-title-text">
+                                            <div class="login-text p-b-10" style="color: black;">
                                                 Campaign Start Date
                                             </div>
+                                            <input type="text" id="campaign_update_start_date"
+                                                   class="checkout_input form-control date" value="28/03/2020"
+                                                   placeholder="dd/mm/yyyy">
                                         </div>
                                         <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-content-text">
-                                                28/03/2020
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-title-text">
+                                            <div class="login-text p-b-10" style="color: black;">
                                                 Campaign End Date
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-content-text">
-                                                30/03/2020
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-title-text">
-                                                Ongoing Campaign
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <!-- Name -->
-                                            <div class="tab-content-text">
-                                                Yes
-                                            </div>
+                                            <input type="text" id="campaign_update_end_date"
+                                                   class="checkout_input form-control date" value="30/03/2020"
+                                                   placeholder="dd/mm/yyyy">
                                         </div>
                                     </div>
 
-                                </div>
+                                    <div><!--ERROR--></div>
+
+                                    <!-- Button -->
+                                    <div class="login_button trans_200"><a href="#">Update</a></div>
+                                </form>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <br>
 
-                        <!-- Update informations form -->
-                        <div id="category-info-update" class="collapse">
-
-                            <div class="address-container">
-                                <div class="billingAddress">
-                                    <div class="checkout_form_container">
-                                        <form action="#" id="category-info-update-form" class="checkout_form">
-
-                                            <!-- Category Name -->
-                                            <div>
-                                                <div class="login-text p-b-10" style="color: black;">
-                                                    Category Name
-                                                </div>
-                                                <input type="text" id="category-name-update"
-                                                       class="login_input form-control"
-                                                       required="required" value="Literature">
-                                            </div>
-
-                                            <div><!--ERROR--></div>
-
-                                            <!-- Button -->
-                                            <div class="login_button trans_200"><a href="#">Update</a></div>
-
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-
-                    <!-- Orders -->
+                <!-- Orders -->
             </div>
         </section>
 
@@ -481,6 +494,8 @@
 <script src="js/active.js"></script>
 <script src="js/checkout.js"></script>
 <script src="js/login.js"></script>
+<script src="js/input-mask.js"></script>
+<script src="js/jquery.mask.js"></script>
 
 </body>
 
