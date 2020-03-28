@@ -195,6 +195,7 @@
                     <a href="register.html" style="line-height: 40px">Register</a>
                     <a href="login.html" style="line-height: 40px">Login</a>
                     <a href="profile.html" style="line-height: 40px">Profile</a>
+                    <a href="admin-panel.html" style="line-height: 40px">Panel</a>
                     <a href="index.html" style="line-height: 40px">Logout</a>
                 </div>
             </div>
@@ -565,11 +566,11 @@
                     <div class="tab-pane fade" id="campaign" role="tabpanel" aria-labelledby="campaign-tab">
                         <!-- Add campaign button -->
                         <div class="address-element-padding">
-                            <a href="#billing_address_column" class="trans_200" data-toggle="collapse">
+                            <a href="#new_campaign" class="trans_200" data-toggle="collapse">
                                 <div class="billingAddress">
                                     <div class="product_content">
                                         <div style="align-items: center; justify-content: center"
-                                                class="row order - row ">
+                                             class="row order - row ">
                                             <div class="add-address">Add New Campaign</div>
                                             <i style="padding-left: 5px" class="fa fa-plus"></i>
                                         </div>
@@ -579,12 +580,12 @@
                         </div>
 
                         <!-- Category form -->
-                        <div id="billing_address_column" class="collapse">
+                        <div id="new_campaign" class="collapse">
 
                             <div class="address-container">
                                 <div class="billingAddress">
                                     <div class="checkout_form_container">
-                                        <form action="#" id="billing_address_form" class="checkout_form">
+                                        <form action="#" id="new_campaign_form" class="checkout_form">
 
                                             <!-- Name -->
                                             <div>
@@ -592,37 +593,34 @@
                                                     Campaign Name
                                                 </div>
 
-                                                <input type="text" id="billing_address_name"
-                                                        class="checkout_input form-control"
-                                                        placeholder="Campaign Name" required="required">
+                                                <input type="text" id="new_campaign_name"
+                                                       class="checkout_input form-control"
+                                                       placeholder="Campaign Name" required="required">
                                             </div>
 
                                             <div class="row">
-                                                
                                                 <div class="col-md-6">
                                                     <div class="login-text p-b-10" style="color: black;">
-                                                        Discount
+                                                        Discount Rate
                                                     </div>
-                                                    <input type="text" id="billing_address_name"
-                                                        class="checkout_input form-control"
-                                                        placeholder="Discount" required="required">
+                                                    <input type="text" id="new_campaign_rate"
+                                                           class="checkout_input form-control discount-rate"
+                                                           placeholder="Discount Rate" required="required">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Category
                                                     </div>
-                                                    <select name="billing_address_title" id="category"
-                                                                class="dropdown_item_select checkout_input"
-                                                                require="required">
-                                                            <option>SELECT</option>
-                                                            <option>HOME</option>
-                                                            <option>WORKPLACE</option>
-                                                            <option>SUMMERY</option>
-                                                            <option>OTHER</option>
-                                                        </select>
+                                                    <select name="billing_address_title" id="new_campaign_category"
+                                                            class="dropdown_item_select checkout_input"
+                                                            require="required">
+                                                        <option>SELECT</option>
+                                                        <option>ALL</option>
+                                                        <option>LITERATURE</option>
+                                                        <option>NOVEL</option>
+                                                        <option>POET</option>
+                                                    </select>
                                                 </div>
-
-                                                
                                             </div>
 
                                             <div class="row">
@@ -630,13 +628,17 @@
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Campaign Start Date
                                                     </div>
-                                                    <input type="text" id="campaign_start_date" class="checkout_input form-control date" placeholder="dd/mm/yyyy" maxlength="10">
+                                                    <input type="text" id="campaign_start_date"
+                                                           class="checkout_input form-control date"
+                                                           placeholder="dd/mm/yyyy">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Campaign End Date
                                                     </div>
-                                                    <input type="text" id="campaign_start_date" class="checkout_input form-control date" placeholder="dd/mm/yyyy" maxlength="10">
+                                                    <input type="text" id="campaign_end_date"
+                                                           class="checkout_input form-control date"
+                                                           placeholder="dd/mm/yyyy">
                                                 </div>
                                             </div>
 
@@ -644,7 +646,6 @@
 
                                             <!-- Button -->
                                             <div class="login_button trans_200"><a href="#">Add campaign</a></div>
-
                                         </form>
                                     </div>
                                 </div>
@@ -660,13 +661,24 @@
                                     <li class="item_sorting_btn"
                                         data-isotope-option='{ "sortBy": "original-order" }'>ID
                                     </li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Campaign Name</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "product-num" }'>
-                                        Total Discount
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Campaign
+                                        Name
                                     </li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "sub-num" }'>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "rate" }'>
+                                        Discount Rate
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "category" }'>
                                         Category
                                     </li>
+                                </ul>
+                            </div>
+                            <div class="products_dropdown text-right product_dropdown_filter">
+                                <div class="isotope_filter_text"><span>Filter</span><i class="fa fa-caret-down"
+                                                                                       aria-hidden="true"></i></div>
+                                <ul>
+                                    <li class="item_filter_btn" data-filter="*">All</li>
+                                    <li class="item_filter_btn" data-filter=".ongoing">Ongoing</li>
+                                    <li class="item_filter_btn" data-filter=".ended">Ended</li>
                                 </ul>
                             </div>
                         </div>
@@ -685,7 +697,7 @@
                                 </div>
 
                                 <div class="col-lg-3 col-md-3 col-xs-6">
-                                    <div class="profile-order-title">Total Discount</div>
+                                    <div class="profile-order-title">Discount Rate</div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-xs-6">
                                     <div class="profile-order-title">Category</div>
@@ -709,7 +721,7 @@
                                                         </div>
 
                                                         <div class="col-lg-3 col-md-3 col-xs-6">
-                                                            <div class="profile-order-text">10</div>
+                                                            <div class="profile-order-text">%10</div>
                                                         </div>
 
                                                         <div class="col-lg-3 col-md-3 col-xs-6">
@@ -735,7 +747,7 @@
                                                         </div>
 
                                                         <div class="col-lg-3 col-md-3 col-xs-6">
-                                                            <div class="profile-order-text">20</div>
+                                                            <div class="profile-order-text">%20</div>
                                                         </div>
 
                                                         <div class="col-lg-3 col-md-3 col-xs-6">
@@ -775,7 +787,7 @@
                                 <div class="billingAddress">
                                     <div class="product_content">
                                         <div style="align-items: center; justify-content: center"
-                                                class="row order - row ">
+                                             class="row order - row ">
                                             <div class="add-address">Add New Product</div>
                                             <i style="padding-left: 5px" class="fa fa-plus"></i>
                                         </div>
@@ -810,7 +822,6 @@
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Product Name
                                                         </div>
-
                                                         <input type="text" id="book_product_name_input"
                                                                 class="checkout_input form-control"
                                                                 placeholder="Product Name" required="required">
@@ -873,8 +884,6 @@
                                                                 <option>OTHER</option>
                                                             </select>
                                                     </div>
-
-                                                    
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-4">
@@ -1025,6 +1034,7 @@
                                                                 class="checkout_input form-control"
                                                                 placeholder="Stock" required="required">
                                                     </div>
+
                                                 </div>
 
                                                 <div class="row">
@@ -1203,7 +1213,6 @@
                                                             </select>
                                                     </div>
 
-                                                    
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-4">
@@ -1763,7 +1772,9 @@
                                     <li class="item_sorting_btn"
                                         data-isotope-option='{ "sortBy": "original-order" }'>ID
                                     </li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Product Name</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "name" }'>Product
+                                        Name
+                                    </li>
                                     <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "product-num" }'>
                                         Barcode
                                     </li>
@@ -1989,8 +2000,10 @@
                                                                     <div class="product_name_container">
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Hayvan
-                                                                            CiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligi</a></div>
-                                                                        <div class="cart-product-text">George Orwell</div>
+                                                                            CiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligiCiftligi</a>
+                                                                        </div>
+                                                                        <div class="cart-product-text">George Orwell
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -2013,7 +2026,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Sineklerin
                                                                             Tanrisi</a></div>
-                                                                        <div class="cart-product-text">William Golding</div>
+                                                                        <div class="cart-product-text">William Golding
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -2080,7 +2094,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Hayvan
                                                                             Ciftligi</a></div>
-                                                                        <div class="cart-product-text">George Orwell</div>
+                                                                        <div class="cart-product-text">George Orwell
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -2103,7 +2118,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Sineklerin
                                                                             Tanrisi</a></div>
-                                                                        <div class="cart-product-text">William Golding</div>
+                                                                        <div class="cart-product-text">William Golding
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -2170,7 +2186,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Hayvan
                                                                             Ciftligi</a></div>
-                                                                        <div class="cart-product-text">George Orwell</div>
+                                                                        <div class="cart-product-text">George Orwell
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -2193,7 +2210,8 @@
                                                                         <div class="cart-product-name"><a
                                                                                 href="product.html">Sineklerin
                                                                             Tanrisi</a></div>
-                                                                        <div class="cart-product-text">William Golding</div>
+                                                                        <div class="cart-product-text">William Golding
+                                                                        </div>
                                                                     </div>
                                                                 </a>
                                                             </div>
@@ -2243,11 +2261,21 @@
                                     <li class="item_sorting_btn"
                                         data-isotope-option='{ "sortBy": "original-order" }'>Date
                                     </li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "user-name" }'>User Name</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "user-surname" }'>User Surname</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "book-name" }'>Book Name</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "decr-rate" }'>Decreasing Rate</li>
-                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "incr-rate" }'>Increasing Rate</li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "user-name" }'>User
+                                        Name
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "user-surname" }'>User
+                                        Surname
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "book-name" }'>Book
+                                        Name
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "decr-rate" }'>
+                                        Decreasing Rate
+                                    </li>
+                                    <li class="item_sorting_btn" data-isotope-option='{ "sortBy": "incr-rate" }'>
+                                        Increasing Rate
+                                    </li>
                                 </ul>
                             </div>
 
@@ -2285,7 +2313,8 @@
                                                     <!-- Delete button -->
                                                     <a href="#" class="trans_200" data-toggle="collapse"><i
                                                             style="font-size: 30px; color: #4a4a4a"
-                                                            class="fa product_text" title="Delete this review">&#xf014;</i></a>
+                                                            class="fa product_text"
+                                                            title="Delete this review">&#xf014;</i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2332,7 +2361,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_name_container">
-                                                        <div class="review-product-name txt-left"><a href="product.html">Seker
+                                                        <div class="review-product-name txt-left"><a
+                                                                href="product.html">Seker
                                                             PortakaliPortakaliPortakaliPortakali</a>
                                                         </div>
                                                         <div class="review-product-text">José Mauro de Vasconcelos</div>
@@ -2391,7 +2421,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_name_container">
-                                                        <div class="review-product-name txt-left"><a href="product.html">Kürk
+                                                        <div class="review-product-name txt-left"><a
+                                                                href="product.html">Kürk
                                                             Mantolu</a>
                                                         </div>
                                                         <div class="review-product-text">José Mauro de Vasconcelos</div>
