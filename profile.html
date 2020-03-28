@@ -280,7 +280,7 @@
                                                             </div>
                                                             <input type="email" id="change_name"
                                                                    class="checkout_input form-control"
-                                                                   placeholder="--Name--">
+                                                                   placeholder="Name">
                                                         </div>
                                                         <div>
                                                             <!-- Surname -->
@@ -290,7 +290,7 @@
                                                             </div>
                                                             <input type="email" id="change_surname"
                                                                    class="checkout_input form-control"
-                                                                   placeholder="--Surname--">
+                                                                   placeholder="Surname">
                                                         </div>
                                                         <div>
                                                             <br>
@@ -300,7 +300,7 @@
                                                             </div>
                                                             <input type="email" id="change_email"
                                                                    class="checkout_input form-control"
-                                                                   placeholder="--E-Mail--">
+                                                                   placeholder="E-Mail">
                                                         </div>
                                                         <div>
                                                             <br>
@@ -308,8 +308,8 @@
                                                             <div class="login-text p-b-10" style="color: black;">Birth
                                                                 Date
                                                             </div>
-                                                            <input type="date" id="change_birthdate"
-                                                                   class="checkout_input form-control"
+                                                            <input type="text" id="change_birthdate"
+                                                                   class="checkout_input form-control date"
                                                                    placeholder="g/a/y">
                                                         </div>
                                                         <div>
@@ -318,9 +318,9 @@
                                                             <div class="login-text p-b-10" style="color: black;">Phone
                                                                 Number
                                                             </div>
-                                                            <input type="phone" id="change_phone"
-                                                                   class="checkout_input form-control"
-                                                                   placeholder="Phone No.">
+                                                            <input type="text" id="change_phone"
+                                                                   class="checkout_input form-control phone_mask"
+                                                                   placeholder="(XXX) XXX XX XX">
                                                         </div>
                                                         <div class="login_extra">
                                                             <br>
@@ -500,9 +500,8 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="profile-order-text">
-                                                            12.03.2020
-                                                            <br>
-                                                            14:30
+                                                            <div class="date">12.03.2020</div>
+                                                            <div class="time">14:30</div>
                                                         </div>
                                                     </div>
                                                     <div class="col">
@@ -586,9 +585,8 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="profile-order-text">
-                                                            12.03.2020
-                                                            <br>
-                                                            14:30
+                                                            <div class="date">12.03.2020</div>
+                                                            <div class="time">14:30</div>
                                                         </div>
                                                     </div>
                                                     <div class="col">
@@ -672,9 +670,8 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="profile-order-text">
-                                                            12.03.2020
-                                                            <br>
-                                                            14:30
+                                                            <div class="date">12.03.2020</div>
+                                                            <div class="time">14:30</div>
                                                         </div>
                                                     </div>
                                                     <div class="col">
@@ -946,9 +943,9 @@
                                                         <div class="login-text p-b-10" style="color: black;">Phone
                                                             Number
                                                         </div>
-                                                        <input type="phone" id="billing_address_phone"
-                                                               class="checkout_input form-control"
-                                                               placeholder="Phone Number" required="required">
+                                                        <input type="text" id="billing_address_phone"
+                                                               class="checkout_input form-control phone_mask"
+                                                               placeholder="(XXX) XXX XX XX" required="required">
                                                     </div>
 
                                                     <!-- Email -->
@@ -1150,9 +1147,9 @@
                                                                 <div class="login-text p-b-10" style="color: black;">Phone
                                                                     Number
                                                                 </div>
-                                                                <input type="phone" id="billing_address_update_phone"
-                                                                       class="checkout_input form-control"
-                                                                       placeholder="Phone Number" required="required">
+                                                                <input type="text" id="billing_address_update_phone"
+                                                                       class="checkout_input form-control phone_mask"
+                                                                       placeholder="(XXX) XXX XX XX" required="required">
                                                             </div>
 
                                                             <!-- Email -->
@@ -1350,9 +1347,9 @@
                                                                 <div class="login-text p-b-10" style="color: black;">Phone
                                                                     Number
                                                                 </div>
-                                                                <input type="phone" id="billing_address_update_phone_id"
-                                                                       class="checkout_input form-control"
-                                                                       placeholder="Phone Number" required="required">
+                                                                <input type="text" id="billing_address_update_phone_id"
+                                                                       class="checkout_input form-control phone_mask"
+                                                                       placeholder="(XXX) XXX XX XX" required="required">
                                                             </div>
 
                                                             <!-- Email -->
@@ -1551,9 +1548,9 @@
                                                         <div class="login-text p-b-10" style="color: black;">Phone
                                                             Number
                                                         </div>
-                                                        <input type="phone" id="delivery_address_phone"
-                                                               class="checkout_input form-control"
-                                                               placeholder="Phone Number" required="required">
+                                                        <input type="text" id="textbox"
+                                                               class="checkout_input form-control phone_mask"
+                                                               placeholder="(XXX) XXX XX XX" required="required">
                                                     </div>
 
                                                     <!-- Email -->
@@ -1755,9 +1752,9 @@
                                                                 <div class="login-text p-b-10" style="color: black;">Phone
                                                                     Number
                                                                 </div>
-                                                                <input type="phone" id="delivery_address_update_phone"
-                                                                       class="checkout_input form-control"
-                                                                       placeholder="Phone Number" required="required">
+                                                                <input type="text" id="delivery_address_update_phone"
+                                                                       class="checkout_input form-control phone_mask"
+                                                                       placeholder="(XXX) XXX XX XX" required="required">
                                                             </div>
 
                                                             <!-- Email -->
@@ -1817,7 +1814,7 @@
                                         <div class="media">
                                             <div class="media-body row">
                                                 <div class="col-lg-10">
-                                                    <h4>02.02.2020</h4>
+                                                    <h4 class="date">02.02.2020</h4>
                                                     <i class="fa fa-star" style="color:#fbd600"></i>
                                                     <i class="fa fa-star" style="color:#fbd600"></i>
                                                     <i class="fa fa-star-half-full" style="color:#fbd600"></i>
@@ -1895,7 +1892,7 @@
                                     <div class="review_item">
                                         <div class="media-body row">
                                             <div class="col-lg-10">
-                                                <h4>01.02.2020</h4>
+                                                <h4 class="date">01.02.2020</h4>
                                                 <i class="fa fa-star" style="color:#fbd600"></i>
                                                 <i class="fa fa-star" style="color:#fbd600"></i>
                                                 <i class="fa fa-star-half-full" style="color:#fbd600"></i>
@@ -1988,12 +1985,12 @@
                         <div class="col-lg-4 footer_col">
                             <ul class="footer_list">
                                 <li>
-                                    <a href="#">
+                                    <a href="membership.html" target="_blank">
                                         <div>Terms and Conditions</div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="mailto: oak.bookyourshelf@gmail.com">
                                         <div>Contact</div>
                                     </a>
                                 </li>
@@ -2046,7 +2043,8 @@
 <script src="js/custom.js"></script>
 <script src="js/active.js"></script>
 <script src="js/checkout.js"></script>
-
+<script src="js/input-mask.js"></script>
+<script src="js/jquery.mask.js"></script>
 
 </body>
 

@@ -127,10 +127,13 @@
 .tab-content-text {
     color: #4a4a4a;
     font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .product-container-padding {
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 .product-row
@@ -177,9 +180,11 @@
 
 .search-value-text
 {
-    font-size: 20px;
+    font-size: 18px;
     color: #4a4a4a!important;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .search-value-height

@@ -921,6 +921,8 @@ section
 	color: #4a4a4a;
 	font-weight: 500;
 	margin-top: 1px;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .product_category a:hover
 {
@@ -1513,4 +1515,123 @@ section
 
 .sale_price del {
 	color: #b3b3b3;
+}
+.products_dropdown
+{
+	cursor: pointer;
+}
+
+.products_dropdown i
+{
+	margin-left: 9px;
+	font-size: 14px;
+	color: #bcbcbc;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.products_dropdown:hover i
+{
+	color: #000000;
+}
+.products_dropdown > ul
+{
+	position: absolute;
+	top: 100%;
+	right: -15px;
+	visibility: hidden;
+	opacity: 0;
+	width: 100px;
+	z-index: 111111;
+	text-align: right;
+	background: #f6f8fa;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 13px;
+	padding-bottom: 15px;
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.products_dropdown ul li:not(:last-child)
+{
+	margin-bottom: 7px;
+}
+.products_dropdown ul li
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #bcbcbc;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.products_dropdown ul li:hover
+{
+	color: #000000;
+}
+.products_dropdown:hover > ul
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.product_dropdown_sorting
+{
+	position: relative;
+}
+
+.isotope_filter_text span,
+.isotope_sorting_text span
+{
+	font-size: 16px;
+	font-weight: 400;
+	color: #969696;
+}
+
+.product_dropdown_filter
+{
+	width: 114px;
+	position: relative;
+}
+
+.page_nav_row
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.page_nav ul li
+{
+	width: 32px;
+	height: 32px;
+	border: solid 2px transparent;
+	text-align: center;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.page_nav ul li:not(:last-of-type)
+{
+	margin-right: 8px;
+}
+.page_nav ul li.active,
+.page_nav ul li:hover
+{
+	border: solid 2px #fbaa1d;
+	border-radius: 2px;
+}
+.page_nav ul li a {
+	display: block;
+	font-size: 14px;
+	color: #fbaa1d;
 }

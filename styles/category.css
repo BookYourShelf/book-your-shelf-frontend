@@ -992,7 +992,9 @@ section
 {
 	text-align: center;
 	max-width: 320px;
-	height: 55px;
+	height: 50px;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .product_name a
 {
@@ -1550,6 +1552,9 @@ section
 	font-size: 14px;
 	font-weight: 300;
 	color: #4a4a4a;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .sidebar_title
@@ -1560,6 +1565,9 @@ section
 	max-width: 320px;
 	height: 55px;
 	padding-top:12px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .sidebar_title a
@@ -1668,6 +1676,9 @@ section
 .expand_element_text {
 	display:inline;
 	cursor: pointer;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .expand_element_text:hover {
