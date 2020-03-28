@@ -8,6 +8,7 @@
     <meta name="description" content="Little Closet template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap-multiselect.css">
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Favicon  -->
     <link rel="icon" href="images/logo/book_your_shelf_tab.png">
@@ -611,14 +612,13 @@
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Category
                                                     </div>
-                                                    <select name="billing_address_title" id="new_campaign_category"
-                                                            class="dropdown_item_select checkout_input"
+                                                    <select name="campaign_update_categories"
+                                                            id="new_campaign_categories" multiple="multiple"
                                                             require="required">
-                                                        <option>SELECT</option>
-                                                        <option>ALL</option>
-                                                        <option>LITERATURE</option>
-                                                        <option>NOVEL</option>
-                                                        <option>POET</option>
+                                                        <option value="literature">Literature</option>
+                                                        <option value="novel">Novel</option>
+                                                        <option value="poet">Poet</option>
+                                                        <option value="comicon">Comicon</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -2761,6 +2761,8 @@
 <script src="js/admin-panel.js"></script>
 <script src="js/input-mask.js"></script>
 <script src="js/jquery.mask.js"></script>
+<script src="js/checkbox-dropdown.js"></script>
+<script src="js/bootstrap-multiselect.js"></script>
 
 </body>
 
