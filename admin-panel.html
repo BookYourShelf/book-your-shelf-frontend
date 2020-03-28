@@ -413,12 +413,12 @@
                         </div>
 
                         <!-- Category form -->
-                        <div id="billing_address_column" class="collapse">
+                        <div id="new_category" class="collapse">
 
                             <div class="address-container">
                                 <div class="billingAddress">
                                     <div class="checkout_form_container">
-                                        <form action="#" id="billing_address_form" class="checkout_form">
+                                        <form action="#" id="new_category_form" class="checkout_form">
 
                                             <!-- Name -->
                                             <div>
@@ -426,7 +426,7 @@
                                                     Category Name
                                                 </div>
 
-                                                <input type="text" id="billing_address_name"
+                                                <input type="text" id="new_category_name"
                                                        class="checkout_input form-control"
                                                        placeholder="Category Name" required="required">
                                             </div>
@@ -783,7 +783,7 @@
                     <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="product-tab">
                         <!-- Add campaign button -->
                         <div class="address-element-padding">
-                            <a href="#billing_address_column" class="trans_200" data-toggle="collapse">
+                            <a href="#new_product" class="trans_200" data-toggle="collapse">
                                 <div class="billingAddress">
                                     <div class="product_content">
                                         <div style="align-items: center; justify-content: center"
@@ -797,23 +797,22 @@
                         </div>
 
                         <!-- Category form -->
-                        <div id="billing_address_column" class="collapse">
-
+                        <div id="new_product" class="collapse">
                             <div class="address-container">
                                 <div class="billingAddress">
                                     <div class="checkout_form_container">
-                                        <form action="#" id="billing_address_form" class="checkout_form">
+                                        <form action="#" id="new_product_form" class="checkout_form">
                                             <select name="book_type" id="book_type"
-                                                                class="dropdown_item_select checkout_input"
-                                                                require="required">
-                                                            <option>Select Product Type</option>
-                                                            <option>Book</option>
-                                                            <option>E-Book</option>
-                                                            <option>Audio Book</option>
-                                                            <option>E-Book Reader</option>
-                                                            <option>E-Book Reader Case</option>
-                                                            <option>Book Case</option>
-                                                        </select>
+                                                    class="dropdown_item_select checkout_input"
+                                                    require="required">
+                                                <option>Select Product Type</option>
+                                                <option>Book</option>
+                                                <option>E-Book</option>
+                                                <option>Audio Book</option>
+                                                <option>E-Book Reader</option>
+                                                <option>E-Book Reader Case</option>
+                                                <option>Book Case</option>
+                                            </select>
                                             <br><br>
                                             <div id="book" class="d-none">
                                                 <!-- Name -->
@@ -823,8 +822,8 @@
                                                             Product Name
                                                         </div>
                                                         <input type="text" id="book_product_name_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Product Name" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Product Name" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -832,8 +831,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_barcode_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Barcode" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Barcode" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -841,50 +840,45 @@
                                                         </div>
 
                                                         <input type="number" id="book_stock_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Stock" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Stock" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
 
                                                 <div class="row m-t-20">
-                                                    
+
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Price
                                                         </div>
                                                         <input type="number" id="book_price_input"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Price" required="required"
-                                                            min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Price" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Category
                                                         </div>
                                                         <select name="category" id="book_category_input"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>HOME</option>
-                                                                <option>WORKPLACE</option>
-                                                                <option>SUMMERY</option>
-                                                                <option>OTHER</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Literature</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Subcategory
                                                         </div>
                                                         <select name="subcategory" id="book_subcategory_input"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>HOME</option>
-                                                                <option>WORKPLACE</option>
-                                                                <option>SUMMERY</option>
-                                                                <option>OTHER</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Novel</option>
+                                                            <option>Poet</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -894,9 +888,9 @@
                                                         </div>
 
                                                         <input type="text" id="book_published_year_input"
-                                                                class="checkout_input form-control year"
-                                                                placeholder="Published Year" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control year"
+                                                               placeholder="Published Year" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -904,8 +898,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_language_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Language" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Language" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -913,8 +907,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_translator_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Translator" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Translator" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -922,8 +916,9 @@
                                                         </div>
 
                                                         <input type="text" id="book_authors_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Authors(Seperate with comma)" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Authors(Separate with comma)"
+                                                               required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -933,8 +928,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_isbn_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="ISBN" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="ISBN" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -942,8 +937,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_publisher_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Publisher" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Publisher" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -951,8 +946,9 @@
                                                         </div>
 
                                                         <input type="text" id="book_keywords_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Keywords" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Keywords(Separate with comma)"
+                                                               required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -962,8 +958,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_short_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Short Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Short Description" required="required">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -971,8 +967,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_long_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Long Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Long Description" required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -981,50 +977,50 @@
                                                             Media Type
                                                         </div>
                                                         <select name="category" id="book_media_type_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>Hard Cover</option>
-                                                                <option>Soft Cover</option>
-                                                                <option>Pocket Size</option>
-                                                                <option>Tablet Size</option>
-                                                                <option>Monthly</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Hard Cover</option>
+                                                            <option>Soft Cover</option>
+                                                            <option>Pocket Size</option>
+                                                            <option>Tablet Size</option>
+                                                            <option>Monthly</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Paper Type
                                                         </div>
                                                         <select name="category" id="book_paper_type_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>Coated</option>
-                                                                <option>Uncoated</option>
-                                                                <option>American Bristol</option>
-                                                                <option>Tracing</option>
-                                                                <option>Canvas</option>
-                                                                <option>Cellophane</option>
-                                                                <option>Craft</option>
-                                                                <option>Matte Coated Plaster</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Coated</option>
+                                                            <option>Uncoated</option>
+                                                            <option>American Bristol</option>
+                                                            <option>Tracing</option>
+                                                            <option>Canvas</option>
+                                                            <option>Cellophane</option>
+                                                            <option>Craft</option>
+                                                            <option>Matte Coated Plaster</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Binding Type
                                                         </div>
                                                         <select name="category" id="book_binding_type_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>Saddle Stitching</option>
-                                                                <option>Case Binding</option>
-                                                                <option>Case Wrapped</option>
-                                                                <option>Plastic Coil</option>
-                                                                <option>Perfect Binding</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Saddle Stitching</option>
+                                                            <option>Case Binding</option>
+                                                            <option>Case Wrapped</option>
+                                                            <option>Plastic Coil</option>
+                                                            <option>Perfect Binding</option>
+                                                        </select>
                                                     </div>
-                                                    
+
                                                 </div>
                                                 <div class="row m-t-20">
                                                     <div class="col-md-3">
@@ -1032,48 +1028,50 @@
                                                             Page Number
                                                         </div>
 
-                                                        <input type="text" id="book_page_number_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Page Number" required="required">
+                                                        <input type="number" id="book_page_number_input"
+                                                               class="checkout_input form-control" min=0
+                                                               placeholder="Page Number" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Edition Number
                                                         </div>
 
-                                                        <input type="text" id="book_edition_number_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Edition Number" required="required">
+                                                        <input type="number" id="book_edition_number_input"
+                                                               class="checkout_input form-control" min=0
+                                                               placeholder="Edition Number" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Height
                                                         </div>
 
-                                                        <input type="text" id="book_height_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Height" required="required">
+                                                        <input type="number" step="0.01" id="book_height_input"
+                                                               class="checkout_input form-control" min="0"
+                                                               placeholder="Height" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Width
                                                         </div>
 
-                                                        <input type="text" id="book_width_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Width" required="required">
+                                                        <input type="number" step="0.01" id="book_width_input"
+                                                               class="checkout_input form-control" min="0"
+                                                               placeholder="Width" required="required">
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div><!--ERROR--></div>
                                                 <br>
                                                 <!-- Button -->
                                                 <div class="row m-t-20">
                                                     <div class="col-md-3">
-                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a>
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-9">
-                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Add product</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1086,17 +1084,17 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_product_name_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Product Name" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Product Name" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Barcode
                                                         </div>
 
-                                                        <input type="text" id="ebook_product_name_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Barcode" required="required">
+                                                        <input type="text" id="ebook_product_barcode_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Barcode" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1104,54 +1102,47 @@
                                                         </div>
 
                                                         <input type="number" id="ebook_stock_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Stock" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Stock" required="required"
+                                                               min=0>
                                                     </div>
 
                                                 </div>
 
                                                 <div class="row m-t-20">
-                                                    
+
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Price
                                                         </div>
                                                         <input type="number" id="ebook_price_input"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Price" required="required"
-                                                            min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Price" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Category
                                                         </div>
                                                         <select name="category" id="ebook_category_input"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>HOME</option>
-                                                                <option>WORKPLACE</option>
-                                                                <option>SUMMERY</option>
-                                                                <option>OTHER</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Literature</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Subcategory
                                                         </div>
                                                         <select name="subcategory" id="ebook_subcategory_input"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>HOME</option>
-                                                                <option>WORKPLACE</option>
-                                                                <option>SUMMERY</option>
-                                                                <option>OTHER</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Novel</option>
+                                                            <option>Poet</option>
+                                                        </select>
                                                     </div>
-
-                                                    
                                                 </div>
                                                 <div class="row m-t-20">
                                                     <div class="col-md-3">
@@ -1160,9 +1151,9 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_published_year_input"
-                                                                class="checkout_input form-control year"
-                                                                placeholder="Published Year" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control year"
+                                                               placeholder="Published Year" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1170,8 +1161,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_language_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Language" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Language" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1179,8 +1170,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_translator_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Translator" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Translator" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1188,8 +1179,9 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_authors_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Authors(Seperate with comma)" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Authors(Separate with comma)"
+                                                               required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1199,8 +1191,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_isbn_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="ISBN" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="ISBN" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1208,8 +1200,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_publisher_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Publisher" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Publisher" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1217,8 +1209,9 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_keywords_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Keywords" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Keywords(Separate with comma)"
+                                                               required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1228,8 +1221,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_short_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Short Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Short Description" required="required">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1237,8 +1230,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_long_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Long Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Long Description" required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1247,29 +1240,30 @@
                                                             Page Number
                                                         </div>
 
-                                                        <input type="text" id="ebook_page_number_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Page Number" required="required">
+                                                        <input type="number" id="ebook_page_number_input"
+                                                               class="checkout_input form-control" min="0"
+                                                               placeholder="Page Number" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
-                                                            Filesize
+                                                            File Size
                                                         </div>
 
-                                                        <input type="text" id="ebook_filesize_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Page Number" required="required">
+                                                        <input type="number" id="ebook_filesize_input"
+                                                               class="checkout_input form-control" min="0"
+                                                               placeholder="File Size" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             File Format
                                                         </div>
                                                         <select name="file_format" id="ebook_file_format_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>PDF</option>
-                                                                <option>EPUB</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>PDF</option>
+                                                            <option>EPUB</option>
+                                                        </select>
                                                     </div>
                                                 </div>
 
@@ -1278,10 +1272,12 @@
                                                 <!-- Button -->
                                                 <div class="row m-t-20">
                                                     <div class="col-md-4">
-                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a>
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-8">
-                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Add product</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1294,8 +1290,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_product_name_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Product Name" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Product Name" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1303,8 +1299,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_barcode_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Barcode" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Barcode" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1312,50 +1308,45 @@
                                                         </div>
 
                                                         <input type="number" id="audiobook_stock_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Stock" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Stock" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
 
                                                 <div class="row m-t-20">
-                                                    
+
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Price
                                                         </div>
                                                         <input type="number" id="audiobook_price_input"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Price" required="required"
-                                                            min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Price" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Category
                                                         </div>
                                                         <select name="category" id="audiobook_category_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>HOME</option>
-                                                                <option>WORKPLACE</option>
-                                                                <option>SUMMERY</option>
-                                                                <option>OTHER</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Literature</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Subcategory
                                                         </div>
                                                         <select name="subcategory" id="audiobook_subcategory_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>SELECT</option>
-                                                                <option>HOME</option>
-                                                                <option>WORKPLACE</option>
-                                                                <option>SUMMERY</option>
-                                                                <option>OTHER</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>Novel</option>
+                                                            <option>Poet</option>
+                                                        </select>
                                                     </div>
 
                                                 </div>
@@ -1366,9 +1357,9 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_published_year_input"
-                                                                class="checkout_input form-control year"
-                                                                placeholder="Published Year" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control year"
+                                                               placeholder="Published Year" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1376,8 +1367,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_language_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Language" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Language" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1385,8 +1376,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_translator_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Translator" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Translator" required="required">
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1394,8 +1385,9 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_authors_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Authors(Seperate with comma)" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Authors(Separate with comma)"
+                                                               required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1405,8 +1397,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_isbn_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="ISBN" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="ISBN" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1414,8 +1406,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_publisher_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Publisher" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Publisher" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1423,8 +1415,9 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_keywords_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Keywords" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Keywords(Separate with comma)"
+                                                               required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1434,8 +1427,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_short_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Short Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Short Description" required="required">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1443,8 +1436,8 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_long_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Long Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Long Description" required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1454,9 +1447,9 @@
                                                         </div>
 
                                                         <input type="number" id="audiobook_length_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Length (In minutes)" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Length (In minutes)" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1464,14 +1457,15 @@
                                                         </div>
 
                                                         <input type="text" id="audiobook_narrator_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Narrated By" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Narrated By" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             &nbsp;
                                                         </div>
-                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a>
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -1480,7 +1474,8 @@
                                                 <!-- Button -->
                                                 <div class="row m-t-20">
                                                     <div class="col-md-12">
-                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Add product</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1493,8 +1488,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_reader_product_name_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Product Name" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Product Name" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1502,8 +1497,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_reader_barcode_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Barcode" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Barcode" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1511,9 +1506,9 @@
                                                         </div>
 
                                                         <input type="number" id="ebook_reader_stock_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Stock" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Stock" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1523,8 +1518,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_reader_short_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Short Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Short Description" required="required">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1532,8 +1527,35 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_reader_long_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Long Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Brand
+                                                        </div>
+                                                        <input type="text" id="ebook_reader_brand_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Model
+                                                        </div>
+                                                        <input type="text" id="ebook_reader_model_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Model" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="ebook_reader_price_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Price" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1542,51 +1564,16 @@
                                                             Color
                                                         </div>
                                                         <input type="text" id="ebook_reader_color_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Color" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Color" required="required">
                                                     </div>
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Brand
-                                                        </div>
-                                                        <input type="text" id="ebook_reader_brand_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Brand" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Price
-                                                        </div>
-                                                        <input type="number" id="ebook_reader_price_input"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Price" required="required"
-                                                            min=0>
-                                                    </div>
-                                                </div>
-                                                <div class="row m-t-20">
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Model
-                                                        </div>
-                                                        <input type="text" id="ebook_reader_model_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Model" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
+                                                    <div class="col-md-8">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Specification
                                                         </div>
                                                         <input type="text" id="ebook_reader_specification_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Specification" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Specification
-                                                        </div>
-                                                        <input type="text" id="ebook_reader_specification_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Specification" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Specification" required="required">
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1595,27 +1582,27 @@
                                                             Weight
                                                         </div>
                                                         <input type="number" id="ebook_reader_weight_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Weight" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Weight" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Width
                                                         </div>
                                                         <input type="number" step="0.01" id="ebook_reader_width_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Width" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Width" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Height
                                                         </div>
                                                         <input type="number" step="0.01" id="ebook_reader_height_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Height" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Height" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1624,27 +1611,28 @@
                                                             Screen Size
                                                         </div>
                                                         <input type="number" id="ebook_reader_screen_size_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Screen Size" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Screen Size" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Battery Life
                                                         </div>
-                                                        <input type="number" step="0.1" id="ebook_reader_battery_life_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Battery Life" required="required"
-                                                                min=0>
+                                                        <input type="number" step="0.1"
+                                                               id="ebook_reader_battery_life_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Battery Life" required="required"
+                                                               min=0>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Resolution
                                                         </div>
                                                         <input type="number" id="ebook_reader_resolution_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Resolution" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Resolution" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1653,44 +1641,49 @@
                                                             Glare Free Screen
                                                         </div>
                                                         <select name="subcategory" id="ebook_reader_glare_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Water Proof
                                                         </div>
                                                         <select name="subcategory" id="ebook_reader_water_proof_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Auto Adjusting Light
                                                         </div>
-                                                        <select name="subcategory" id="ebook_reader_auto_adjusting_light_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                        <select name="subcategory"
+                                                                id="ebook_reader_auto_adjusting_light_select"
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Buttons
                                                         </div>
                                                         <select name="subcategory" id="ebook_reader_buttons_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1699,44 +1692,49 @@
                                                             Wifi
                                                         </div>
                                                         <select name="subcategory" id="ebook_reader_wifi_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Cellular
                                                         </div>
                                                         <select name="subcategory" id="ebook_reader_cellular_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Backlight
                                                         </div>
                                                         <select name="subcategory" id="ebook_reader_backlight_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Warm Backlight
                                                         </div>
-                                                        <select name="subcategory" id="ebook_reader_warm_backlight_select"
-                                                                    class="dropdown_item_select checkout_input"
-                                                                    require="required">
-                                                                <option>No</option>
-                                                                <option>Yes</option>
-                                                            </select>
+                                                        <select name="subcategory"
+                                                                id="ebook_reader_warm_backlight_select"
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>No</option>
+                                                            <option>Yes</option>
+                                                        </select>
                                                     </div>
                                                 </div>
 
@@ -1745,10 +1743,12 @@
                                                 <!-- Button -->
                                                 <div class="row m-t-20">
                                                     <div class="col-md-3">
-                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a>
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-9">
-                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Add product</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1761,8 +1761,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_reader_case_product_name_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Product Name" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Product Name" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1770,8 +1770,8 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_reader_case_barcode_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Barcode" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Barcode" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1779,9 +1779,9 @@
                                                         </div>
 
                                                         <input type="number" id="ebook_reader_case_stock_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Stock" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Stock" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1790,9 +1790,10 @@
                                                             Short Description
                                                         </div>
 
-                                                        <input type="text" id="ebook_reader_case_short_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Short Description" required="required">
+                                                        <input type="text"
+                                                               id="ebook_reader_case_short_description_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Short Description" required="required">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1800,8 +1801,35 @@
                                                         </div>
 
                                                         <input type="text" id="ebook_reader_case_long_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Long Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Brand
+                                                        </div>
+                                                        <input type="text" id="ebook_reader_case_brand_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Model
+                                                        </div>
+                                                        <input type="text" id="ebook_reader_case_case_model_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Case Model" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="ebook_reader_case_price_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Price" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1810,51 +1838,24 @@
                                                             Color
                                                         </div>
                                                         <input type="text" id="ebook_reader_case_color_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Color" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Brand
-                                                        </div>
-                                                        <input type="text" id="ebook_reader_case_brand_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Brand" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Price
-                                                        </div>
-                                                        <input type="number" id="ebook_reader_case_price_input"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Price" required="required"
-                                                            min=0>
-                                                    </div>
-                                                </div>
-                                                <div class="row m-t-20">
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Case Model
-                                                        </div>
-                                                        <input type="text" id="ebook_reader_case_case_model_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Case Model" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Color" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Reader Brand
                                                         </div>
                                                         <input type="text" id="ebook_reader_case_reader_brand_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Reader Brand" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Reader Brand" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
                                                             Reader Model
                                                         </div>
                                                         <input type="text" id="ebook_reader_case_reader_model_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Reader Model" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Reader Model" required="required">
                                                     </div>
                                                 </div>
 
@@ -1863,10 +1864,12 @@
                                                 <!-- Button -->
                                                 <div class="row m-t-20">
                                                     <div class="col-md-4">
-                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a>
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-8">
-                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                        <div class="login_button trans_200"><a href="#">Add product</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1879,8 +1882,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_case_product_name_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Product Name" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Product Name" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1888,8 +1891,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_case_barcode_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Barcode" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Barcode" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1897,9 +1900,9 @@
                                                         </div>
 
                                                         <input type="number" id="book_case_stock_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Stock" required="required"
-                                                                min=0>
+                                                               class="checkout_input form-control"
+                                                               placeholder="Stock" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1909,8 +1912,8 @@
                                                         </div>
 
                                                         <input type="text" id="book_case_short_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Short Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Short Description" required="required">
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="login-text p-b-10" style="color: black;">
@@ -1918,8 +1921,35 @@
                                                         </div>
 
                                                         <input type="text" id="book_case_long_description_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Long Description" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Brand
+                                                        </div>
+                                                        <input type="text" id="book_case_brand_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Model
+                                                        </div>
+                                                        <input type="text" id="book_case_model_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Model" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="book_case_price_input"
+                                                               class="checkout_input form-control"
+                                                               placeholder="Price" required="required"
+                                                               min=0>
                                                     </div>
                                                 </div>
                                                 <div class="row m-t-20">
@@ -1928,58 +1958,38 @@
                                                             Color
                                                         </div>
                                                         <input type="text" id="book_case_color_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Color" required="required">
+                                                               class="checkout_input form-control"
+                                                               placeholder="Color" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
-                                                            Brand
+                                                            Width
                                                         </div>
-                                                        <input type="text" id="book_case_brand_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Brand" required="required">
+                                                        <input type="number" step="0.01" id="book_case_case_width_input"
+                                                               class="checkout_input form-control" min="0"
+                                                               placeholder="Width" required="required">
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="login-text p-b-10" style="color: black;">
-                                                            Price
+                                                            Height
                                                         </div>
-                                                        <input type="number" id="book_case_price_input"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Price" required="required"
-                                                            min=0>
+                                                        <input type="number" step="0.01"
+                                                               id="book_case_case_height_input"
+                                                               class="checkout_input form-control" min="0"
+                                                               placeholder="Height" required="required">
                                                     </div>
                                                 </div>
-                                                <div class="row m-t-20">
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Case Width
-                                                        </div>
-                                                        <input type="text" id="book_case_case_width_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Case Model" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            Case Height
-                                                        </div>
-                                                        <input type="text" id="book_case_case_height_input"
-                                                                class="checkout_input form-control"
-                                                                placeholder="Reader Brand" required="required">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="login-text p-b-10" style="color: black;">
-                                                            &nbsp;
-                                                        </div>
-                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
-                                                    </div>
-                                                </div>
-
                                                 <div><!--ERROR--></div>
                                                 <br>
                                                 <!-- Button -->
                                                 <div class="row m-t-20">
-                                                    <div class="col-md-12">
-                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                    <div class="col-md-4">
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login_button trans_200"><a href="#">Add product</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2072,7 +2082,7 @@
                                                         </div>
 
                                                         <div class="col-lg-3 col-md-3 col-xs-6">
-                                                            <div class="profile-order-text">20</div>
+                                                            <div class="profile-order-text">Novel</div>
                                                         </div>
 
                                                         <div class="col-lg-3 col-md-3 col-xs-6">
