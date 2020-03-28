@@ -133,3 +133,54 @@
     padding-top: 20px;
     background: #f8f8f8;
 }
+
+.review-product-name {
+    max-width: 250px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.review-product-text
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    max-width: 250px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.review-product-name a
+{
+    font-size: 18px;
+    color: #4a4a4a!important;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.review-product-name a:hover
+{
+    color: #fbaa1d!important;
+}
+
+.cart-product-name {
+    max-width: 800px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cart-product-text
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a4a4a;
+    max-width: 800px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

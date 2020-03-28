@@ -159,11 +159,21 @@
     color: #b3b3b3;
 }
 
+.cart-product-name {
+    max-width: 100px!important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .cart-product-name a
 {
     font-size: 18px;
     color: #4a4a4a!important;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .cart-product-name a:hover

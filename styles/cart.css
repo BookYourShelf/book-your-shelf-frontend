@@ -868,6 +868,13 @@ section
 	color: #4a4a4a;
 }
 
+.product_name {
+	max-width: 550px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
 .product_name a
 {
 	font-size: 18px;
@@ -876,6 +883,7 @@ section
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	max-width: 100px;
 }
 .product_name a:hover
 {
@@ -886,6 +894,10 @@ section
 	font-size: 14px;
 	font-weight: 400;
 	color: #4a4a4a;
+	max-width: 550px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .product_color
 {
