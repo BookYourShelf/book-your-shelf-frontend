@@ -611,13 +611,15 @@
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Category
                                                     </div>
-                                                    <div class="dropdown">
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="#">Action</a>
-                                                            <a class="dropdown-item" href="#">Another action</a>
-                                                            <a class="dropdown-item" href="#">Something else here</a>
-                                                          </div>
-                                                    </div>
+                                                    <select name="billing_address_title" id="book_type"
+                                                                class="dropdown_item_select checkout_input"
+                                                                require="required">
+                                                            <option>SELECT</option>
+                                                            <option>HOME</option>
+                                                            <option>WORKPLACE</option>
+                                                            <option>SUMMERY</option>
+                                                            <option>OTHER</option>
+                                                        </select>
                                                 </div>
 
                                                 
@@ -628,29 +630,13 @@
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Campaign Start Date
                                                     </div>
-                                                    <select name="billing_address_title" id="book_type"
-                                                                class="dropdown_item_select checkout_input form-control"
-                                                                require="required">
-                                                            <option>SELECT</option>
-                                                            <option>HOME</option>
-                                                            <option>WORKPLACE</option>
-                                                            <option>SUMMERY</option>
-                                                            <option>OTHER</option>
-                                                        </select>
+                                                    <input type="text" id="campaign_start_date" class="checkout_input form-control date" placeholder="dd/mm/yyyy" maxlength="10">
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Campaign End Date
                                                     </div>
-                                                    <select name="billing_address_title" id="book_type"
-                                                                class="dropdown_item_select checkout_input form-control"
-                                                                require="required">
-                                                            <option>SELECT</option>
-                                                            <option>HOME</option>
-                                                            <option>WORKPLACE</option>
-                                                            <option>SUMMERY</option>
-                                                            <option>OTHER</option>
-                                                        </select>
+                                                    <input type="text" id="campaign_start_date" class="checkout_input form-control date" placeholder="dd/mm/yyyy" maxlength="10">
                                                 </div>
                                             </div>
 
@@ -806,7 +792,7 @@
                                     <div class="checkout_form_container">
                                         <form action="#" id="billing_address_form" class="checkout_form">
                                             <select name="billing_address_title" id="book_type"
-                                                                class="dropdown_item_select checkout_input form-control"
+                                                                class="dropdown_item_select checkout_input"
                                                                 require="required">
                                                             <option>SELECT</option>
                                                             <option>HOME</option>
