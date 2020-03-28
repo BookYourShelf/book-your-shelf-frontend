@@ -1,6 +1,7 @@
 (function( $ ) {
     $(function() {
         $('.time').mask('00:00');
+        $('.year').mask('0000');
         $('.date_time').mask('00/00/0000 00:00');
         $('.cep').mask('00000-000');
         $('.phone_mask').mask('(000) 000 00 00');
