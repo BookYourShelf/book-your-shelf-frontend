@@ -611,7 +611,7 @@
                                                     <div class="login-text p-b-10" style="color: black;">
                                                         Category
                                                     </div>
-                                                    <select name="billing_address_title" id="book_type"
+                                                    <select name="billing_address_title" id="category"
                                                                 class="dropdown_item_select checkout_input"
                                                                 require="required">
                                                             <option>SELECT</option>
@@ -799,126 +799,955 @@
                                                             <option>E-Book</option>
                                                             <option>Audio Book</option>
                                                             <option>E-Book Reader</option>
+                                                            <option>E-Book Reader Case</option>
+                                                            <option>Book Case</option>
                                                         </select>
+                                            <br><br>
+                                            <div id="book" class="d-none">
+                                                <!-- Name -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Product Name
+                                                        </div>
 
-                                            <!-- Name -->
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Product Name
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Product Name" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Barcode
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Barcode" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Stock
+                                                        </div>
+
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Stock" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
+                                                            class="checkout_input form-control"
+                                                            placeholder="Price" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Category
+                                                        </div>
+                                                        <select name="category" id="category"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>SELECT</option>
+                                                                <option>HOME</option>
+                                                                <option>WORKPLACE</option>
+                                                                <option>SUMMERY</option>
+                                                                <option>OTHER</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Subcategory
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>SELECT</option>
+                                                                <option>HOME</option>
+                                                                <option>WORKPLACE</option>
+                                                                <option>SUMMERY</option>
+                                                                <option>OTHER</option>
+                                                            </select>
                                                     </div>
 
-                                                    <input type="text" id="billing_address_name"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Product Name" required="required">
+                                                    
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Barcode
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Short Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Short Description" required="required">
                                                     </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Long Description
+                                                        </div>
 
-                                                    <input type="text" id="billing_address_name"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Barcode" required="required">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Stock
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Long Description" required="required">
                                                     </div>
-
-                                                    <input type="number" id="billing_address_name"
-                                                            class="checkout_input form-control"
-                                                            placeholder="Stock" required="required">
                                                 </div>
-                                            </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Media Type
+                                                        </div>
+                                                        <select name="category" id="category"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>Hard Cover</option>
+                                                                <option>Soft Cover</option>
+                                                                <option>Pocket Size</option>
+                                                                <option>Tablet Size</option>
+                                                                <option>Monthly</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Paper Type
+                                                        </div>
+                                                        <select name="category" id="category"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>Coated</option>
+                                                                <option>Uncoated</option>
+                                                                <option>American Bristol</option>
+                                                                <option>Tracing</option>
+                                                                <option>Canvas</option>
+                                                                <option>Cellophane</option>
+                                                                <option>Craft</option>
+                                                                <option>Matte Coated Plaster</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Binding Type
+                                                        </div>
+                                                        <select name="category" id="category"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>Saddle Stitching</option>
+                                                                <option>Case Binding</option>
+                                                                <option>Case Wrapped</option>
+                                                                <option>Plastic Coil</option>
+                                                                <option>Perfect Binding</option>
+                                                            </select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Page Number
+                                                        </div>
 
-                                            <div class="row">
+                                                        <input type="text" id="page_number"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Page Number" required="required">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Edition Number
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Edition Number" required="required">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Height
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Height" required="required">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Width
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Width" required="required">
+                                                    </div>
+                                                </div>
                                                 
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Price
+                                                <div><!--ERROR--></div>
+                                                <br>
+                                                <!-- Button -->
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
                                                     </div>
-                                                    <input type="number" id="billing_address_name"
-                                                        class="checkout_input form-control"
-                                                        placeholder="Price" required="required">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Category
+                                                    <div class="col-md-9">
+                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
                                                     </div>
-                                                    <select name="category" id="category"
-                                                                class="dropdown_item_select checkout_input"
-                                                                require="required">
-                                                            <option>SELECT</option>
-                                                            <option>HOME</option>
-                                                            <option>WORKPLACE</option>
-                                                            <option>SUMMERY</option>
-                                                            <option>OTHER</option>
-                                                        </select>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Subcategory
-                                                    </div>
-                                                    <select name="subcategory" id="subcategory"
-                                                                class="dropdown_item_select checkout_input"
-                                                                require="required">
-                                                            <option>SELECT</option>
-                                                            <option>HOME</option>
-                                                            <option>WORKPLACE</option>
-                                                            <option>SUMMERY</option>
-                                                            <option>OTHER</option>
-                                                        </select>
-                                                </div>
-
-                                                
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Short Description
-                                                    </div>
+                                            <div id="e-book" class="d-none">
+                                                <!-- Name -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Product Name
+                                                        </div>
 
-                                                    <input type="text" id="billing_address_name"
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Product Name" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Barcode
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Barcode" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Stock
+                                                        </div>
+
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Stock" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
                                                             class="checkout_input form-control"
-                                                            placeholder="Short Description" required="required">
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Long Description
+                                                            placeholder="Price" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Category
+                                                        </div>
+                                                        <select name="category" id="category"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>SELECT</option>
+                                                                <option>HOME</option>
+                                                                <option>WORKPLACE</option>
+                                                                <option>SUMMERY</option>
+                                                                <option>OTHER</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Subcategory
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>SELECT</option>
+                                                                <option>HOME</option>
+                                                                <option>WORKPLACE</option>
+                                                                <option>SUMMERY</option>
+                                                                <option>OTHER</option>
+                                                            </select>
                                                     </div>
 
-                                                    <input type="text" id="billing_address_name"
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Short Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Short Description" required="required">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Long Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Page Number
+                                                        </div>
+
+                                                        <input type="text" id="page_number"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Page Number" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Filesize
+                                                        </div>
+
+                                                        <input type="text" id="filesize"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Page Number" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            File Format
+                                                        </div>
+                                                        <select name="file_format" id="file_format"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>PDF</option>
+                                                                <option>EPUB</option>
+                                                            </select>
+                                                    </div>
+                                                </div>
+
+                                                <div><!--ERROR--></div>
+                                                <br>
+                                                <!-- Button -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="audiobook" class="d-none">
+                                                <!-- Name -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Product Name
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Product Name" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Barcode
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Barcode" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Stock
+                                                        </div>
+
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Stock" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
                                                             class="checkout_input form-control"
-                                                            placeholder="Long Description" required="required">
+                                                            placeholder="Price" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Category
+                                                        </div>
+                                                        <select name="category" id="category"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>SELECT</option>
+                                                                <option>HOME</option>
+                                                                <option>WORKPLACE</option>
+                                                                <option>SUMMERY</option>
+                                                                <option>OTHER</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Subcategory
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>SELECT</option>
+                                                                <option>HOME</option>
+                                                                <option>WORKPLACE</option>
+                                                                <option>SUMMERY</option>
+                                                                <option>OTHER</option>
+                                                            </select>
+                                                    </div>
+
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Short Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Short Description" required="required">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Long Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Length (In minutes)
+                                                        </div>
+
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Length (In minutes)" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Narrated By
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Narrated By" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            &nbsp;
+                                                        </div>
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                    </div>
+                                                </div>
+
+                                                <div><!--ERROR--></div>
+                                                <br>
+                                                <!-- Button -->
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="login-text p-b-10" style="color: black;">
-                                                        Book Type
-                                                    </div>
-                                                    <div class="dropdown">
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                            <a class="dropdown-item" href="#">Book</a>
-                                                            <a class="dropdown-item" href="#">E Book</a>
-                                                            <a class="dropdown-item" href="#">Audiobook</a>
-                                                          </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
+                                            <div id="e-book_reader" class="d-none">
+                                                <!-- Name -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Product Name
+                                                        </div>
 
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Product Name" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Barcode
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Barcode" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Stock
+                                                        </div>
+
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Stock" required="required">
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Short Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Short Description" required="required">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Long Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Color
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Color" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Brand
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
+                                                            class="checkout_input form-control"
+                                                            placeholder="Price" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Model
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Model" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Specification
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Specification" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Specification
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Specification" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Weight
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Weight" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Width
+                                                        </div>
+                                                        <input type="number" step="0.01" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Width" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Height
+                                                        </div>
+                                                        <input type="number" step="0.01" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Height" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Screen Size
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Screen Size" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Battery Life
+                                                        </div>
+                                                        <input type="number" step="0.1" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Battery Life" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Resolution
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Resolution" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Glare Free Screen
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Water Proof
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Auto Adjusting Light
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Buttons
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Wifi
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Cellular
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Backlight
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Warm Backlight
+                                                        </div>
+                                                        <select name="subcategory" id="subcategory"
+                                                                    class="dropdown_item_select checkout_input"
+                                                                    require="required">
+                                                                <option>No</option>
+                                                                <option>Yes</option>
+                                                            </select>
+                                                    </div>
+                                                </div>
+
+                                                <div><!--ERROR--></div>
+                                                <br>
+                                                <!-- Button -->
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div id="e-book_reader_case" class="d-none">
+                                                <!-- Name -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Product Name
+                                                        </div>
 
-                                            <div><!--ERROR--></div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Product Name" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Barcode
+                                                        </div>
 
-                                            <!-- Button -->
-                                            <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Barcode" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Stock
+                                                        </div>
 
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Stock" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Short Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Short Description" required="required">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Long Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Color
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Color" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Brand
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
+                                                            class="checkout_input form-control"
+                                                            placeholder="Price" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Case Model
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Case Model" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Reader Brand
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Reader Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Reader Model
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Reader Model" required="required">
+                                                    </div>
+                                                </div>
+
+                                                <div><!--ERROR--></div>
+                                                <br>
+                                                <!-- Button -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="book_case" class="d-none">
+                                                <!-- Name -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Product Name
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Product Name" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Barcode
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Barcode" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Stock
+                                                        </div>
+
+                                                        <input type="number" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Stock" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Short Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Short Description" required="required">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Long Description
+                                                        </div>
+
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Long Description" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Color
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Color" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Brand
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Price
+                                                        </div>
+                                                        <input type="number" id="billing_address_name"
+                                                            class="checkout_input form-control"
+                                                            placeholder="Price" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Case Width
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Case Model" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            Case Height
+                                                        </div>
+                                                        <input type="text" id="billing_address_name"
+                                                                class="checkout_input form-control"
+                                                                placeholder="Reader Brand" required="required">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="login-text p-b-10" style="color: black;">
+                                                            &nbsp;
+                                                        </div>
+                                                        <div class="login_button trans_200"><a href="#">Upload Image</a></div>
+                                                    </div>
+                                                </div>
+
+                                                <div><!--ERROR--></div>
+                                                <br>
+                                                <!-- Button -->
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="login_button trans_200"><a href="#">Add product</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
