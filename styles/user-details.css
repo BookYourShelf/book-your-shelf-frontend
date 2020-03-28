@@ -127,6 +127,7 @@
 .tab-content-text {
     color: #4a4a4a;
     font-size: 20px;
+    word-wrap: break-word;
 }
 
 .product-container-padding {
