@@ -185,3 +185,11 @@
     white-space: nowrap;
 }
 
+.choose_file_button {
+    color: #ffffff!important;
+    cursor: pointer!important;
+}
+
+.choose_file_button:hover {
+    color: #fbaa1d!important;
+}

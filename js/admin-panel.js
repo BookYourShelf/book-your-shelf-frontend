@@ -21,11 +21,11 @@ $('#book_type').change(function (){
         clearOthers();
         $('#book_case').removeClass('d-none');
     }
-})
+});
 
- function updateList() {
-    var input = document.getElementById('file');
-    var output = document.getElementById('fileList');
+function updatePhoto(inputId) {
+    var input = document.getElementById(inputId);
+    var output = document.getElementById(inputId.concat("-list"));
     var children = "";
     for (var i = 0; i < input.files.length; ++i) {
         children += '<li>' + input.files.item(i).name + '</li>';
