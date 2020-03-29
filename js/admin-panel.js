@@ -23,7 +23,21 @@ $('#book_type').change(function (){
     }
 })
 
+ function updateList() {
+    var input = document.getElementById('file');
+    var output = document.getElementById('fileList');
+    var children = "";
+    for (var i = 0; i < input.files.length; ++i) {
+        children += '<li>' + input.files.item(i).name + '</li>';
+    }
+    output.innerHTML = '<ul>'+children+'</ul>';
+}
 
+function FileSelected(e)
+{
+    file = document.getElementById('fu').files[document.getElementById('fu').files.length - 1];
+    document.getElementById('fileName').innerHtml= file.name;
+}
 
 function clearOthers() {
     $('#book').addClass('d-none');
