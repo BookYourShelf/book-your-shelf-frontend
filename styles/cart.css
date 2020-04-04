@@ -1623,7 +1623,6 @@ section
 	border: none;
 	outline: none;
 	box-sizing: border-box;
-	border-bottom: solid 2px #FFFFFF;
 	padding-left: 20px;
 	color: #000000;
 	-webkit-transition: all 200ms ease;

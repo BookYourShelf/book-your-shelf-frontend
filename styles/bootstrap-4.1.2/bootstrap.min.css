@@ -3187,7 +3187,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     position: relative;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    vertical-align: middle
+    vertical-align: middle;
+    padding-left: 0!important;
 }
 
 .btn-group-vertical > .btn, .btn-group > .btn {

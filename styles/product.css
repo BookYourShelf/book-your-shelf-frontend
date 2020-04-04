@@ -1110,6 +1110,10 @@ section
 {
 	border-right: solid 1px #ededed;
 }
+.product_buttons > div > div:last-of-type
+{
+	border-left: solid 1px #ededed;
+}
 .product_button
 {
 	cursor: pointer;
