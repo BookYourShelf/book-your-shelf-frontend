@@ -320,8 +320,10 @@ img {
 
 .classynav ul li .megamenu .single-mega .title {
     font-size: 14px;
+    font-weight: bold;
     border-bottom: 1px solid #f2f4f8;
-    padding: 8px 12px
+    padding: 8px 12px;
+    color: #4a4a4a!important;
 }
 
 .classynav ul li .dropdown li a {
