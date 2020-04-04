@@ -286,8 +286,21 @@
                                 </div>
                                 <div class="col-lg-9">
                                     <div class="tab-content-text">
-                                        Literature<br>
-                                        Novel
+                                        Literature, Novel
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hot List Type -->
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="tab-title-text">
+                                        Hot List Type
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="tab-content-text">
+                                        Best Sellers
                                     </div>
                                 </div>
                             </div>
@@ -306,36 +319,61 @@
                                 </div>
                             </div>
 
-                            <!-- Duration -->
+                            <!-- Start Date -->
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="tab-title-text">
-                                        Duration
+                                        Start Date
                                     </div>
                                 </div>
                                 <div class="col-lg-9">
-                                    <!-- Category -->
-                                    <div class="tab-content-text">
-                                        5
+                                    <div class="tab-content-text date">
+                                        05/04/2020
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Duration type -->
+                            <!-- Start Time -->
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="tab-title-text">
-                                        Duration Type
+                                        Start Time
                                     </div>
                                 </div>
                                 <div class="col-lg-9">
-                                    <!-- Category -->
-                                    <div class="tab-content-text">
-                                        Hours
+                                    <div class="tab-content-text time">
+                                        20:00
                                     </div>
                                 </div>
                             </div>
 
+                            <!-- End Date -->
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="tab-title-text">
+                                        End Date
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="tab-content-text date">
+                                        06/04/2020
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- End Date -->
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="tab-title-text">
+                                        End Time
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="tab-content-text time">
+                                        20:00
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -347,54 +385,82 @@
                             <div class="checkout_form_container">
                                 <form action="#" id="campaign_update_form" class="checkout_form">
 
-                                    <!-- Category - Number -->
+                                    <!-- Category -->
+                                    <div>
+                                        <div class="login-text p-b-10" style="color: black;">
+                                            Category
+                                        </div>
+                                        <select name="update_hot_list_categories"
+                                                id="update_hot_list_categories" multiple="multiple"
+                                                require="required">
+                                            <option selected value="literature">Literature</option>
+                                            <option selected value="novel">Novel</option>
+                                            <option value="poet">Poet</option>
+                                            <option value="comicon">Comicon</option>
+                                        </select>
+                                    </div>
+
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="login-text p-b-10" style="color: black;">
-                                                Category
+                                                Hot List Type
                                             </div>
-                                            <select name="new_hot_list_categories"
-                                                    id="new_hot_list_categories" multiple="multiple"
+                                            <select name="update_hot_list_type" id="update_hot_list_type"
+                                                    class="dropdown_item_select checkout_input"
                                                     require="required">
-                                                <option selected value="literature">Literature</option>
-                                                <option selected value="novel">Novel</option>
-                                                <option value="poet">Poet</option>
-                                                <option value="comicon">Comicon</option>
+                                                <option>SELECT</option>
+                                                <option selected>Best Sellers</option>
+                                                <option>New Releases</option>
+                                                <option>Our Picks For You</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="login-text p-b-10" style="color: black;">
                                                 Number of Products
                                             </div>
-                                            <input type="number" id="new_hot_list_product_number" value="100"
-                                                   class="checkout_input form-control" min="1"
+                                            <input type="number" id="update_hot_list_product_number"
+                                                   class="checkout_input form-control" min="1" value="100"
                                                    placeholder="Number of Products" required="required">
                                         </div>
                                     </div>
 
-                                    <!-- Duration -->
+                                    <!-- Start -->
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="login-text p-b-10" style="color: black;">
-                                                Duration
+                                                Hot List Start Date
                                             </div>
-                                            <input type="number" id="new_hot_list_duration" value="5"
-                                                   class="checkout_input form-control" min="1"
-                                                   placeholder="Duration" required="required">
+                                            <input type="text" id="update_hot_list_start_date"
+                                                   class="checkout_input form-control date" value="05/04/2020"
+                                                   placeholder="dd/mm/yyyy">
                                         </div>
                                         <div class="col-md-6">
                                             <div class="login-text p-b-10" style="color: black;">
-                                                Duration Type
+                                                Hot List Start Time
                                             </div>
-                                            <select name="new_hot_list_duration_type" id="new_hot_list_duration_type"
-                                                    class="dropdown_item_select checkout_input"
-                                                    require="required">
-                                                <option selected>Hours</option>
-                                                <option>Days</option>
-                                                <option>Weeks</option>
-                                                <option>Months</option>
-                                                <option>Years</option>
-                                            </select>
+                                            <input type="text" id="update_hot_list_start_time"
+                                                   class="checkout_input form-control time" value="20:00"
+                                                   placeholder="hh:mm">
+                                        </div>
+                                    </div>
+
+                                    <!-- End -->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="login-text p-b-10" style="color: black;">
+                                                Hot List End Date
+                                            </div>
+                                            <input type="text" id="update_hot_list_end_date"
+                                                   class="checkout_input form-control date" value="06/04/2020"
+                                                   placeholder="dd/mm/yyyy">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="login-text p-b-10" style="color: black;">
+                                                Hot List End Time
+                                            </div>
+                                            <input type="text" id="update_hot_list_end_time"
+                                                   class="checkout_input form-control time" value="20:00"
+                                                   placeholder="hh:mm">
                                         </div>
                                     </div>
 

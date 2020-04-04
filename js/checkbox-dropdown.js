@@ -8,4 +8,7 @@ $(function() {
     $('#new_hot_list_categories').multiselect({
         includeSelectAllOption: true
     });
+    $('#update_hot_list_categories').multiselect({
+        includeSelectAllOption: true
+    });
 });
