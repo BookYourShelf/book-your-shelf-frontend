@@ -1674,11 +1674,15 @@ section
 }
 
 .expand_element_text {
+	font-size: 15px;
 	display:inline;
 	cursor: pointer;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	float: right;
+	max-width: 165px;
+	color: #4a4a4a;
 }
 
 .expand_element_text:hover {
@@ -1690,6 +1694,17 @@ section
 	cursor: pointer;
 }
 
+.expand_element_number {
+	font-size: 15px;
+	display:inline;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	float: right;
+	max-width: 165px;
+	color: #4a4a4a;
+}
+
 .category-name {
 	text-align: start;
 	font-size: 22px;
@@ -1699,4 +1714,30 @@ section
 
 .search_fail {
 	text-align: center;
+}
+
+.subcategory_li {
+	line-height: 30px;;
+	display: block;
+	overflow: hidden;
+}
+
+.subcategory_li a {
+	font-size: 15px;
+	display:inline;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 165px;
+	color: #4a4a4a;
+}
+
+.subcategory_text {
+	padding-top: 18px;
+	padding-right: 18px;
+	padding-left: 18px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	background-color: #ffffff;
 }
