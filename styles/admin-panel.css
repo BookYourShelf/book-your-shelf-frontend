@@ -193,3 +193,10 @@
 .choose_file_button:hover {
     color: #fbaa1d!important;
 }
+
+.form-review .form-control {
+    background: transparent;
+    border: 1px solid #999999;
+    font-size: 18px;
+    color: #495057;
+}
