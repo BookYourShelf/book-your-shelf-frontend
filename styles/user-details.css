@@ -263,3 +263,10 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+.form-review .form-control {
+    background: transparent;
+    border: 1px solid #999999;
+    font-size: 18px;
+    color: #495057;
+}
