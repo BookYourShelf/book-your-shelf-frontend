@@ -274,6 +274,11 @@
                         <a class="nav-link profile-navbar-text" id="history-tab" data-toggle="tab" href="#history"
                            role="tab" aria-controls="history" aria-selected="false">Search History</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link profile-navbar-text" id="message-tab" data-toggle="tab" href="#message"
+                           role="tab" aria-controls="message" aria-selected="false">Send Message</a>
+                    </li>
                 </ul>
                 <br>
                 <br>
@@ -2271,6 +2276,44 @@
 
                         <!-- No search -->
                         <div class="warning-text" style="display: none">There are no searches.</div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="tab-pane fade " id="message" role="tabpanel" aria-labelledby="message-tab">
+                        <form action="#" class="form-contact form-review mt-3">
+                            <div class="form-group">
+                                <input class="form-control" name="subject" type="text"
+                                       placeholder="Enter Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control different-control w-100" name="textarea"
+                                          id="textarea" cols="30" rows="5"
+                                          placeholder="Enter Message"></textarea>
+                            </div>
+                            <p>
+                                Note 1: This message will be sent to the user
+                            </p>
+                            <p>
+                                Note 2: E-mail will be sent from oak.bookyourshelf@gmail.com
+                            </p>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="login_button trans_200"><a href="#">Send SMS</a></div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="login_button trans_200"><a href="#">Send E-mail</a></div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="login_button trans_200"><a href="#">Send SMS & E-mail</a></div>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                        </form>
                     </div>
                 </div>
             </div>
