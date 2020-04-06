@@ -749,6 +749,40 @@ section
 }
 .page_nav_row
 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.page_nav ul li
+{
+	width: 32px;
+	height: 32px;
+	border: solid 2px transparent;
+	text-align: center;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.page_nav ul li:not(:last-of-type)
+{
+	margin-right: 8px;
+}
+.page_nav ul li.active,
+.page_nav ul li:hover
+{
+	border: solid 2px #fbaa1d;
+	border-radius: 2px;
+}
+.page_nav ul li a {
+	display: block;
+	font-size: 14px;
+	color: #fbaa1d;
+}
+
+.page_nav_row
+{
 	margin-top: 35px;
 }
 .page_nav
@@ -769,6 +803,14 @@ section
 .page_nav ul li a:hover
 {
 	color: #fbaa1d;
+}
+.products_row
+{
+	margin-top: 32px;
+}
+.load_more_row
+{
+	margin-top: 20px;
 }
 .products_row
 {

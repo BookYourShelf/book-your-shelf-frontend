@@ -1731,40 +1731,6 @@ section
     position: relative;
 }
 
-.page_nav_row
-{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.page_nav ul li
-{
-    width: 32px;
-    height: 32px;
-    border: solid 2px transparent;
-    text-align: center;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-.page_nav ul li:not(:last-of-type)
-{
-    margin-right: 8px;
-}
-.page_nav ul li.active,
-.page_nav ul li:hover
-{
-    border: solid 2px #fbaa1d;
-    border-radius: 2px;
-}
-.page_nav ul li a {
-    display: block;
-    font-size: 14px;
-    color: #fbaa1d;
-}
-
 .cart-product-name {
     max-width: 800px!important;
     text-overflow: ellipsis;
