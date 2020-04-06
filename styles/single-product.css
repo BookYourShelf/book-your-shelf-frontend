@@ -145,7 +145,6 @@ a {
     width: 100%;
     z-index: 9999;
     transition: background 0.4s, all 0.3s linear;
-    box-shadow: 0px 10px 27px 3px rgba(221, 221, 221, 0.3)
 }
 
 .header_area .navbar {
