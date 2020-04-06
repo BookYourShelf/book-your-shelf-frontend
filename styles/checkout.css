@@ -913,7 +913,6 @@ section
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: 400;
-	color: #969696 !important;
 }
 .dropdown_item_select::-ms-expand
 {

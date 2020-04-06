@@ -3088,6 +3088,8 @@ iframe {border: none;}
 [ TEXT ]*/
 .clwhite {color: white;}
 .clblack {color: black;}
+.clblackimportant{color: black !important;}
+.clgrayimportant{color: #969696 !important;}
 
 /*------------------------------------------------------------------
 [ Line height ]*/
