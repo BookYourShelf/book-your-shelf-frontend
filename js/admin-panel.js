@@ -1,4 +1,4 @@
-$('#book_type').change(function (){
+$('#book_type').change(function () {
     var index = $(this).prop('selectedIndex');
 
     if (index == 1) {
@@ -30,13 +30,12 @@ function updatePhoto(inputId) {
     for (var i = 0; i < input.files.length; ++i) {
         children += '<li>' + input.files.item(i).name + '</li>';
     }
-    output.innerHTML = '<ul>'+children+'</ul>';
+    output.innerHTML = '<ul>' + children + '</ul>';
 }
 
-function FileSelected(e)
-{
+function FileSelected(e) {
     file = document.getElementById('fu').files[document.getElementById('fu').files.length - 1];
-    document.getElementById('fileName').innerHtml= file.name;
+    document.getElementById('fileName').innerHtml = file.name;
 }
 
 function clearOthers() {

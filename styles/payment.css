@@ -1,5 +1,5 @@
 .nav-pills > li > a.active {
-    background-color: #fbaa1d!important;
+    background-color: #fbaa1d !important;
 }
 
 .accent-color {
@@ -7,21 +7,21 @@
 }
 
 .subscribe {
-    background-color: #fbaa1d!important;
-    border-color: #fbaa1d!important;
+    background-color: #fbaa1d !important;
+    border-color: #fbaa1d !important;
 }
+
 .m-45-btm {
     margin-top: 45px;
     margin-bottom: 60px;
 }
 
-.dropdown_item_select
-{
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    -ms-appearance:none;
-    -o-appearance:none;
-    appearance:none;
+.dropdown_item_select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
     -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     -webkit-user-select: none;
     background-image: url(../images/down.png);
@@ -36,7 +36,7 @@
     font-weight: 400;
     color: #969696 !important;
 }
-.dropdown_item_select::-ms-expand
-{
+
+.dropdown_item_select::-ms-expand {
     display: none;
 }

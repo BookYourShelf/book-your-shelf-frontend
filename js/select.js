@@ -1,6 +1,6 @@
 $('select').each(
-    function(){
-        $(this).on('change',function(){
+    function () {
+        $(this).on('change', function () {
             var text = $(this).find("option:selected").text();
             $(this).removeClass('clblackimportant');
             $(this).removeClass('clgrayimportant');

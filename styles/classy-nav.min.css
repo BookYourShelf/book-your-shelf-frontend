@@ -4,7 +4,7 @@ ul {
     margin: 0
 }
 
-.classynav ul li.megamenu-item>a:after,
+.classynav ul li.megamenu-item > a:after,
 .icon-down-arrow:before {
     content: "\e900"
 }
@@ -90,11 +90,11 @@ img {
     left: 0
 }
 
-.classy-nav-container.box-skins .classynav>ul>li {
+.classy-nav-container.box-skins .classynav > ul > li {
     background-color: #1abc9c
 }
 
-.classy-nav-container.box-skins .classynav>ul>li>a {
+.classy-nav-container.box-skins .classynav > ul > li > a {
     color: #fff
 }
 
@@ -183,7 +183,7 @@ img {
     -moz-osx-font-smoothing: grayscale
 }
 
-.classynav ul li.megamenu-item>a:after {
+.classynav ul li.megamenu-item > a:after {
     font-family: icomoon !important;
     font-size: 11px;
     color: #000;
@@ -323,7 +323,7 @@ img {
     font-weight: bold;
     border-bottom: 1px solid #f2f4f8;
     padding: 8px 12px;
-    color: #4a4a4a!important;
+    color: #4a4a4a !important;
 }
 
 .classynav ul li .dropdown li a {
@@ -390,8 +390,8 @@ img {
     border-bottom: none
 }
 
-.classynav>ul>li.cn-dropdown-item.has-down>.dd-arrow,
-.classynav>ul>li.megamenu-item>.dd-arrow {
+.classynav > ul > li.cn-dropdown-item.has-down > .dd-arrow,
+.classynav > ul > li.megamenu-item > .dd-arrow {
     top: 17px;
     -webkit-transform: rotate(0);
     transform: rotate(0);
@@ -408,11 +408,11 @@ img {
     right: 20px
 }
 
-.classynav>ul>li.has-down.active>.dd-arrow::after,
+.classynav > ul > li.has-down.active > .dd-arrow::after,
 .has-down .dd-arrow::after,
-.has-down.active>.dd-arrow::after,
+.has-down.active > .dd-arrow::after,
 .megamenu-item .dd-arrow::after,
-.megamenu-item.active>.dd-arrow::after {
+.megamenu-item.active > .dd-arrow::after {
     width: 8px;
     height: 1px;
     background-color: #000;
@@ -443,7 +443,7 @@ img {
     transform: rotate(45deg)
 }
 
-.classynav>ul>li.has-down.active>.dd-arrow::before {
+.classynav > ul > li.has-down.active > .dd-arrow::before {
     width: 8px;
     height: 1px;
     background-color: #000;
@@ -456,13 +456,13 @@ img {
     border-radius: 1px
 }
 
-.classynav>ul>li.has-down.active>.dd-arrow::after {
+.classynav > ul > li.has-down.active > .dd-arrow::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg)
 }
 
-.has-down.active>.dd-arrow::before,
-.megamenu-item.active>.dd-arrow::before {
+.has-down.active > .dd-arrow::before,
+.megamenu-item.active > .dd-arrow::before {
     width: 8px;
     height: 1px;
     background-color: #000;
@@ -475,8 +475,8 @@ img {
     border-radius: 1px
 }
 
-.has-down.active>.dd-arrow::after,
-.megamenu-item.active>.dd-arrow::after {
+.has-down.active > .dd-arrow::after,
+.megamenu-item.active > .dd-arrow::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg)
 }
@@ -606,7 +606,7 @@ img {
     display: none
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width: 991px) {
 
     .classy-navbar-toggler,
     .classycloseIcon {
@@ -682,7 +682,7 @@ img {
 
     .classynav ul li .dropdown,
     .classynav ul li .megamenu,
-    .classynav ul li.megamenu-item>a:after {
+    .classynav ul li.megamenu-item > a:after {
         display: none
     }
 
@@ -712,13 +712,13 @@ img {
         padding-right: 0 !important
     }
 
-    .classynav>ul>li>a {
+    .classynav > ul > li > a {
         background-color: #f2f4f8;
         border-bottom: 1px solid rgba(255, 255, 255, .5)
     }
 
-    .classynav>ul>li.cn-dropdown-item.has-down>.dd-arrow,
-    .classynav>ul>li.megamenu-item>.dd-arrow {
+    .classynav > ul > li.cn-dropdown-item.has-down > .dd-arrow,
+    .classynav > ul > li.megamenu-item > .dd-arrow {
         right: 20px
     }
 
@@ -807,7 +807,7 @@ img {
 
 .breakpoint-on .classynav ul li .dropdown,
 .breakpoint-on .classynav ul li .megamenu,
-.breakpoint-on .classynav ul li.megamenu-item>a:after {
+.breakpoint-on .classynav ul li.megamenu-item > a:after {
     display: none
 }
 
@@ -837,7 +837,7 @@ img {
     padding-right: 0 !important
 }
 
-.breakpoint-on .classynav>ul>li>a {
+.breakpoint-on .classynav > ul > li > a {
     background-color: #f2f4f8;
     border-bottom: 1px solid rgba(255, 255, 255, .5)
 }
@@ -847,8 +847,8 @@ img {
     background-color: #192a56
 }
 
-.breakpoint-on .classynav>ul>li.cn-dropdown-item.has-down>.dd-arrow,
-.breakpoint-on .classynav>ul>li.megamenu-item>.dd-arrow {
+.breakpoint-on .classynav > ul > li.cn-dropdown-item.has-down > .dd-arrow,
+.breakpoint-on .classynav > ul > li.megamenu-item > .dd-arrow {
     right: 20px
 }
 
@@ -865,22 +865,22 @@ img {
     color: rgba(255, 255, 255, .7)
 }
 
-.dark .classynav ul li.megamenu-item>a:after,
+.dark .classynav ul li.megamenu-item > a:after,
 .dark.classy-nav-container a:focus,
 .dark.classy-nav-container a:hover {
     color: #fff
 }
 
-.dark .classynav>ul>li.has-down.active>.dd-arrow::after,
-.dark .classynav>ul>li.has-down.active>.dd-arrow::before,
+.dark .classynav > ul > li.has-down.active > .dd-arrow::after,
+.dark .classynav > ul > li.has-down.active > .dd-arrow::before,
 .dark .has-down .dd-arrow::after,
 .dark .has-down .dd-arrow::before,
-.dark .has-down.active>.dd-arrow::after,
-.dark .has-down.active>.dd-arrow::before,
+.dark .has-down.active > .dd-arrow::after,
+.dark .has-down.active > .dd-arrow::before,
 .dark .megamenu-item .dd-arrow::after,
 .dark .megamenu-item .dd-arrow::before,
-.dark .megamenu-item.active>.dd-arrow::after,
-.dark .megamenu-item.active>.dd-arrow::before {
+.dark .megamenu-item.active > .dd-arrow::after,
+.dark .megamenu-item.active > .dd-arrow::before {
     background-color: #fff
 }
 
@@ -915,7 +915,7 @@ img {
     background-color: #fff
 }
 
-.dark.breakpoint-on .classynav>ul>li>a {
+.dark.breakpoint-on .classynav > ul > li > a {
     background-color: #192a56;
     border-bottom: 1px solid rgba(255, 255, 255, .05)
 }
@@ -1007,7 +1007,7 @@ img {
     text-align: right
 }
 
-.dropdown-rtl .classynav>ul>li.cn-dropdown-item.has-down>.dd-arrow {
+.dropdown-rtl .classynav > ul > li.cn-dropdown-item.has-down > .dd-arrow {
     right: 10px !important;
     left: auto
 }
@@ -1055,7 +1055,7 @@ img {
     top: 0
 }
 
-.dropdown-rtl.breakpoint-on .classynav>ul>li.cn-dropdown-item.has-down>.dd-arrow {
+.dropdown-rtl.breakpoint-on .classynav > ul > li.cn-dropdown-item.has-down > .dd-arrow {
     right: auto !important;
     left: 20px
 }

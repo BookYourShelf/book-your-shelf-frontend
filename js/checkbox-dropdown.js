@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     $('#campaign_update_categories').multiselect({
         includeSelectAllOption: true
     });

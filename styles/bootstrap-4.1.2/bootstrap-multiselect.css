@@ -81,6 +81,7 @@ span.multiselect-native-select select {
 .form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
     margin-right: 0
 }
+
 .dropdown-menu {
-    transform: translate3d(0px, 50px, 0px)!important;
+    transform: translate3d(0px, 50px, 0px) !important;
 }

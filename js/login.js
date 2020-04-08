@@ -1,4 +1,4 @@
-$(".reveal").on('click',function() {
+$(".reveal").on('click', function () {
     var $pwd = $(".pwd");
     var $reveal = $("#eye");
     if ($pwd.attr('type') === 'password') {
@@ -12,7 +12,7 @@ $(".reveal").on('click',function() {
     }
 });
 
-$(".reveal1").on('click',function() {
+$(".reveal1").on('click', function () {
     var $pwd = $(".pwd1");
     var $reveal = $("#eye1");
     if ($pwd.attr('type') === 'password') {
